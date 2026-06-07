@@ -1,0 +1,1541 @@
+{
+  "generated_at": "2026-06-01T18:40:07.248342+00:00",
+  "overnight_hours": 8,
+  "steps": [
+    {
+      "name": "krx_daily",
+      "ok": true,
+      "started_at": "2026-06-01T15:47:30.168051+00:00",
+      "finished_at": "2026-06-01T16:00:33.559947+00:00",
+      "result": null
+    },
+    {
+      "name": "krx_investor_flows",
+      "ok": true,
+      "started_at": "2026-06-01T16:00:33.559947+00:00",
+      "finished_at": "2026-06-01T16:00:49.224021+00:00",
+      "result": null
+    },
+    {
+      "name": "global_stock_prices",
+      "ok": true,
+      "started_at": "2026-06-01T16:00:49.224021+00:00",
+      "finished_at": "2026-06-01T16:40:19.532296+00:00",
+      "result": null
+    },
+    {
+      "name": "ecos_exchange_rate",
+      "ok": true,
+      "started_at": "2026-06-01T16:40:19.533294+00:00",
+      "finished_at": "2026-06-01T16:56:29.444269+00:00",
+      "result": null
+    },
+    {
+      "name": "fred_semiconductor_indicators",
+      "ok": true,
+      "started_at": "2026-06-01T16:56:29.445271+00:00",
+      "finished_at": "2026-06-01T17:04:15.135899+00:00",
+      "result": null
+    },
+    {
+      "name": "customs_trade",
+      "ok": true,
+      "started_at": "2026-06-01T17:04:15.136898+00:00",
+      "finished_at": "2026-06-01T17:04:19.493509+00:00",
+      "result": null
+    },
+    {
+      "name": "kosis_stats",
+      "ok": true,
+      "started_at": "2026-06-01T17:04:19.493509+00:00",
+      "finished_at": "2026-06-01T17:04:26.716270+00:00",
+      "result": null
+    },
+    {
+      "name": "cycle_1_company_official_sources",
+      "ok": true,
+      "started_at": "2026-06-01T17:04:26.716270+00:00",
+      "finished_at": "2026-06-01T17:19:16.773145+00:00",
+      "result": null
+    },
+    {
+      "name": "cycle_1_rss_all_sources",
+      "ok": true,
+      "started_at": "2026-06-01T17:19:16.780070+00:00",
+      "finished_at": "2026-06-01T17:20:48.506122+00:00",
+      "result": null
+    },
+    {
+      "name": "cycle_1_tech_blogs",
+      "ok": true,
+      "started_at": "2026-06-01T17:20:48.506122+00:00",
+      "finished_at": "2026-06-01T17:21:37.244299+00:00",
+      "result": null
+    },
+    {
+      "name": "cycle_1_arxiv_new_papers",
+      "ok": true,
+      "started_at": "2026-06-01T17:21:37.245303+00:00",
+      "finished_at": "2026-06-01T18:01:06.308739+00:00",
+      "result": null
+    },
+    {
+      "name": "cycle_1_arxiv_company_papers",
+      "ok": true,
+      "started_at": "2026-06-01T18:01:06.308739+00:00",
+      "finished_at": "2026-06-01T18:04:00.843439+00:00",
+      "result": null
+    },
+    {
+      "name": "cycle_1_openalex_company_priority_papers",
+      "ok": true,
+      "started_at": "2026-06-01T18:04:00.844440+00:00",
+      "finished_at": "2026-06-01T18:12:11.729786+00:00",
+      "result": null
+    },
+    {
+      "name": "build_event_dataset",
+      "ok": true,
+      "started_at": "2026-06-01T18:12:11.729786+00:00",
+      "finished_at": "2026-06-01T18:16:29.312444+00:00",
+      "result": {
+        "document_events": 123,
+        "disclosure_events": 0,
+        "outcomes": 12
+      }
+    },
+    {
+      "name": "index_all_chunks",
+      "ok": false,
+      "started_at": "2026-06-01T18:16:29.312444+00:00",
+      "finished_at": "2026-06-01T18:18:01.256889+00:00",
+      "error": "[Errno 22] Invalid argument",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\82102\\OneDrive\\바탕 화면\\sc_agent\\semiconductor_agent_design\\app\\run_semiconductor_overnight.py\", line 53, in _run_step\n    result = fn()\n             ^^^^\n  File \"C:\\Users\\82102\\OneDrive\\바탕 화면\\sc_agent\\semiconductor_agent_design\\app\\rag\\indexer.py\", line 146, in index_all_chunks\n    embeddings = encode_batch(texts)  # list[(dense, sparse)]\n                 ^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\82102\\OneDrive\\바탕 화면\\sc_agent\\semiconductor_agent_design\\app\\rag\\embedder.py\", line 57, in encode_batch\n    model = get_embedder()\n            ^^^^^^^^^^^^^^\n  File \"C:\\Users\\82102\\OneDrive\\바탕 화면\\sc_agent\\semiconductor_agent_design\\app\\rag\\embedder.py\", line 40, in get_embedder\n    _model = BGEM3FlagModel(\n             ^^^^^^^^^^^^^^^\nOSError: [Errno 22] Invalid argument\n"
+    },
+    {
+      "name": "evaluate_rag",
+      "ok": true,
+      "started_at": "2026-06-01T18:18:02.158729+00:00",
+      "finished_at": "2026-06-01T18:25:53.769972+00:00",
+      "result": {
+        "passed": 4,
+        "total": 4,
+        "pass_rate": 1.0,
+        "results": [
+          {
+            "id": "hbm_hybrid_bonding",
+            "query": "HBM4 hybrid bonding Cu-Cu bonding SK hynix Samsung Hanmi",
+            "difficulty": "easy",
+            "passed": true,
+            "coverage": {
+              "count": 8,
+              "tier1_count": 4,
+              "tier12_count": 8,
+              "domains": [
+                "ai_demand",
+                "general",
+                "hbm"
+              ],
+              "sources": [
+                "arxiv",
+                "openalex",
+                "samsung_global_newsroom",
+                "skhynix_newsroom"
+              ],
+              "avg_evidence_score": 0.8855500000000001,
+              "recent_365d_count": 4,
+              "recent_90d_count": 2
+            },
+            "term_hits": {
+              "hbm": true,
+              "bonding": true
+            },
+            "pass_reasons": [
+              "enough_evidence",
+              "has_high_trust_sources",
+              "strong_avg_evidence_score",
+              "source_diversity",
+              "required_terms_present"
+            ],
+            "fail_reasons": [],
+            "top_evidence": [
+              {
+                "title": "System-Technology Co-Optimization of Bitline Routing and Bonding Pathways in Monolithic 3D DRAM Architectures",
+                "source": "arxiv",
+                "domain": "general",
+                "year": 2026,
+                "evidence_score": 0.9496,
+                "reasons": [
+                  "tier=2",
+                  "freshness=1.00",
+                  "recency=1.00",
+                  "domain=packaging",
+                  "company_match=1.00",
+                  "published_at=unknown"
+                ]
+              },
+              {
+                "title": "Hardware-Software Co-design for 3D-DRAM-based LLM Serving Accelerator",
+                "source": "arxiv",
+                "domain": "",
+                "year": 2026,
+                "evidence_score": 0.9336,
+                "reasons": [
+                  "tier=2",
+                  "freshness=1.00",
+                  "recency=0.84",
+                  "domain=packaging",
+                  "company_match=1.00",
+                  "published_at=2026-01-01T00:00:00+00:00"
+                ]
+              },
+              {
+                "title": "MemExplorer: Navigating the Heterogeneous Memory Design Space for Agentic Inference NPUs",
+                "source": "arxiv",
+                "domain": "",
+                "year": 2026,
+                "evidence_score": 0.9336,
+                "reasons": [
+                  "tier=2",
+                  "freshness=1.00",
+                  "recency=0.84",
+                  "domain=packaging",
+                  "company_match=1.00",
+                  "published_at=2026-01-01T00:00:00+00:00"
+                ]
+              },
+              {
+                "title": "SK hynix Announces 1Q26 Financial Results",
+                "source": "skhynix_newsroom",
+                "domain": "hbm",
+                "year": 2026,
+                "evidence_score": 0.883,
+                "reasons": [
+                  "tier=1",
+                  "freshness=1.00",
+                  "recency=1.00",
+                  "domain=hbm",
+                  "company_match=1.00",
+                  "published_at=unknown"
+                ]
+              },
+              {
+                "title": "“Shaping the AI Era Together,” SK hynix Unveils Shared Growth Strategy with Partner Companies",
+                "source": "skhynix_newsroom",
+                "domain": "hbm",
+                "year": 2026,
+                "evidence_score": 0.883,
+                "reasons": [
+                  "tier=1",
+                  "freshness=1.00",
+                  "recency=1.00",
+                  "domain=hbm",
+                  "company_match=1.00",
+                  "published_at=unknown"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "euv_high_na",
+            "query": "High-NA EUV lithography ASML Samsung foundry",
+            "difficulty": "easy",
+            "passed": true,
+            "coverage": {
+              "count": 8,
+              "tier1_count": 2,
+              "tier12_count": 8,
+              "domains": [
+                "equipment",
+                "general",
+                "litho"
+              ],
+              "sources": [
+                "arxiv",
+                "asml_press_releases",
+                "openalex"
+              ],
+              "avg_evidence_score": 0.885075,
+              "recent_365d_count": 2,
+              "recent_90d_count": 1
+            },
+            "term_hits": {
+              "euv": true,
+              "high-na": true
+            },
+            "pass_reasons": [
+              "enough_evidence",
+              "has_high_trust_sources",
+              "strong_avg_evidence_score",
+              "source_diversity",
+              "required_terms_present"
+            ],
+            "fail_reasons": [],
+            "top_evidence": [
+              {
+                "title": "Holographic EUV Lithography at 40 nm Resolution",
+                "source": "arxiv",
+                "domain": "",
+                "year": 2026,
+                "evidence_score": 0.9496,
+                "reasons": [
+                  "tier=2",
+                  "freshness=1.00",
+                  "recency=1.00",
+                  "domain=litho",
+                  "company_match=1.00",
+                  "published_at=2026-05-20T17:23:22+00:00"
+                ]
+              },
+              {
+                "title": "Transforming Computational Lithography with AC and AI -- Faster, More Accurate, and Energy-efficient",
+                "source": "arxiv",
+                "domain": "litho",
+                "year": 2026,
+                "evidence_score": 0.9496,
+                "reasons": [
+                  "tier=2",
+                  "freshness=1.00",
+                  "recency=1.00",
+                  "domain=litho",
+                  "company_match=1.00",
+                  "published_at=unknown"
+                ]
+              },
+              {
+                "title": "ForgetMeNot: Understanding and Modeling the Impact of Forever Chemicals Toward Sustainable Large-Scale Computing",
+                "source": "arxiv",
+                "domain": "general",
+                "year": 2025,
+                "evidence_score": 0.9496,
+                "reasons": [
+                  "tier=2",
+                  "freshness=1.00",
+                  "recency=1.00",
+                  "domain=litho",
+                  "company_match=1.00",
+                  "published_at=unknown"
+                ]
+              },
+              {
+                "title": "De la cristalización del silicio a la litografía EUV: proceso integral de fabricación de wafers y fundamentos físico-ingenieriles de los escáneres de ASML",
+                "source": "openalex",
+                "domain": "",
+                "year": 2026,
+                "evidence_score": 0.9336,
+                "reasons": [
+                  "tier=2",
+                  "freshness=1.00",
+                  "recency=0.84",
+                  "domain=litho",
+                  "company_match=1.00",
+                  "published_at=2026-01-01T00:00:00+00:00"
+                ]
+              },
+              {
+                "title": "EUV lithography",
+                "source": "asml_press_releases",
+                "domain": "litho",
+                "year": 0,
+                "evidence_score": 0.879,
+                "reasons": [
+                  "tier=1",
+                  "freshness=0.45",
+                  "recency=0.45",
+                  "domain=litho",
+                  "company_match=1.00",
+                  "published_at=unknown"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "ai_hbm_demand",
+            "query": "NVIDIA AI data center demand HBM memory SK hynix",
+            "difficulty": "medium",
+            "passed": true,
+            "coverage": {
+              "count": 8,
+              "tier1_count": 3,
+              "tier12_count": 6,
+              "domains": [
+                "ai_demand",
+                "general",
+                "hbm"
+              ],
+              "sources": [
+                "arxiv",
+                "nvidia_developer_blog",
+                "skhynix_newsroom"
+              ],
+              "avg_evidence_score": 0.8492500000000001,
+              "recent_365d_count": 4,
+              "recent_90d_count": 4
+            },
+            "term_hits": {
+              "ai": true,
+              "hbm": true
+            },
+            "pass_reasons": [
+              "enough_evidence",
+              "has_high_trust_sources",
+              "strong_avg_evidence_score",
+              "source_diversity",
+              "required_terms_present"
+            ],
+            "fail_reasons": [],
+            "top_evidence": [
+              {
+                "title": "What Brought Dell and SK hynix Together in Las Vegas? From HBM to cSSD, Reaffirming the Limitless Scalability of AI Memory",
+                "source": "skhynix_newsroom",
+                "domain": "",
+                "year": 2026,
+                "evidence_score": 0.916,
+                "reasons": [
+                  "tier=1",
+                  "freshness=1.00",
+                  "recency=1.00",
+                  "domain=hbm",
+                  "company_match=0.40",
+                  "published_at=2026-05-20T04:59:03+00:00"
+                ]
+              },
+              {
+                "title": "SK hynix receives 2026 IEEE Corporate Innovation Award for Driving AI Computing Expansion with HBM",
+                "source": "skhynix_newsroom",
+                "domain": "hbm",
+                "year": 2026,
+                "evidence_score": 0.916,
+                "reasons": [
+                  "tier=1",
+                  "freshness=1.00",
+                  "recency=1.00",
+                  "domain=hbm",
+                  "company_match=0.40",
+                  "published_at=unknown"
+                ]
+              },
+              {
+                "title": "SK hynix unveils ‘iHBM’ thermal solution to boost AI performance",
+                "source": "skhynix_newsroom",
+                "domain": "",
+                "year": 2026,
+                "evidence_score": 0.916,
+                "reasons": [
+                  "tier=1",
+                  "freshness=1.00",
+                  "recency=1.00",
+                  "domain=hbm",
+                  "company_match=0.40",
+                  "published_at=2026-05-26T00:13:36+00:00"
+                ]
+              },
+              {
+                "title": "Towards Fully-fledged GPU Multitasking via Proactive Memory Scheduling",
+                "source": "arxiv",
+                "domain": "",
+                "year": 2025,
+                "evidence_score": 0.9116,
+                "reasons": [
+                  "tier=2",
+                  "freshness=1.00",
+                  "recency=0.62",
+                  "domain=hbm",
+                  "company_match=1.00",
+                  "published_at=2025-01-01T00:00:00+00:00"
+                ]
+              },
+              {
+                "title": "Insights into DeepSeek-V3: Scaling Challenges and Reflections on Hardware for AI Architectures",
+                "source": "arxiv",
+                "domain": "hbm",
+                "year": 2025,
+                "evidence_score": 0.8326,
+                "reasons": [
+                  "tier=2",
+                  "freshness=1.00",
+                  "recency=1.00",
+                  "domain=hbm",
+                  "company_match=1.00",
+                  "published_at=unknown"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "tsmc_cowos_capacity",
+            "query": "TSMC CoWoS advanced packaging AI accelerator capacity",
+            "difficulty": "medium",
+            "passed": true,
+            "coverage": {
+              "count": 8,
+              "tier1_count": 2,
+              "tier12_count": 6,
+              "domains": [
+                "ai_demand",
+                "general",
+                "hbm",
+                "logic"
+              ],
+              "sources": [
+                "arxiv",
+                "nvidia_blog_feed",
+                "openalex",
+                "semiwiki",
+                "skhynix_newsroom"
+              ],
+              "avg_evidence_score": 0.8728249999999999,
+              "recent_365d_count": 2,
+              "recent_90d_count": 2
+            },
+            "term_hits": {
+              "cowos": true,
+              "packaging": true
+            },
+            "pass_reasons": [
+              "enough_evidence",
+              "has_high_trust_sources",
+              "strong_avg_evidence_score",
+              "source_diversity",
+              "required_terms_present"
+            ],
+            "fail_reasons": [],
+            "top_evidence": [
+              {
+                "title": "Panel-Scale Reconfigurable Photonic Interconnects for Scalable AI Computation",
+                "source": "arxiv",
+                "domain": "general",
+                "year": 2025,
+                "evidence_score": 0.9496,
+                "reasons": [
+                  "tier=2",
+                  "freshness=1.00",
+                  "recency=1.00",
+                  "domain=packaging",
+                  "company_match=1.00",
+                  "published_at=unknown"
+                ]
+              },
+              {
+                "title": "3D Atomic-Scale Metrology of Strain Relaxation and Roughness in Gate-All-Around (GAA) Transistors via Electron Ptychography",
+                "source": "arxiv",
+                "domain": "logic",
+                "year": 2025,
+                "evidence_score": 0.9496,
+                "reasons": [
+                  "tier=2",
+                  "freshness=1.00",
+                  "recency=1.00",
+                  "domain=packaging",
+                  "company_match=1.00",
+                  "published_at=unknown"
+                ]
+              },
+              {
+                "title": "Optimization and Benchmarking of Monolithically Stackable Gain Cell Memory for Last-Level Cache",
+                "source": "arxiv",
+                "domain": "",
+                "year": 2025,
+                "evidence_score": 0.9116,
+                "reasons": [
+                  "tier=2",
+                  "freshness=1.00",
+                  "recency=0.62",
+                  "domain=packaging",
+                  "company_match=1.00",
+                  "published_at=2025-03-08T18:42:34+00:00"
+                ]
+              },
+              {
+                "title": "Synopsys and TSMC Deepen AI Design Alliance: What It Means",
+                "source": "semiwiki",
+                "domain": "general",
+                "year": 2026,
+                "evidence_score": 0.8936,
+                "reasons": [
+                  "tier=3",
+                  "freshness=1.00",
+                  "recency=1.00",
+                  "domain=packaging",
+                  "company_match=1.00",
+                  "published_at=unknown"
+                ]
+              },
+              {
+                "title": "“Overcoming Technological Limits Requires the Integration of Memory and Logic”: SK hynix Presents Vision at TSMC Symposium",
+                "source": "skhynix_newsroom",
+                "domain": "hbm",
+                "year": 2026,
+                "evidence_score": 0.883,
+                "reasons": [
+                  "tier=1",
+                  "freshness=1.00",
+                  "recency=1.00",
+                  "domain=hbm",
+                  "company_match=1.00",
+                  "published_at=unknown"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "chunked_backtest",
+      "ok": true,
+      "started_at": "2026-06-01T18:25:53.769972+00:00",
+      "finished_at": "2026-06-01T18:34:38.189759+00:00",
+      "result": {
+        "total_tasks": 33,
+        "completed_tasks": 2,
+        "pending_tasks": 31,
+        "ran_tasks": [
+          {
+            "key": "005930|2021-06-01|2021-11-27|21",
+            "company_code": "005930",
+            "start_date": "2021-06-01",
+            "end_date": "2021-11-27",
+            "cases": 15,
+            "interval_hit_rate": 0.267,
+            "direction_accuracy": 0.2,
+            "avg_abs_error": 0.0408
+          },
+          {
+            "key": "005930|2021-11-28|2022-05-26|21",
+            "company_code": "005930",
+            "start_date": "2021-11-28",
+            "end_date": "2022-05-26",
+            "cases": 18,
+            "interval_hit_rate": 0.278,
+            "direction_accuracy": 0.333,
+            "avg_abs_error": 0.0415
+          }
+        ],
+        "ran_cases": 33,
+        "checkpoint_path": "C:\\Users\\82102\\OneDrive\\바탕 화면\\sc_agent\\semiconductor_agent_design\\reports\\overnight_backtest_checkpoint.json"
+      }
+    },
+    {
+      "name": "build_experience_memory",
+      "ok": true,
+      "started_at": "2026-06-01T18:34:38.189759+00:00",
+      "finished_at": "2026-06-01T18:39:40.728379+00:00",
+      "result": {
+        "cases_built": 151,
+        "stats_built": 69,
+        "success_count": 25,
+        "partial_count": 67,
+        "failure_count": 59,
+        "top_primary_patterns": [
+          [
+            "direction_flip",
+            68
+          ],
+          [
+            "missing_tech_event_context",
+            31
+          ],
+          [
+            "volatility_underweighted",
+            15
+          ],
+          [
+            "already_priced_in_miss",
+            15
+          ],
+          [
+            "macro_override",
+            3
+          ]
+        ]
+      }
+    }
+  ],
+  "coverage": {
+    "counts": {
+      "companies": 13,
+      "price_daily": 14967,
+      "metric_observations": 1210,
+      "disclosures": 0,
+      "tech_documents": 1410,
+      "tech_document_chunks": 8917,
+      "paper_sections": 1439,
+      "paper_tables": 380,
+      "paper_figures": 1806,
+      "event_candidates": 194,
+      "event_outcomes": 12,
+      "price_forecasts": 228,
+      "price_forecast_evaluations": 151
+    },
+    "source_type_rows": [
+      [
+        "paper",
+        1142
+      ],
+      [
+        "company_official",
+        210
+      ],
+      [
+        "rss_news",
+        51
+      ],
+      [
+        "tech_blog",
+        7
+      ]
+    ],
+    "source_rows": [
+      [
+        "arxiv",
+        900
+      ],
+      [
+        "openalex",
+        242
+      ],
+      [
+        "nvidia_developer_blog",
+        105
+      ],
+      [
+        "samsung_global_newsroom",
+        57
+      ],
+      [
+        "ieee_spectrum",
+        32
+      ],
+      [
+        "nvidia_blog_feed",
+        23
+      ],
+      [
+        "asml_press_releases",
+        12
+      ],
+      [
+        "semiconductor_engineering",
+        11
+      ],
+      [
+        "skhynix_newsroom",
+        10
+      ],
+      [
+        "eetimes",
+        8
+      ],
+      [
+        "chips_and_cheese",
+        7
+      ],
+      [
+        "nvidia_newsroom_home",
+        2
+      ],
+      [
+        "skhynix_press_center",
+        1
+      ]
+    ],
+    "company_rows": [
+      [
+        "UNASSIGNED",
+        1205
+      ],
+      [
+        "NVDA",
+        130
+      ],
+      [
+        "005930",
+        57
+      ],
+      [
+        "ASML",
+        12
+      ],
+      [
+        "000660",
+        6
+      ]
+    ],
+    "domain_rows": [
+      [
+        "ai_demand",
+        167
+      ],
+      [
+        "reliability",
+        31
+      ],
+      [
+        "general",
+        30
+      ],
+      [
+        "process",
+        29
+      ],
+      [
+        "equipment",
+        28
+      ],
+      [
+        "power",
+        16
+      ],
+      [
+        "memory",
+        12
+      ],
+      [
+        "financials",
+        8
+      ],
+      [
+        "business",
+        4
+      ],
+      [
+        "litho",
+        2
+      ],
+      [
+        "logic",
+        2
+      ],
+      [
+        "hbm",
+        1
+      ],
+      [
+        "materials",
+        1
+      ],
+      [
+        "standards",
+        1
+      ]
+    ],
+    "latest_docs": [
+      [
+        "openalex",
+        "paper",
+        "Hardware-Software Co-design for Reliable and Efficient Heterogeneous Systems",
+        "2024-01-01 00:00:00+00:00",
+        "2026-06-01 18:12:10.592138+00:00",
+        0.55
+      ],
+      [
+        "openalex",
+        "paper",
+        "Improving Multi-GPU Strong Scaling Through Optimization of Fine-Grained Transfers",
+        "2022-01-01 00:00:00+00:00",
+        "2026-06-01 18:12:08.694467+00:00",
+        0.55
+      ],
+      [
+        "openalex",
+        "paper",
+        "Applying Rosenbrock method for solving stiff ODEs raised from the chemical reactivity of the atmosphere through heterogeneous architectures based on FPGAs",
+        "2023-01-01 00:00:00+00:00",
+        "2026-06-01 18:12:06.820265+00:00",
+        0.55
+      ],
+      [
+        "arxiv",
+        "paper",
+        "Rethinking the Producer-Consumer Relationship in Modern DRAM-Based Systems",
+        "2024-01-01 00:00:00+00:00",
+        "2026-06-01 18:12:03.156970+00:00",
+        0.55
+      ],
+      [
+        "openalex",
+        "paper",
+        "Design of a data layout and memory access abstraction layer for heterogeneous architectures",
+        "2024-01-01 00:00:00+00:00",
+        "2026-06-01 18:12:01.255965+00:00",
+        0.55
+      ],
+      [
+        "openalex",
+        "paper",
+        "Towards Efficient Large Language Model Serving: A Survey on System-Aware KV Cache Optimization",
+        "2026-01-01 00:00:00+00:00",
+        "2026-06-01 18:11:59.341777+00:00",
+        0.55
+      ],
+      [
+        "openalex",
+        "paper",
+        "Towards Efficient Large Language Model Serving: A Survey on System-Aware KV Cache Optimization",
+        "2025-01-01 00:00:00+00:00",
+        "2026-06-01 18:11:57.468179+00:00",
+        0.55
+      ],
+      [
+        "openalex",
+        "paper",
+        "Advanced Simulation and Computing: FY25 Implementation Plan",
+        "2024-01-01 00:00:00+00:00",
+        "2026-06-01 18:11:55.615867+00:00",
+        0.55
+      ],
+      [
+        "arxiv",
+        "paper",
+        "Energy-Aware Computing in the Year 2026",
+        "2026-01-01 00:00:00+00:00",
+        "2026-06-01 18:11:51.814322+00:00",
+        0.55
+      ],
+      [
+        "openalex",
+        "paper",
+        "Front Matter",
+        "2022-01-01 00:00:00+00:00",
+        "2026-06-01 18:11:50.007998+00:00",
+        0.55
+      ],
+      [
+        "openalex",
+        "paper",
+        "Architectures and Frameworks for Near-Memory Computing using 3D-Stacked Memories",
+        "2025-01-01 00:00:00+00:00",
+        "2026-06-01 18:11:48.153584+00:00",
+        0.55
+      ],
+      [
+        "arxiv",
+        "paper",
+        "SwarmIO: Towards 100 Million IOPS SSD Emulation for Next-generation GPU-centric Storage Systems",
+        "2026-01-01 00:00:00+00:00",
+        "2026-06-01 18:11:44.342992+00:00",
+        0.55
+      ]
+    ]
+  },
+  "rag_eval": {
+    "passed": 4,
+    "total": 4,
+    "pass_rate": 1.0,
+    "results": [
+      {
+        "id": "hbm_hybrid_bonding",
+        "query": "HBM4 hybrid bonding Cu-Cu bonding SK hynix Samsung Hanmi",
+        "difficulty": "easy",
+        "passed": true,
+        "coverage": {
+          "count": 8,
+          "tier1_count": 4,
+          "tier12_count": 8,
+          "domains": [
+            "ai_demand",
+            "general",
+            "hbm"
+          ],
+          "sources": [
+            "arxiv",
+            "openalex",
+            "samsung_global_newsroom",
+            "skhynix_newsroom"
+          ],
+          "avg_evidence_score": 0.8855500000000001,
+          "recent_365d_count": 4,
+          "recent_90d_count": 2
+        },
+        "term_hits": {
+          "hbm": true,
+          "bonding": true
+        },
+        "pass_reasons": [
+          "enough_evidence",
+          "has_high_trust_sources",
+          "strong_avg_evidence_score",
+          "source_diversity",
+          "required_terms_present"
+        ],
+        "fail_reasons": [],
+        "top_evidence": [
+          {
+            "title": "System-Technology Co-Optimization of Bitline Routing and Bonding Pathways in Monolithic 3D DRAM Architectures",
+            "source": "arxiv",
+            "domain": "general",
+            "year": 2026,
+            "evidence_score": 0.9496,
+            "reasons": [
+              "tier=2",
+              "freshness=1.00",
+              "recency=1.00",
+              "domain=packaging",
+              "company_match=1.00",
+              "published_at=unknown"
+            ]
+          },
+          {
+            "title": "Hardware-Software Co-design for 3D-DRAM-based LLM Serving Accelerator",
+            "source": "arxiv",
+            "domain": "",
+            "year": 2026,
+            "evidence_score": 0.9336,
+            "reasons": [
+              "tier=2",
+              "freshness=1.00",
+              "recency=0.84",
+              "domain=packaging",
+              "company_match=1.00",
+              "published_at=2026-01-01T00:00:00+00:00"
+            ]
+          },
+          {
+            "title": "MemExplorer: Navigating the Heterogeneous Memory Design Space for Agentic Inference NPUs",
+            "source": "arxiv",
+            "domain": "",
+            "year": 2026,
+            "evidence_score": 0.9336,
+            "reasons": [
+              "tier=2",
+              "freshness=1.00",
+              "recency=0.84",
+              "domain=packaging",
+              "company_match=1.00",
+              "published_at=2026-01-01T00:00:00+00:00"
+            ]
+          },
+          {
+            "title": "SK hynix Announces 1Q26 Financial Results",
+            "source": "skhynix_newsroom",
+            "domain": "hbm",
+            "year": 2026,
+            "evidence_score": 0.883,
+            "reasons": [
+              "tier=1",
+              "freshness=1.00",
+              "recency=1.00",
+              "domain=hbm",
+              "company_match=1.00",
+              "published_at=unknown"
+            ]
+          },
+          {
+            "title": "“Shaping the AI Era Together,” SK hynix Unveils Shared Growth Strategy with Partner Companies",
+            "source": "skhynix_newsroom",
+            "domain": "hbm",
+            "year": 2026,
+            "evidence_score": 0.883,
+            "reasons": [
+              "tier=1",
+              "freshness=1.00",
+              "recency=1.00",
+              "domain=hbm",
+              "company_match=1.00",
+              "published_at=unknown"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "euv_high_na",
+        "query": "High-NA EUV lithography ASML Samsung foundry",
+        "difficulty": "easy",
+        "passed": true,
+        "coverage": {
+          "count": 8,
+          "tier1_count": 2,
+          "tier12_count": 8,
+          "domains": [
+            "equipment",
+            "general",
+            "litho"
+          ],
+          "sources": [
+            "arxiv",
+            "asml_press_releases",
+            "openalex"
+          ],
+          "avg_evidence_score": 0.885075,
+          "recent_365d_count": 2,
+          "recent_90d_count": 1
+        },
+        "term_hits": {
+          "euv": true,
+          "high-na": true
+        },
+        "pass_reasons": [
+          "enough_evidence",
+          "has_high_trust_sources",
+          "strong_avg_evidence_score",
+          "source_diversity",
+          "required_terms_present"
+        ],
+        "fail_reasons": [],
+        "top_evidence": [
+          {
+            "title": "Holographic EUV Lithography at 40 nm Resolution",
+            "source": "arxiv",
+            "domain": "",
+            "year": 2026,
+            "evidence_score": 0.9496,
+            "reasons": [
+              "tier=2",
+              "freshness=1.00",
+              "recency=1.00",
+              "domain=litho",
+              "company_match=1.00",
+              "published_at=2026-05-20T17:23:22+00:00"
+            ]
+          },
+          {
+            "title": "Transforming Computational Lithography with AC and AI -- Faster, More Accurate, and Energy-efficient",
+            "source": "arxiv",
+            "domain": "litho",
+            "year": 2026,
+            "evidence_score": 0.9496,
+            "reasons": [
+              "tier=2",
+              "freshness=1.00",
+              "recency=1.00",
+              "domain=litho",
+              "company_match=1.00",
+              "published_at=unknown"
+            ]
+          },
+          {
+            "title": "ForgetMeNot: Understanding and Modeling the Impact of Forever Chemicals Toward Sustainable Large-Scale Computing",
+            "source": "arxiv",
+            "domain": "general",
+            "year": 2025,
+            "evidence_score": 0.9496,
+            "reasons": [
+              "tier=2",
+              "freshness=1.00",
+              "recency=1.00",
+              "domain=litho",
+              "company_match=1.00",
+              "published_at=unknown"
+            ]
+          },
+          {
+            "title": "De la cristalización del silicio a la litografía EUV: proceso integral de fabricación de wafers y fundamentos físico-ingenieriles de los escáneres de ASML",
+            "source": "openalex",
+            "domain": "",
+            "year": 2026,
+            "evidence_score": 0.9336,
+            "reasons": [
+              "tier=2",
+              "freshness=1.00",
+              "recency=0.84",
+              "domain=litho",
+              "company_match=1.00",
+              "published_at=2026-01-01T00:00:00+00:00"
+            ]
+          },
+          {
+            "title": "EUV lithography",
+            "source": "asml_press_releases",
+            "domain": "litho",
+            "year": 0,
+            "evidence_score": 0.879,
+            "reasons": [
+              "tier=1",
+              "freshness=0.45",
+              "recency=0.45",
+              "domain=litho",
+              "company_match=1.00",
+              "published_at=unknown"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ai_hbm_demand",
+        "query": "NVIDIA AI data center demand HBM memory SK hynix",
+        "difficulty": "medium",
+        "passed": true,
+        "coverage": {
+          "count": 8,
+          "tier1_count": 3,
+          "tier12_count": 6,
+          "domains": [
+            "ai_demand",
+            "general",
+            "hbm"
+          ],
+          "sources": [
+            "arxiv",
+            "nvidia_developer_blog",
+            "skhynix_newsroom"
+          ],
+          "avg_evidence_score": 0.8492500000000001,
+          "recent_365d_count": 4,
+          "recent_90d_count": 4
+        },
+        "term_hits": {
+          "ai": true,
+          "hbm": true
+        },
+        "pass_reasons": [
+          "enough_evidence",
+          "has_high_trust_sources",
+          "strong_avg_evidence_score",
+          "source_diversity",
+          "required_terms_present"
+        ],
+        "fail_reasons": [],
+        "top_evidence": [
+          {
+            "title": "What Brought Dell and SK hynix Together in Las Vegas? From HBM to cSSD, Reaffirming the Limitless Scalability of AI Memory",
+            "source": "skhynix_newsroom",
+            "domain": "",
+            "year": 2026,
+            "evidence_score": 0.916,
+            "reasons": [
+              "tier=1",
+              "freshness=1.00",
+              "recency=1.00",
+              "domain=hbm",
+              "company_match=0.40",
+              "published_at=2026-05-20T04:59:03+00:00"
+            ]
+          },
+          {
+            "title": "SK hynix receives 2026 IEEE Corporate Innovation Award for Driving AI Computing Expansion with HBM",
+            "source": "skhynix_newsroom",
+            "domain": "hbm",
+            "year": 2026,
+            "evidence_score": 0.916,
+            "reasons": [
+              "tier=1",
+              "freshness=1.00",
+              "recency=1.00",
+              "domain=hbm",
+              "company_match=0.40",
+              "published_at=unknown"
+            ]
+          },
+          {
+            "title": "SK hynix unveils ‘iHBM’ thermal solution to boost AI performance",
+            "source": "skhynix_newsroom",
+            "domain": "",
+            "year": 2026,
+            "evidence_score": 0.916,
+            "reasons": [
+              "tier=1",
+              "freshness=1.00",
+              "recency=1.00",
+              "domain=hbm",
+              "company_match=0.40",
+              "published_at=2026-05-26T00:13:36+00:00"
+            ]
+          },
+          {
+            "title": "Towards Fully-fledged GPU Multitasking via Proactive Memory Scheduling",
+            "source": "arxiv",
+            "domain": "",
+            "year": 2025,
+            "evidence_score": 0.9116,
+            "reasons": [
+              "tier=2",
+              "freshness=1.00",
+              "recency=0.62",
+              "domain=hbm",
+              "company_match=1.00",
+              "published_at=2025-01-01T00:00:00+00:00"
+            ]
+          },
+          {
+            "title": "Insights into DeepSeek-V3: Scaling Challenges and Reflections on Hardware for AI Architectures",
+            "source": "arxiv",
+            "domain": "hbm",
+            "year": 2025,
+            "evidence_score": 0.8326,
+            "reasons": [
+              "tier=2",
+              "freshness=1.00",
+              "recency=1.00",
+              "domain=hbm",
+              "company_match=1.00",
+              "published_at=unknown"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "tsmc_cowos_capacity",
+        "query": "TSMC CoWoS advanced packaging AI accelerator capacity",
+        "difficulty": "medium",
+        "passed": true,
+        "coverage": {
+          "count": 8,
+          "tier1_count": 2,
+          "tier12_count": 6,
+          "domains": [
+            "ai_demand",
+            "general",
+            "hbm",
+            "logic"
+          ],
+          "sources": [
+            "arxiv",
+            "nvidia_blog_feed",
+            "openalex",
+            "semiwiki",
+            "skhynix_newsroom"
+          ],
+          "avg_evidence_score": 0.8728249999999999,
+          "recent_365d_count": 2,
+          "recent_90d_count": 2
+        },
+        "term_hits": {
+          "cowos": true,
+          "packaging": true
+        },
+        "pass_reasons": [
+          "enough_evidence",
+          "has_high_trust_sources",
+          "strong_avg_evidence_score",
+          "source_diversity",
+          "required_terms_present"
+        ],
+        "fail_reasons": [],
+        "top_evidence": [
+          {
+            "title": "Panel-Scale Reconfigurable Photonic Interconnects for Scalable AI Computation",
+            "source": "arxiv",
+            "domain": "general",
+            "year": 2025,
+            "evidence_score": 0.9496,
+            "reasons": [
+              "tier=2",
+              "freshness=1.00",
+              "recency=1.00",
+              "domain=packaging",
+              "company_match=1.00",
+              "published_at=unknown"
+            ]
+          },
+          {
+            "title": "3D Atomic-Scale Metrology of Strain Relaxation and Roughness in Gate-All-Around (GAA) Transistors via Electron Ptychography",
+            "source": "arxiv",
+            "domain": "logic",
+            "year": 2025,
+            "evidence_score": 0.9496,
+            "reasons": [
+              "tier=2",
+              "freshness=1.00",
+              "recency=1.00",
+              "domain=packaging",
+              "company_match=1.00",
+              "published_at=unknown"
+            ]
+          },
+          {
+            "title": "Optimization and Benchmarking of Monolithically Stackable Gain Cell Memory for Last-Level Cache",
+            "source": "arxiv",
+            "domain": "",
+            "year": 2025,
+            "evidence_score": 0.9116,
+            "reasons": [
+              "tier=2",
+              "freshness=1.00",
+              "recency=0.62",
+              "domain=packaging",
+              "company_match=1.00",
+              "published_at=2025-03-08T18:42:34+00:00"
+            ]
+          },
+          {
+            "title": "Synopsys and TSMC Deepen AI Design Alliance: What It Means",
+            "source": "semiwiki",
+            "domain": "general",
+            "year": 2026,
+            "evidence_score": 0.8936,
+            "reasons": [
+              "tier=3",
+              "freshness=1.00",
+              "recency=1.00",
+              "domain=packaging",
+              "company_match=1.00",
+              "published_at=unknown"
+            ]
+          },
+          {
+            "title": "“Overcoming Technological Limits Requires the Integration of Memory and Logic”: SK hynix Presents Vision at TSMC Symposium",
+            "source": "skhynix_newsroom",
+            "domain": "hbm",
+            "year": 2026,
+            "evidence_score": 0.883,
+            "reasons": [
+              "tier=1",
+              "freshness=1.00",
+              "recency=1.00",
+              "domain=hbm",
+              "company_match=1.00",
+              "published_at=unknown"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "backtest_chunks": {
+    "total_tasks": 33,
+    "completed_tasks": 2,
+    "pending_tasks": 31,
+    "ran_tasks": [
+      {
+        "key": "005930|2021-06-01|2021-11-27|21",
+        "company_code": "005930",
+        "start_date": "2021-06-01",
+        "end_date": "2021-11-27",
+        "cases": 15,
+        "interval_hit_rate": 0.267,
+        "direction_accuracy": 0.2,
+        "avg_abs_error": 0.0408
+      },
+      {
+        "key": "005930|2021-11-28|2022-05-26|21",
+        "company_code": "005930",
+        "start_date": "2021-11-28",
+        "end_date": "2022-05-26",
+        "cases": 18,
+        "interval_hit_rate": 0.278,
+        "direction_accuracy": 0.333,
+        "avg_abs_error": 0.0415
+      }
+    ],
+    "ran_cases": 33,
+    "checkpoint_path": "C:\\Users\\82102\\OneDrive\\바탕 화면\\sc_agent\\semiconductor_agent_design\\reports\\overnight_backtest_checkpoint.json"
+  },
+  "experience_build": {
+    "cases_built": 151,
+    "stats_built": 69,
+    "success_count": 25,
+    "partial_count": 67,
+    "failure_count": 59,
+    "top_primary_patterns": [
+      [
+        "direction_flip",
+        68
+      ],
+      [
+        "missing_tech_event_context",
+        31
+      ],
+      [
+        "volatility_underweighted",
+        15
+      ],
+      [
+        "already_priced_in_miss",
+        15
+      ],
+      [
+        "macro_override",
+        3
+      ]
+    ]
+  },
+  "experience_report": {
+    "case_count": 151,
+    "success_labels": [
+      [
+        "partial",
+        67
+      ],
+      [
+        "failure",
+        59
+      ],
+      [
+        "success",
+        25
+      ]
+    ],
+    "primary_patterns": [
+      [
+        "direction_flip",
+        68
+      ],
+      [
+        "missing_tech_event_context",
+        31
+      ],
+      [
+        "already_priced_in_miss",
+        15
+      ],
+      [
+        "volatility_underweighted",
+        15
+      ],
+      [
+        "macro_override",
+        3
+      ]
+    ],
+    "error_tag_counts": [
+      [
+        "missing_tech_event_context",
+        77
+      ],
+      [
+        "direction_flip",
+        68
+      ],
+      [
+        "already_priced_in_miss",
+        30
+      ],
+      [
+        "band_too_narrow",
+        20
+      ],
+      [
+        "volatility_underweighted",
+        20
+      ],
+      [
+        "macro_override",
+        3
+      ]
+    ],
+    "by_company": [
+      [
+        "005930",
+        75
+      ],
+      [
+        "NVDA",
+        26
+      ],
+      [
+        "000660",
+        25
+      ],
+      [
+        "042700",
+        25
+      ]
+    ],
+    "by_horizon": [
+      [
+        7,
+        53
+      ],
+      [
+        14,
+        50
+      ],
+      [
+        30,
+        48
+      ]
+    ],
+    "by_domain": []
+  }
+}

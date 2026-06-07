@@ -1,0 +1,46 @@
+{
+  "completed": {
+    "005930|2021-06-01|2021-11-27|21": {
+      "key": "005930|2021-06-01|2021-11-27|21",
+      "company_code": "005930",
+      "start_date": "2021-06-01",
+      "end_date": "2021-11-27",
+      "cases": 15,
+      "interval_hit_rate": 0.267,
+      "direction_accuracy": 0.2,
+      "avg_abs_error": 0.0408
+    },
+    "005930|2021-11-28|2022-05-26|21": {
+      "key": "005930|2021-11-28|2022-05-26|21",
+      "company_code": "005930",
+      "start_date": "2021-11-28",
+      "end_date": "2022-05-26",
+      "cases": 18,
+      "interval_hit_rate": 0.278,
+      "direction_accuracy": 0.333,
+      "avg_abs_error": 0.0415
+    }
+  },
+  "history": [
+    {
+      "key": "005930|2021-06-01|2021-11-27|21",
+      "company_code": "005930",
+      "start_date": "2021-06-01",
+      "end_date": "2021-11-27",
+      "cases": 15,
+      "interval_hit_rate": 0.267,
+      "direction_accuracy": 0.2,
+      "avg_abs_error": 0.0408
+    },
+    {
+      "key": "005930|2021-11-28|2022-05-26|21",
+      "company_code": "005930",
+      "start_date": "2021-11-28",
+      "end_date": "2022-05-26",
+      "cases": 18,
+      "interval_hit_rate": 0.278,
+      "direction_accuracy": 0.333,
+      "avg_abs_error": 0.0415
+    }
+  ]
+}

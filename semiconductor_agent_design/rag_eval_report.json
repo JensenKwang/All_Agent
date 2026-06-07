@@ -1,0 +1,555 @@
+{
+  "passed": 0,
+  "total": 8,
+  "pass_rate": 0.0,
+  "results": [
+    {
+      "id": "hbm_hybrid_bonding",
+      "query": "HBM4 hybrid bonding Cu-Cu bonding SK hynix Samsung Hanmi",
+      "difficulty": "easy",
+      "passed": false,
+      "coverage": {
+        "count": 8,
+        "tier1_count": 0,
+        "tier12_count": 8,
+        "domains": [],
+        "sources": [
+          "openalex"
+        ],
+        "avg_evidence_score": 0.8372499999999999
+      },
+      "term_hits": {
+        "hbm": true,
+        "bonding": true
+      },
+      "pass_reasons": [
+        "enough_evidence",
+        "has_high_trust_sources",
+        "strong_avg_evidence_score",
+        "required_terms_present"
+      ],
+      "fail_reasons": [
+        "low_source_diversity"
+      ],
+      "top_evidence": [
+        {
+          "title": "Hybrid Bonding, Advanced Substrates, Failure Mechanisms, and Thermal Management for Chiplets and Heterogeneous Integration",
+          "source": "openalex",
+          "domain": "",
+          "year": 2025,
+          "evidence_score": 0.856,
+          "reasons": [
+            "tier=2",
+            "freshness=1.00",
+            "domain=packaging",
+            "company_match=0.40"
+          ]
+        },
+        {
+          "title": "Thermal Issues Related to Hybrid Bonding of 3D-Stacked High Bandwidth Memory: A Comprehensive Review",
+          "source": "openalex",
+          "domain": "",
+          "year": 2025,
+          "evidence_score": 0.856,
+          "reasons": [
+            "tier=2",
+            "freshness=1.00",
+            "domain=packaging",
+            "company_match=0.40"
+          ]
+        },
+        {
+          "title": "Heterogeneous Packaging Technologies for Chiplet and Memory Integration",
+          "source": "openalex",
+          "domain": "",
+          "year": 2025,
+          "evidence_score": 0.856,
+          "reasons": [
+            "tier=2",
+            "freshness=1.00",
+            "domain=packaging",
+            "company_match=0.40"
+          ]
+        },
+        {
+          "title": "Cu-Cu Thermocompression Bonding with a Self-Assembled Monolayer as Oxidation Protection for 3D/2.5D System Integration",
+          "source": "openalex",
+          "domain": "",
+          "year": 2023,
+          "evidence_score": 0.826,
+          "reasons": [
+            "tier=2",
+            "freshness=0.80",
+            "domain=packaging",
+            "company_match=0.40"
+          ]
+        },
+        {
+          "title": "Flip Chip, Hybrid Bonding, Fan-In, and Fan-Out Technology",
+          "source": "openalex",
+          "domain": "",
+          "year": 2024,
+          "evidence_score": 0.826,
+          "reasons": [
+            "tier=2",
+            "freshness=0.80",
+            "domain=packaging",
+            "company_match=0.40"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "euv_high_na",
+      "query": "High-NA EUV lithography ASML Samsung foundry",
+      "difficulty": "easy",
+      "passed": false,
+      "coverage": {
+        "count": 8,
+        "tier1_count": 2,
+        "tier12_count": 8,
+        "domains": [
+          "litho"
+        ],
+        "sources": [
+          "asml_press_releases",
+          "openalex"
+        ],
+        "avg_evidence_score": 0.9113749999999999
+      },
+      "term_hits": {
+        "euv": true,
+        "high-na": true
+      },
+      "pass_reasons": [
+        "enough_evidence",
+        "has_high_trust_sources",
+        "strong_avg_evidence_score",
+        "required_terms_present"
+      ],
+      "fail_reasons": [
+        "low_source_diversity"
+      ],
+      "top_evidence": [
+        {
+          "title": "NTD CARs purity developments toward single-print capability in EUV scanners",
+          "source": "openalex",
+          "domain": "",
+          "year": 2025,
+          "evidence_score": 0.946,
+          "reasons": [
+            "tier=2",
+            "freshness=1.00",
+            "domain=litho",
+            "company_match=1.00"
+          ]
+        },
+        {
+          "title": "Advancements in Lithography Techniques and Emerging Molecular Strategies for Nanostructure Fabrication",
+          "source": "openalex",
+          "domain": "",
+          "year": 2025,
+          "evidence_score": 0.946,
+          "reasons": [
+            "tier=2",
+            "freshness=1.00",
+            "domain=litho",
+            "company_match=1.00"
+          ]
+        },
+        {
+          "title": "Key Challenges and Opportunities for Advanced Extreme Ultraviolet Lithography Photoresist Materials",
+          "source": "openalex",
+          "domain": "",
+          "year": 2025,
+          "evidence_score": 0.946,
+          "reasons": [
+            "tier=2",
+            "freshness=1.00",
+            "domain=litho",
+            "company_match=1.00"
+          ]
+        },
+        {
+          "title": "EUV lithography",
+          "source": "asml_press_releases",
+          "domain": "litho",
+          "year": 0,
+          "evidence_score": 0.9175,
+          "reasons": [
+            "tier=1",
+            "freshness=0.45",
+            "domain=litho",
+            "company_match=1.00"
+          ]
+        },
+        {
+          "title": "April 22, 2026 ASML discloses 2026 AGM results",
+          "source": "asml_press_releases",
+          "domain": "litho",
+          "year": 0,
+          "evidence_score": 0.7875,
+          "reasons": [
+            "tier=1",
+            "freshness=0.45",
+            "domain=litho",
+            "company_match=1.00"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ai_hbm_demand",
+      "query": "NVIDIA AI data center demand HBM memory SK hynix",
+      "difficulty": "medium",
+      "passed": false,
+      "coverage": {
+        "count": 8,
+        "tier1_count": 5,
+        "tier12_count": 8,
+        "domains": [
+          "hbm",
+          "memory"
+        ],
+        "sources": [
+          "openalex",
+          "skhynix_newsroom"
+        ],
+        "avg_evidence_score": 0.88975
+      },
+      "term_hits": {
+        "ai": true,
+        "hbm": true
+      },
+      "pass_reasons": [
+        "enough_evidence",
+        "has_high_trust_sources",
+        "strong_avg_evidence_score",
+        "required_terms_present"
+      ],
+      "fail_reasons": [
+        "low_source_diversity"
+      ],
+      "top_evidence": [
+        {
+          "title": "What Brought Dell and SK hynix Together in Las Vegas? From HBM to cSSD, Reaffirming the Limitless Scalability of AI Memory",
+          "source": "skhynix_newsroom",
+          "domain": "hbm",
+          "year": 2026,
+          "evidence_score": 0.91,
+          "reasons": [
+            "tier=1",
+            "freshness=1.00",
+            "domain=hbm",
+            "company_match=0.40"
+          ]
+        },
+        {
+          "title": "SK hynix unveils ‘iHBM’ thermal solution to boost AI performance",
+          "source": "skhynix_newsroom",
+          "domain": "hbm",
+          "year": 2026,
+          "evidence_score": 0.91,
+          "reasons": [
+            "tier=1",
+            "freshness=1.00",
+            "domain=hbm",
+            "company_match=0.40"
+          ]
+        },
+        {
+          "title": "[Analyst Interview | Kim Rok-ho, Hana Securities] Key beneficiaries of AI infrastructure expansion and increased memory demand",
+          "source": "skhynix_newsroom",
+          "domain": "memory",
+          "year": 2026,
+          "evidence_score": 0.91,
+          "reasons": [
+            "tier=1",
+            "freshness=1.00",
+            "domain=hbm",
+            "company_match=0.40"
+          ]
+        },
+        {
+          "title": "Neural Network Surrogate Model for Junction Temperature and Hotspot Position in 3D Multi-Layer High Bandwidth Memory (HBM) Chiplets Under Varying Thermal Conditions",
+          "source": "openalex",
+          "domain": "",
+          "year": 2025,
+          "evidence_score": 0.856,
+          "reasons": [
+            "tier=2",
+            "freshness=1.00",
+            "domain=hbm",
+            "company_match=0.40"
+          ]
+        },
+        {
+          "title": "Heterogeneous Packaging Technologies for Chiplet and Memory Integration",
+          "source": "openalex",
+          "domain": "",
+          "year": 2025,
+          "evidence_score": 0.856,
+          "reasons": [
+            "tier=2",
+            "freshness=1.00",
+            "domain=hbm",
+            "company_match=0.40"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tsmc_cowos_capacity",
+      "query": "TSMC CoWoS advanced packaging AI accelerator capacity",
+      "difficulty": "medium",
+      "passed": false,
+      "coverage": {
+        "count": 8,
+        "tier1_count": 0,
+        "tier12_count": 8,
+        "domains": [],
+        "sources": [
+          "openalex"
+        ],
+        "avg_evidence_score": 0.8372499999999999
+      },
+      "term_hits": {
+        "cowos": true,
+        "packaging": true
+      },
+      "pass_reasons": [
+        "enough_evidence",
+        "has_high_trust_sources",
+        "strong_avg_evidence_score",
+        "required_terms_present"
+      ],
+      "fail_reasons": [
+        "low_source_diversity"
+      ],
+      "top_evidence": [
+        {
+          "title": "Wafer Level System Integration of the Fifth Generation CoWoS®-S with High Performance Si Interposer at 2500 mm2",
+          "source": "openalex",
+          "domain": "",
+          "year": 2021,
+          "evidence_score": 0.886,
+          "reasons": [
+            "tier=2",
+            "freshness=0.60",
+            "domain=packaging",
+            "company_match=1.00"
+          ]
+        },
+        {
+          "title": "Hybrid Bonding, Advanced Substrates, Failure Mechanisms, and Thermal Management for Chiplets and Heterogeneous Integration",
+          "source": "openalex",
+          "domain": "",
+          "year": 2025,
+          "evidence_score": 0.856,
+          "reasons": [
+            "tier=2",
+            "freshness=1.00",
+            "domain=packaging",
+            "company_match=0.40"
+          ]
+        },
+        {
+          "title": "Heterogeneous Packaging Technologies for Chiplet and Memory Integration",
+          "source": "openalex",
+          "domain": "",
+          "year": 2025,
+          "evidence_score": 0.856,
+          "reasons": [
+            "tier=2",
+            "freshness=1.00",
+            "domain=packaging",
+            "company_match=0.40"
+          ]
+        },
+        {
+          "title": "Challenges and prospects for advanced packaging",
+          "source": "openalex",
+          "domain": "",
+          "year": 2023,
+          "evidence_score": 0.826,
+          "reasons": [
+            "tier=2",
+            "freshness=0.80",
+            "domain=packaging",
+            "company_match=0.40"
+          ]
+        },
+        {
+          "title": "A Review of System-in-Package Technologies: Application and Reliability of Advanced Packaging",
+          "source": "openalex",
+          "domain": "",
+          "year": 2023,
+          "evidence_score": 0.826,
+          "reasons": [
+            "tier=2",
+            "freshness=0.80",
+            "domain=packaging",
+            "company_match=0.40"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cxl_pim_memory",
+      "query": "CXL PIM processing-in-memory bandwidth latency memory expansion",
+      "difficulty": "medium",
+      "passed": false,
+      "coverage": {
+        "count": 3,
+        "tier1_count": 3,
+        "tier12_count": 3,
+        "domains": [
+          "memory"
+        ],
+        "sources": [
+          "skhynix_newsroom"
+        ],
+        "avg_evidence_score": 0.7799999999999999
+      },
+      "term_hits": {
+        "cxl": false,
+        "pim": false,
+        "memory": true
+      },
+      "pass_reasons": [
+        "has_high_trust_sources",
+        "strong_avg_evidence_score"
+      ],
+      "fail_reasons": [
+        "too_few_evidence_items",
+        "low_source_diversity",
+        "missing_terms=cxl,pim"
+      ],
+      "top_evidence": [
+        {
+          "title": "[Analyst Interview | Kim Rok-ho, Hana Securities] Key beneficiaries of AI infrastructure expansion and increased memory demand",
+          "source": "skhynix_newsroom",
+          "domain": "memory",
+          "year": 2026,
+          "evidence_score": 0.78,
+          "reasons": [
+            "tier=1",
+            "freshness=1.00",
+            "domain=memory",
+            "company_match=0.40"
+          ]
+        },
+        {
+          "title": "“Overcoming Technological Limits Requires the Integration of Memory and Logic”: SK hynix Presents Vision at TSMC Symposium",
+          "source": "skhynix_newsroom",
+          "domain": "memory",
+          "year": 2026,
+          "evidence_score": 0.78,
+          "reasons": [
+            "tier=1",
+            "freshness=1.00",
+            "domain=memory",
+            "company_match=0.40"
+          ]
+        },
+        {
+          "title": "[Tech Note EP.1] ‘It’s the Memory’, The Future of AI Will Be Decided by Memory",
+          "source": "skhynix_newsroom",
+          "domain": "memory",
+          "year": 2026,
+          "evidence_score": 0.78,
+          "reasons": [
+            "tier=1",
+            "freshness=1.00",
+            "domain=memory",
+            "company_match=0.40"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "power_semiconductor_sic_gan",
+      "query": "SiC GaN power semiconductor device inverter converter reliability",
+      "difficulty": "hard",
+      "passed": false,
+      "coverage": {
+        "count": 0,
+        "tier1_count": 0,
+        "tier12_count": 0,
+        "domains": [],
+        "sources": [],
+        "avg_evidence_score": 0.0
+      },
+      "term_hits": {
+        "sic": false,
+        "gan": false,
+        "power": false
+      },
+      "pass_reasons": [],
+      "fail_reasons": [
+        "too_few_evidence_items",
+        "not_enough_tier1_or_tier2_sources",
+        "weak_avg_evidence_score",
+        "low_source_diversity",
+        "missing_terms=sic,gan,power"
+      ],
+      "top_evidence": []
+    },
+    {
+      "id": "yield_metrology_failure_analysis",
+      "query": "semiconductor yield metrology inspection failure analysis electromigration",
+      "difficulty": "hard",
+      "passed": false,
+      "coverage": {
+        "count": 0,
+        "tier1_count": 0,
+        "tier12_count": 0,
+        "domains": [],
+        "sources": [],
+        "avg_evidence_score": 0.0
+      },
+      "term_hits": {
+        "yield": false,
+        "metrology": false,
+        "inspection": false
+      },
+      "pass_reasons": [],
+      "fail_reasons": [
+        "too_few_evidence_items",
+        "not_enough_tier1_or_tier2_sources",
+        "weak_avg_evidence_score",
+        "low_source_diversity",
+        "missing_terms=yield,metrology,inspection"
+      ],
+      "top_evidence": []
+    },
+    {
+      "id": "standards_jedec_irds",
+      "query": "JEDEC IRDS semiconductor roadmap standard memory packaging lithography",
+      "difficulty": "hard",
+      "passed": false,
+      "coverage": {
+        "count": 0,
+        "tier1_count": 0,
+        "tier12_count": 0,
+        "domains": [],
+        "sources": [],
+        "avg_evidence_score": 0.0
+      },
+      "term_hits": {
+        "jedec": false,
+        "irds": false,
+        "standard": false
+      },
+      "pass_reasons": [],
+      "fail_reasons": [
+        "too_few_evidence_items",
+        "not_enough_tier1_or_tier2_sources",
+        "weak_avg_evidence_score",
+        "low_source_diversity",
+        "missing_terms=jedec,irds,standard"
+      ],
+      "top_evidence": []
+    }
+  ]
+}

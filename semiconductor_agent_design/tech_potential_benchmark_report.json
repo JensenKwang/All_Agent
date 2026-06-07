@@ -1,0 +1,2527 @@
+{
+  "cases_evaluated": 4,
+  "baseline_avg": 0.589,
+  "rag_avg": 0.622,
+  "improvement": 0.033,
+  "results": [
+    {
+      "id": "hbm_longevity_basic",
+      "difficulty": "easy",
+      "question": "HBM은 1년, 3년, 5년, 10년 기준으로 어디까지 유효한가?",
+      "expected": {
+        "longevity_dominant": "3y",
+        "bottleneck_importance": "high",
+        "expected_beneficiaries": [
+          "000660",
+          "NVDA"
+        ],
+        "required_terms": [
+          "hbm",
+          "memory",
+          "ai"
+        ]
+      },
+      "baseline": {
+        "score": {
+          "longevity": "3y",
+          "bottleneck": "high",
+          "grade": "B",
+          "company_codes": [
+            "000660",
+            "sk하이닉스",
+            "삼성"
+          ],
+          "term_hits": {
+            "hbm": true,
+            "memory": false,
+            "ai": true
+          },
+          "company_score": 0.5,
+          "term_score": 0.667,
+          "longevity_score": 1.0,
+          "bottleneck_score": 1.0,
+          "evidence_score": 0.75,
+          "source_diversity": 0.0,
+          "total": 0.746
+        },
+        "raw": {
+          "longevity": {
+            "1y": "high",
+            "3y": "high",
+            "5y": "medium",
+            "10y": "low",
+            "dominant_horizon": "3y",
+            "reason": "HBM 기술은 현재 AI 및 고성능 컴퓨팅 수요에 의해 강력한 수요를 받고 있으며, 단기적으로는 안정적인 수익을 보장할 것으로 보인다. 그러나 5년 이상 지속 가능성은 대체 기술의 발전과 함께 감소할 가능성이 있다."
+          },
+          "bottleneck": {
+            "is_bottleneck": true,
+            "importance": "high",
+            "substitutability": "hard",
+            "supply_constraint": "high",
+            "reason": "HBM은 현재 메모리 시장에서 중요한 역할을 하고 있으며, 공급 제약과 높은 리드타임이 문제로 지적되고 있다. 대체 기술이 존재하지만, HBM의 성능을 완전히 대체하기는 어려운 상황이다."
+          },
+          "company_impact": [
+            {
+              "company": "삼성",
+              "code": "000660",
+              "stance": "benefit",
+              "confidence": 0.8,
+              "reason": "삼성은 HBM 시장에서 주요 공급업체로, AI 및 데이터 센터 수요 증가에 따라 수익이 증가할 것으로 예상된다."
+            },
+            {
+              "company": "SK하이닉스",
+              "code": "000660",
+              "stance": "benefit",
+              "confidence": 0.8,
+              "reason": "SK하이닉스 또한 HBM 생산에 강점을 가지고 있으며, AI 및 고성능 컴퓨팅의 수요 증가로 인해 긍정적인 영향을 받을 것이다."
+            }
+          ],
+          "evidence_quality": {
+            "grade": "B",
+            "reason": "HBM에 대한 수요와 공급 관련 공식 자료와 실적 데이터가 존재하지만, 대체 기술에 대한 연구 결과가 부족하여 보강이 필요하다."
+          },
+          "overall_thesis": "HBM 기술은 단기적으로는 안정적인 수익을 보장하지만, 중장기적으로는 대체 기술의 발전으로 인해 위협을 받을 수 있다.",
+          "red_flags": [
+            "대체 기술의 빠른 발전",
+            "공급망의 불안정성"
+          ],
+          "missing_data": [
+            "HBM 대체 기술의 상용화 일정",
+            "시장 수요 예측 데이터"
+          ],
+          "recommendation": "watchlist"
+        }
+      },
+      "rag": {
+        "score": {
+          "longevity": "3y",
+          "bottleneck": "high",
+          "grade": "A",
+          "company_codes": [
+            "000660",
+            "005930",
+            "samsung",
+            "sk hynix"
+          ],
+          "term_hits": {
+            "hbm": true,
+            "memory": true,
+            "ai": true
+          },
+          "company_score": 0.5,
+          "term_score": 1.0,
+          "longevity_score": 1.0,
+          "bottleneck_score": 1.0,
+          "evidence_score": 1.0,
+          "source_diversity": 0.75,
+          "total": 0.887
+        },
+        "raw": {
+          "topic": "HBM가 앞으로도 오래 갈까?",
+          "company_hint": "000660",
+          "domain_hint": "hbm",
+          "longevity": {
+            "1y": "high",
+            "3y": "high",
+            "5y": "medium",
+            "10y": "low",
+            "dominant_horizon": "3y",
+            "reason": "The demand for HBM is driven by the expansion of AI infrastructure and increased memory requirements, indicating strong short to medium-term viability. However, potential technological advancements and alternative solutions may emerge in the longer term."
+          },
+          "bottleneck": {
+            "is_bottleneck": true,
+            "importance": "high",
+            "substitutability": "moderate",
+            "supply_constraint": "high",
+            "reason": "The current supply chain for HBM is under pressure due to high demand from AI applications, making it a critical bottleneck in the industry. The complexity of HBM technology and its integration into advanced systems limits immediate substitutes."
+          },
+          "company_impact": [
+            {
+              "company": "SK hynix",
+              "code": "000660",
+              "stance": "benefit",
+              "confidence": 0.9,
+              "reason": "SK hynix is positioned as a leader in AI memory, benefiting from increased demand for high-performance memory solutions."
+            },
+            {
+              "company": "Samsung",
+              "code": "005930",
+              "stance": "benefit",
+              "confidence": 0.8,
+              "reason": "Samsung's involvement in AI technology and memory solutions positions it to benefit from the growing demand for HBM."
+            }
+          ],
+          "evidence_quality": {
+            "grade": "A",
+            "count": 8,
+            "tier1_count": 5,
+            "tier12_count": 8,
+            "source_count": 3,
+            "avg_evidence_score": 0.863,
+            "sources": [
+              "openalex",
+              "samsung_global_newsroom",
+              "skhynix_newsroom"
+            ],
+            "domains": [
+              "ai_demand",
+              "hbm",
+              "memory"
+            ],
+            "reason": "The evidence is derived from multiple high-quality sources, including official company newsrooms and industry analyses, indicating a strong foundation for the assessment."
+          },
+          "overall_thesis": "HBM technology is expected to remain relevant in the short to medium term due to its critical role in AI applications, but potential advancements in alternative technologies may pose challenges in the long term.",
+          "red_flags": [
+            "Emergence of alternative memory technologies that could disrupt HBM's market position."
+          ],
+          "missing_data": [
+            "Detailed forecasts on the development of alternative memory technologies and their potential market impact."
+          ],
+          "recommendation": "watchlist",
+          "confidence": 0.863,
+          "evidence_pack": {
+            "coverage": {
+              "count": 8,
+              "tier1_count": 5,
+              "tier12_count": 8,
+              "domains": [
+                "ai_demand",
+                "hbm",
+                "memory"
+              ],
+              "sources": [
+                "openalex",
+                "samsung_global_newsroom",
+                "skhynix_newsroom"
+              ],
+              "avg_evidence_score": 0.8625624999999999
+            },
+            "items": [
+              {
+                "id": "984205e6ca13e5ddd6833f34496fd10b825c3d45:0",
+                "title": "What Brought Dell and SK hynix Together in Las Vegas? From HBM to cSSD, Reaffirming the Limitless Scalability of AI Memory",
+                "text": "What Brought Dell and SK hynix Together in Las Vegas? From HBM to cSSD, Reaffirming the Limitless Scalability of AI Memory\n\n<p>Las Vegas, a city of cutting-edge technology where colorful neon signs and massive media facades light up around the clock. On May 18 (local time), the eyes of global IT leaders once again turned to The Venetian Expo at the heart of the city. Having established itself as a hub for technological innovation by hosting [&#8230;]</p>\n<p>The post <a href=\"https://news.skhynix.com/dtw-2026/\">What Brought Dell and SK hynix Together in Las Vegas? From HBM to cSSD, Reaffirming the Limitless Scalability of AI Memory</a> first appeared on <a href=\"https://news.skhynix.com\">SK hynix Newsroom</a>.</p>",
+                "source": "skhynix_newsroom",
+                "source_type": "company_official",
+                "domain": "hbm",
+                "company": "000660",
+                "year": 2026,
+                "raw_score": 0.11584249084249085,
+                "evidence_score": 1.0,
+                "reasons": [
+                  "tier=1",
+                  "freshness=1.00",
+                  "domain=hbm",
+                  "company_match=1.00"
+                ],
+                "payload": {
+                  "id": "984205e6ca13e5ddd6833f34496fd10b825c3d45:0",
+                  "doc_uid": "984205e6ca13e5ddd6833f34496fd10b825c3d45",
+                  "chunk_index": 0,
+                  "source": "skhynix_newsroom",
+                  "source_type": "company_official",
+                  "title": "What Brought Dell and SK hynix Together in Las Vegas? From HBM to cSSD, Reaffirming the Limitless Scalability of AI Memory",
+                  "year": 2026,
+                  "company": "000660",
+                  "domain": "hbm",
+                  "tags": [
+                    "000660",
+                    "ai_demand",
+                    "hbm",
+                    "ir",
+                    "memory",
+                    "official",
+                    "press_release",
+                    "sk_hynix"
+                  ],
+                  "text": "What Brought Dell and SK hynix Together in Las Vegas? From HBM to cSSD, Reaffirming the Limitless Scalability of AI Memory\n\n<p>Las Vegas, a city of cutting-edge technology where colorful neon signs and massive media facades light up around the clock. On May 18 (local time), the eyes of global IT leaders once again turned to The Venetian Expo at the heart of the city. Having established itself as a hub for technological innovation by hosting [&#8230;]</p>\n<p>The post <a href=\"https://news.skhynix.com/dtw-2026/\">What Brought Dell and SK hynix Together in Las Vegas? From HBM to cSSD, Reaffirming the Limitless Scalability of AI Memory</a> first appeared on <a href=\"https://news.skhynix.com\">SK hynix Newsroom</a>.</p>",
+                  "score": 0.11584249084249085
+                }
+              },
+              {
+                "id": "f3bdf82c5ef99657a2266013d5e60f02e55a5fa5:0",
+                "title": "SK hynix unveils ‘iHBM’ thermal solution to boost AI performance",
+                "text": "SK hynix unveils ‘iHBM’ thermal solution to boost AI performance\n\n<p>News Highlights Seoul, May 26, 2026&#160;– SK hynix Inc. (or “the company”,&#160;www.skhynix.com) announced today the launch of the iHBM solution that embeds integrated cooling elements(ICEs)1&#160;within the high-bandwidth memory(HBM) package for next-generation HBM products. 1ICE(Integrated Cooling Elements): A cooling element made of electrically non-conductive, thermally conductive silicon-based material, designed to dissipate heat from the HBM package [&#8230;]</p>\n<p>The post <a href=\"https://news.skhynix.com/ihbm-solution/\">SK hynix unveils ‘iHBM’ thermal solution to boost AI performance</a> first appeared on <a href=\"https://news.skhynix.com\">SK hynix Newsroom</a>.</p>",
+                "source": "skhynix_newsroom",
+                "source_type": "company_official",
+                "domain": "hbm",
+                "company": "000660",
+                "year": 2026,
+                "raw_score": 0.10674082313681868,
+                "evidence_score": 1.0,
+                "reasons": [
+                  "tier=1",
+                  "freshness=1.00",
+                  "domain=hbm",
+                  "company_match=1.00"
+                ],
+                "payload": {
+                  "id": "f3bdf82c5ef99657a2266013d5e60f02e55a5fa5:0",
+                  "doc_uid": "f3bdf82c5ef99657a2266013d5e60f02e55a5fa5",
+                  "chunk_index": 0,
+                  "source": "skhynix_newsroom",
+                  "source_type": "company_official",
+                  "title": "SK hynix unveils ‘iHBM’ thermal solution to boost AI performance",
+                  "year": 2026,
+                  "company": "000660",
+                  "domain": "hbm",
+                  "tags": [
+                    "000660",
+                    "ai_demand",
+                    "hbm",
+                    "ir",
+                    "memory",
+                    "official",
+                    "press_release",
+                    "sk_hynix"
+                  ],
+                  "text": "SK hynix unveils ‘iHBM’ thermal solution to boost AI performance\n\n<p>News Highlights Seoul, May 26, 2026&#160;– SK hynix Inc. (or “the company”,&#160;www.skhynix.com) announced today the launch of the iHBM solution that embeds integrated cooling elements(ICEs)1&#160;within the high-bandwidth memory(HBM) package for next-generation HBM products. 1ICE(Integrated Cooling Elements): A cooling element made of electrically non-conductive, thermally conductive silicon-based material, designed to dissipate heat from the HBM package [&#8230;]</p>\n<p>The post <a href=\"https://news.skhynix.com/ihbm-solution/\">SK hynix unveils ‘iHBM’ thermal solution to boost AI performance</a> first appeared on <a href=\"https://news.skhynix.com\">SK hynix Newsroom</a>.</p>",
+                  "score": 0.10674082313681868
+                }
+              },
+              {
+                "id": "ccd2c029962a4de3b5d26eb994ec9f78aed31272:0",
+                "title": "[Analyst Interview | Kim Rok-ho, Hana Securities] Key beneficiaries of AI infrastructure expansion and increased memory demand",
+                "text": "[Analyst Interview | Kim Rok-ho, Hana Securities] Key beneficiaries of AI infrastructure expansion and increased memory demand\n\n<p>SK hynix continued to deliver solid results in the first quarter of 2026 amid favorable market conditions, once again reaffirming its presence as a leader in AI memory. In particular, expanded investment in AI servers and rising demand for high-performance memory centered on data centers are being viewed as key factors driving not just a [&#8230;]</p>\n<p>The post <a href=\"https://news.skhynix.com/2026-analyst-interview-02/\">[Analyst Interview | Kim Rok-ho, Hana Securities] Key beneficiaries of AI infrastructure expansion and increased memory demand</a> first appeared on <a href=\"https://news.skhynix.com\">SK hynix Newsroom</a>.</p>",
+                "source": "skhynix_newsroom",
+                "source_type": "company_official",
+                "domain": "memory",
+                "company": "000660",
+                "year": 2026,
+                "raw_score": 0.1063321385902031,
+                "evidence_score": 1.0,
+                "reasons": [
+                  "tier=1",
+                  "freshness=1.00",
+                  "domain=hbm",
+                  "company_match=1.00"
+                ],
+                "payload": {
+                  "id": "ccd2c029962a4de3b5d26eb994ec9f78aed31272:0",
+                  "doc_uid": "ccd2c029962a4de3b5d26eb994ec9f78aed31272",
+                  "chunk_index": 0,
+                  "source": "skhynix_newsroom",
+                  "source_type": "company_official",
+                  "title": "[Analyst Interview | Kim Rok-ho, Hana Securities] Key beneficiaries of AI infrastructure expansion and increased memory demand",
+                  "year": 2026,
+                  "company": "000660",
+                  "domain": "memory",
+                  "tags": [
+                    "000660",
+                    "ai_demand",
+                    "financials",
+                    "ir",
+                    "memory",
+                    "official",
+                    "press_release",
+                    "sk_hynix"
+                  ],
+                  "text": "[Analyst Interview | Kim Rok-ho, Hana Securities] Key beneficiaries of AI infrastructure expansion and increased memory demand\n\n<p>SK hynix continued to deliver solid results in the first quarter of 2026 amid favorable market conditions, once again reaffirming its presence as a leader in AI memory. In particular, expanded investment in AI servers and rising demand for high-performance memory centered on data centers are being viewed as key factors driving not just a [&#8230;]</p>\n<p>The post <a href=\"https://news.skhynix.com/2026-analyst-interview-02/\">[Analyst Interview | Kim Rok-ho, Hana Securities] Key beneficiaries of AI infrastructure expansion and increased memory demand</a> first appeared on <a href=\"https://news.skhynix.com\">SK hynix Newsroom</a>.</p>",
+                  "score": 0.1063321385902031
+                }
+              },
+              {
+                "id": "aca62d9a89bf0cb692611211d873c19e12d59fc3:doc",
+                "title": "Hybrid Bonding, Advanced Substrates, Failure Mechanisms, and Thermal Management for Chiplets and Heterogeneous Integration",
+                "text": "If disposing of this product, please recycle the paper.",
+                "source": "openalex",
+                "source_type": "paper",
+                "domain": "",
+                "company": "",
+                "year": 2025,
+                "raw_score": 0.08012820512820512,
+                "evidence_score": 0.856,
+                "reasons": [
+                  "tier=2",
+                  "freshness=1.00",
+                  "domain=hbm",
+                  "company_match=0.40"
+                ],
+                "payload": {
+                  "id": "aca62d9a89bf0cb692611211d873c19e12d59fc3:doc",
+                  "doc_uid": "aca62d9a89bf0cb692611211d873c19e12d59fc3",
+                  "chunk_index": 0,
+                  "source": "openalex",
+                  "source_type": "paper",
+                  "title": "Hybrid Bonding, Advanced Substrates, Failure Mechanisms, and Thermal Management for Chiplets and Heterogeneous Integration",
+                  "year": 2025,
+                  "company": "",
+                  "domain": "",
+                  "tags": [
+                    "openalex",
+                    "oa_hybrid_bonding",
+                    "wafer_bonding",
+                    "hybrid_bonding",
+                    "chiplet"
+                  ],
+                  "text": "If disposing of this product, please recycle the paper.",
+                  "score": 0.08012820512820512
+                }
+              },
+              {
+                "id": "9d2ab73d10eb061d6b077e18761b6c375e6b652c:0",
+                "title": "Samsung Launches Samsung AI Week 2026 for AI-Powered Living",
+                "text": "Samsung Launches Samsung AI Week 2026 for AI-Powered Living\n\nSamsung Electronics is hosting Samsung AI Week 2026 from May 11 to June 7 in 58 countries. Now in its seventh year, Samsung Week has become the company’s largest annual global promotion, celebrating its founding anniversary and thanking customers for their continued support with exclusive deals on a wide range of products. Beginning this year, […]",
+                "source": "samsung_global_newsroom",
+                "source_type": "company_official",
+                "domain": "ai_demand",
+                "company": "005930",
+                "year": 2026,
+                "raw_score": 0.05643879173290938,
+                "evidence_score": 0.7799999999999999,
+                "reasons": [
+                  "tier=1",
+                  "freshness=1.00",
+                  "domain=ai_demand",
+                  "company_match=0.40"
+                ],
+                "payload": {
+                  "id": "9d2ab73d10eb061d6b077e18761b6c375e6b652c:0",
+                  "doc_uid": "9d2ab73d10eb061d6b077e18761b6c375e6b652c",
+                  "chunk_index": 0,
+                  "source": "samsung_global_newsroom",
+                  "source_type": "company_official",
+                  "title": "Samsung Launches Samsung AI Week 2026 for AI-Powered Living",
+                  "year": 2026,
+                  "company": "005930",
+                  "domain": "ai_demand",
+                  "tags": [
+                    "005930",
+                    "ai_demand",
+                    "ir",
+                    "official",
+                    "press_release",
+                    "samsung"
+                  ],
+                  "text": "Samsung Launches Samsung AI Week 2026 for AI-Powered Living\n\nSamsung Electronics is hosting Samsung AI Week 2026 from May 11 to June 7 in 58 countries. Now in its seventh year, Samsung Week has become the company’s largest annual global promotion, celebrating its founding anniversary and thanking customers for their continued support with exclusive deals on a wide range of products. Beginning this year, […]",
+                  "score": 0.05643879173290938
+                }
+              },
+              {
+                "id": "5f1bf7cfdc891e2b3df55c11c66a27d4e957eff8:0",
+                "title": "[Editorial] How APV Is Elevating Mobile Video to Professional Standards",
+                "text": "[Editorial] How APV Is Elevating Mobile Video to Professional Standards\n\nThe era of filmmaking with a mobile phone has arrived. As anyone can now shoot, edit and share high-quality video, users increasingly expect greater color accuracy, finer detail and more post-production flexibility. In response, Samsung Electronics has developed the Advanced Professional Video (APV) codec and is working to establish it as a global open standard. […]",
+                "source": "samsung_global_newsroom",
+                "source_type": "company_official",
+                "domain": "ai_demand",
+                "company": "005930",
+                "year": 2026,
+                "raw_score": 0.052941176470588235,
+                "evidence_score": 0.7799999999999999,
+                "reasons": [
+                  "tier=1",
+                  "freshness=1.00",
+                  "domain=ai_demand",
+                  "company_match=0.40"
+                ],
+                "payload": {
+                  "id": "5f1bf7cfdc891e2b3df55c11c66a27d4e957eff8:0",
+                  "doc_uid": "5f1bf7cfdc891e2b3df55c11c66a27d4e957eff8",
+                  "chunk_index": 0,
+                  "source": "samsung_global_newsroom",
+                  "source_type": "company_official",
+                  "title": "[Editorial] How APV Is Elevating Mobile Video to Professional Standards",
+                  "year": 2026,
+                  "company": "005930",
+                  "domain": "ai_demand",
+                  "tags": [
+                    "005930",
+                    "ai_demand",
+                    "ir",
+                    "official",
+                    "press_release",
+                    "samsung"
+                  ],
+                  "text": "[Editorial] How APV Is Elevating Mobile Video to Professional Standards\n\nThe era of filmmaking with a mobile phone has arrived. As anyone can now shoot, edit and share high-quality video, users increasingly expect greater color accuracy, finer detail and more post-production flexibility. In response, Samsung Electronics has developed the Advanced Professional Video (APV) codec and is working to establish it as a global open standard. […]",
+                  "score": 0.052941176470588235
+                }
+              },
+              {
+                "id": "3e483a452c9d40fdfae62fc6f234e7f5743a1cd7:1",
+                "title": "Die to Wafer Stacking with Low Temperature Hybrid Bonding",
+                "text": "one or both surfaces of the die. The die has a similar size to a high bandwidth dynamic random access memory (HBM DRAM) die, 8 mm x 12 mm. The longest daisy chain structure has 31,356 links and covers an active area of 5.36mm x 9.36mm. The bonding pitch ranges from 10 to 40 μm with a pad diameter of either 5, 10 or 15 μm. We have achieved >95% electrical test yield and superior reliability in temperature cycling, high temperature storage and autoclave test.In this paper, we assess the high volume production readiness of the technology using a die to wafer and die to die stacking. Critical enabling factors include the CMP process for bonding surface planarization and Cu recess control, metrology tools for CMP process control and verification, and compatibility with the silicon supply chain for assembly. The singulation technology must ensure good die edge quality and surface cleanliness. The die handling includes a die-on-tape preparation process for compatibility with low cost, high volume assembly. We will also review our continuous process and bonding yield improvement. Our new test die design with TSVs allows for electrical testing of all stacked die.",
+                "source": "openalex",
+                "source_type": "paper",
+                "domain": "",
+                "company": "",
+                "year": 2020,
+                "raw_score": 0.04627659574468085,
+                "evidence_score": 0.7585,
+                "reasons": [
+                  "tier=2",
+                  "freshness=0.35",
+                  "domain=hbm",
+                  "company_match=0.40"
+                ],
+                "payload": {
+                  "id": "3e483a452c9d40fdfae62fc6f234e7f5743a1cd7:1",
+                  "doc_uid": "3e483a452c9d40fdfae62fc6f234e7f5743a1cd7",
+                  "chunk_index": 1,
+                  "source": "openalex",
+                  "source_type": "paper",
+                  "title": "Die to Wafer Stacking with Low Temperature Hybrid Bonding",
+                  "year": 2020,
+                  "company": "",
+                  "domain": "",
+                  "tags": [
+                    "openalex",
+                    "oa_hybrid_bonding",
+                    "wafer_bonding",
+                    "hybrid_bonding",
+                    "chiplet"
+                  ],
+                  "text": "one or both surfaces of the die. The die has a similar size to a high bandwidth dynamic random access memory (HBM DRAM) die, 8 mm x 12 mm. The longest daisy chain structure has 31,356 links and covers an active area of 5.36mm x 9.36mm. The bonding pitch ranges from 10 to 40 μm with a pad diameter of either 5, 10 or 15 μm. We have achieved >95% electrical test yield and superior reliability in temperature cycling, high temperature storage and autoclave test.In this paper, we assess the high volume production readiness of the technology using a die to wafer and die to die stacking. Critical enabling factors include the CMP process for bonding surface planarization and Cu recess control, metrology tools for CMP process control and verification, and compatibility with the silicon supply chain for assembly. The singulation technology must ensure good die edge quality and surface cleanliness. The die handling includes a die-on-tape preparation process for compatibility with low cost, high volume assembly. We will also review our continuous process and bonding yield improvement. Our new test die design with TSVs allows for electrical testing of all stacked die.",
+                  "score": 0.04627659574468085
+                }
+              },
+              {
+                "id": "e8371b0a267f7f45e0b647b22b99adab44fcd5ad:1",
+                "title": "A Novel 3D Stacked Vertical-Channel High-Voltage Peripheral Transistor for Largely Scaled the WL Driver Circuit of 1000-layer 3D NAND Flash",
+                "text": "stor (with an effective channel length of ~1.2 μm in the vertical direction) can achieve a junction breakdown voltage exceeding 20 V, while maintaining sufficient ON-current drivability for WL setup operations. Additionally, incorporating approximately four dummy gates near the drain side as auxiliary gates (AG > 0 V) effectively mitigates GIDL-induced breakdown during the OFF state (Gate = 0 V). This paper outlines the layout design concept and provides device guidelines to enable efficient WL driver designs for the upcoming 1000-layer 3D NAND era.",
+                "source": "openalex",
+                "source_type": "paper",
+                "domain": "",
+                "company": "",
+                "year": 2025,
+                "raw_score": 0.06111111111111111,
+                "evidence_score": 0.7259999999999999,
+                "reasons": [
+                  "tier=2",
+                  "freshness=1.00",
+                  "domain=weak",
+                  "company_match=0.40"
+                ],
+                "payload": {
+                  "id": "e8371b0a267f7f45e0b647b22b99adab44fcd5ad:1",
+                  "doc_uid": "e8371b0a267f7f45e0b647b22b99adab44fcd5ad",
+                  "chunk_index": 1,
+                  "source": "openalex",
+                  "source_type": "paper",
+                  "title": "A Novel 3D Stacked Vertical-Channel High-Voltage Peripheral Transistor for Largely Scaled the WL Driver Circuit of 1000-layer 3D NAND Flash",
+                  "year": 2025,
+                  "company": "",
+                  "domain": "",
+                  "tags": [
+                    "openalex",
+                    "3d_nand",
+                    "nand",
+                    "oa_3d_nand",
+                    "flash_memory"
+                  ],
+                  "text": "stor (with an effective channel length of ~1.2 μm in the vertical direction) can achieve a junction breakdown voltage exceeding 20 V, while maintaining sufficient ON-current drivability for WL setup operations. Additionally, incorporating approximately four dummy gates near the drain side as auxiliary gates (AG > 0 V) effectively mitigates GIDL-induced breakdown during the OFF state (Gate = 0 V). This paper outlines the layout design concept and provides device guidelines to enable efficient WL driver designs for the upcoming 1000-layer 3D NAND era.",
+                  "score": 0.06111111111111111
+                }
+              }
+            ],
+            "queries": [
+              "HBM가 앞으로도 오래 갈까?",
+              "HBM가 앞으로도 오래 갈까? official company investor relations",
+              "HBM가 앞으로도 오래 갈까? paper standard roadmap"
+            ],
+            "playbook": {
+              "evidence_priority": [
+                "official_ir",
+                "official_press_release",
+                "standard",
+                "earnings",
+                "paper",
+                "blog",
+                "news"
+              ],
+              "event_examples": [
+                {
+                  "event": "미국, 추가 AI칩 대중 수출통제 발표",
+                  "impact": [
+                    {
+                      "NVIDIA": "down"
+                    },
+                    {
+                      "AMD": "down"
+                    },
+                    {
+                      "TSMC": "down"
+                    },
+                    {
+                      "Samsung": "neutral_to_down"
+                    },
+                    {
+                      "SK hynix": "neutral_to_down"
+                    }
+                  ]
+                },
+                {
+                  "event": "TSMC 월간 매출 MoM +15% 서프라이즈",
+                  "impact": [
+                    {
+                      "TSMC": "up"
+                    },
+                    {
+                      "ASML": "up"
+                    },
+                    {
+                      "AMAT": "up"
+                    },
+                    {
+                      "Lam Research": "up"
+                    },
+                    {
+                      "Samsung": "relative_weakness"
+                    }
+                  ]
+                },
+                {
+                  "event": "SK하이닉스, HBM4 양산 조기 선언",
+                  "impact": [
+                    {
+                      "SK hynix": "up"
+                    },
+                    {
+                      "NVIDIA": "up"
+                    },
+                    {
+                      "Micron": "down"
+                    },
+                    {
+                      "CoWoS ecosystem": "up"
+                    }
+                  ]
+                },
+                {
+                  "event": "EUV High-NA 장비 양산 출하 시작",
+                  "impact": [
+                    {
+                      "ASML": "up"
+                    },
+                    {
+                      "TSMC": "up"
+                    },
+                    {
+                      "Samsung": "mixed"
+                    },
+                    {
+                      "AMAT": "neutral_to_up"
+                    }
+                  ]
+                },
+                {
+                  "event": "DRAM 고정거래가 전분기 대비 10% 상승",
+                  "impact": [
+                    {
+                      "Samsung": "up"
+                    },
+                    {
+                      "SK hynix": "up"
+                    },
+                    {
+                      "Micron": "up"
+                    },
+                    {
+                      "PC/OEM": "down"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "delta": {
+        "total": 0.141,
+        "grade": "B -> A",
+        "company_score": 0.0,
+        "term_score": 0.333,
+        "evidence_score": 0.25
+      }
+    },
+    {
+      "id": "euv_bottleneck_basic",
+      "difficulty": "easy",
+      "question": "EUV와 High-NA는 얼마나 중요한 병목인가?",
+      "expected": {
+        "longevity_dominant": "5y",
+        "bottleneck_importance": "critical",
+        "expected_beneficiaries": [
+          "ASML",
+          "TSM"
+        ],
+        "required_terms": [
+          "euv",
+          "litho",
+          "high-na"
+        ]
+      },
+      "baseline": {
+        "score": {
+          "longevity": "3y",
+          "bottleneck": "critical",
+          "grade": "A",
+          "company_codes": [
+            "005930",
+            "ASML",
+            "TSM",
+            "asml",
+            "tsmc",
+            "삼성"
+          ],
+          "term_hits": {
+            "euv": true,
+            "litho": false,
+            "high-na": false
+          },
+          "company_score": 1.0,
+          "term_score": 0.333,
+          "longevity_score": 0.0,
+          "bottleneck_score": 1.0,
+          "evidence_score": 1.0,
+          "source_diversity": 0.0,
+          "total": 0.617
+        },
+        "raw": {
+          "longevity": {
+            "1y": "high",
+            "3y": "high",
+            "5y": "high",
+            "10y": "medium",
+            "dominant_horizon": "3y",
+            "reason": "EUV 기술은 현재 반도체 제조 공정에서 필수적이며, 특히 5nm 이하의 노드에서의 수요가 지속적으로 증가하고 있습니다. 그러나 10년 후에는 대체 기술이 등장할 가능성이 있어 중장기적으로는 불확실성이 존재합니다."
+          },
+          "bottleneck": {
+            "is_bottleneck": true,
+            "importance": "critical",
+            "substitutability": "hard",
+            "supply_constraint": "high",
+            "reason": "EUV 장비는 현재 반도체 제조 공정에서 필수적인 기술로, 공급이 제한적이며 대체 기술이 존재하지 않아 산업 전체의 생산성과 원가에 큰 영향을 미치고 있습니다."
+          },
+          "company_impact": [
+            {
+              "company": "ASML",
+              "code": "ASML",
+              "stance": "benefit",
+              "confidence": 0.9,
+              "reason": "ASML은 EUV 장비의 독점 공급자로서, 반도체 제조업체들의 수요 증가로 인해 매출이 크게 증가할 것으로 예상됩니다."
+            },
+            {
+              "company": "TSMC",
+              "code": "TSM",
+              "stance": "benefit",
+              "confidence": 0.8,
+              "reason": "TSMC는 EUV 기술을 활용하여 고급 공정을 지속적으로 발전시키고 있으며, 이는 경쟁력을 높이는 데 기여하고 있습니다."
+            },
+            {
+              "company": "삼성",
+              "code": "005930",
+              "stance": "benefit",
+              "confidence": 0.7,
+              "reason": "삼성은 EUV 기술을 통해 차세대 반도체 제품을 개발하고 있으며, 이는 시장 점유율 확대에 긍정적인 영향을 미칠 것입니다."
+            }
+          ],
+          "evidence_quality": {
+            "grade": "A",
+            "reason": "EUV 기술의 중요성에 대한 공식 자료와 업계 보고서가 다수 존재하며, ASML의 실적 자료와 로드맵이 이를 뒷받침하고 있습니다."
+          },
+          "overall_thesis": "EUV 장비는 반도체 제조 공정에서 필수적인 기술로, 현재와 가까운 미래에 걸쳐 높은 수요가 예상되며, ASML과 같은 기업에게는 큰 기회를 제공합니다.",
+          "red_flags": [
+            "대체 기술의 발전 가능성",
+            "공급망의 불안정성"
+          ],
+          "missing_data": [
+            "EUV 장비의 가격 변동 추세",
+            "경쟁 기술의 발전 상황"
+          ],
+          "recommendation": "investable"
+        }
+      },
+      "rag": {
+        "score": {
+          "longevity": "3y",
+          "bottleneck": "critical",
+          "grade": "C",
+          "company_codes": [
+            "ASML",
+            "asml"
+          ],
+          "term_hits": {
+            "euv": true,
+            "litho": true,
+            "high-na": true
+          },
+          "company_score": 0.5,
+          "term_score": 1.0,
+          "longevity_score": 0.0,
+          "bottleneck_score": 1.0,
+          "evidence_score": 0.5,
+          "source_diversity": 0.5,
+          "total": 0.6
+        },
+        "raw": {
+          "topic": "EUV 장비 중요성",
+          "company_hint": "ASML",
+          "domain_hint": "litho",
+          "longevity": {
+            "1y": "high",
+            "3y": "high",
+            "5y": "medium",
+            "10y": "medium",
+            "dominant_horizon": "3y",
+            "reason": "EUV lithography is critical for advanced semiconductor manufacturing and is expected to maintain strong demand in the near term due to ongoing advancements and the need for higher precision in patterning. However, the long-term outlook may face challenges as alternative technologies develop."
+          },
+          "bottleneck": {
+            "is_bottleneck": true,
+            "importance": "critical",
+            "substitutability": "hard",
+            "supply_constraint": "high",
+            "reason": "EUV lithography is currently a critical bottleneck in semiconductor manufacturing due to its complexity and the limited number of suppliers. The technology is essential for achieving smaller nodes, and any supply constraints can significantly impact the overall semiconductor production capacity."
+          },
+          "company_impact": [
+            {
+              "company": "ASML",
+              "code": "ASML",
+              "stance": "benefit",
+              "confidence": 0.917,
+              "reason": "ASML is the primary supplier of EUV lithography equipment, and as demand for advanced nodes increases, the company stands to benefit significantly from the ongoing investments in semiconductor manufacturing."
+            }
+          ],
+          "evidence_quality": {
+            "grade": "C",
+            "count": 8,
+            "tier1_count": 1,
+            "tier12_count": 8,
+            "source_count": 2,
+            "avg_evidence_score": 0.924,
+            "sources": [
+              "asml_press_releases",
+              "openalex"
+            ],
+            "domains": [
+              "litho"
+            ],
+            "reason": "The evidence is based on a mix of press releases and academic sources, with a moderate level of reliability. While there are multiple references, they primarily focus on specific advancements rather than comprehensive market analysis."
+          },
+          "overall_thesis": "EUV lithography is a critical technology for the future of semiconductor manufacturing, with strong short-term demand and significant implications for key players like ASML. However, potential long-term challenges may arise from the development of alternative technologies.",
+          "red_flags": [
+            "Potential for emerging technologies to disrupt EUV dominance in the long term."
+          ],
+          "missing_data": [
+            "Detailed market forecasts for EUV adoption rates beyond 5 years.",
+            "Information on competitive technologies and their development timelines."
+          ],
+          "recommendation": "investable",
+          "confidence": 0.924,
+          "evidence_pack": {
+            "coverage": {
+              "count": 8,
+              "tier1_count": 1,
+              "tier12_count": 8,
+              "domains": [
+                "litho"
+              ],
+              "sources": [
+                "asml_press_releases",
+                "openalex"
+              ],
+              "avg_evidence_score": 0.9236875
+            },
+            "items": [
+              {
+                "id": "ac063ac4636ca99831dadfa92bf53ef2e31d0edb:1",
+                "title": "NTD CARs purity developments toward single-print capability in EUV scanners",
+                "text": "ct on patterning performance through resist application, wafer exposure, and post-etch defect analysis. Our findings demonstrate the efficacy of optimized filter designs in reducing defect densities, providing actionable insights for refining EUV lithography processes to achieve higher yields and enhanced performance in semiconductor manufacturing.",
+                "source": "openalex",
+                "source_type": "paper",
+                "domain": "",
+                "company": "",
+                "year": 2025,
+                "raw_score": 0.219532279314888,
+                "evidence_score": 0.946,
+                "reasons": [
+                  "tier=2",
+                  "freshness=1.00",
+                  "domain=litho",
+                  "company_match=1.00"
+                ],
+                "payload": {
+                  "id": "ac063ac4636ca99831dadfa92bf53ef2e31d0edb:1",
+                  "doc_uid": "ac063ac4636ca99831dadfa92bf53ef2e31d0edb",
+                  "chunk_index": 1,
+                  "source": "openalex",
+                  "source_type": "paper",
+                  "title": "NTD CARs purity developments toward single-print capability in EUV scanners",
+                  "year": 2025,
+                  "company": "",
+                  "domain": "",
+                  "tags": [
+                    "openalex",
+                    "patterning",
+                    "euv",
+                    "lithography",
+                    "oa_euv_litho"
+                  ],
+                  "text": "ct on patterning performance through resist application, wafer exposure, and post-etch defect analysis. Our findings demonstrate the efficacy of optimized filter designs in reducing defect densities, providing actionable insights for refining EUV lithography processes to achieve higher yields and enhanced performance in semiconductor manufacturing.",
+                  "score": 0.219532279314888
+                }
+              },
+              {
+                "id": "317064490fe28ef7984a01167fdbc771a888fe1c:1",
+                "title": "Key Challenges and Opportunities for Advanced Extreme Ultraviolet Lithography Photoresist Materials",
+                "text": "o tackle the ultimate resist variability challenge, multiple technical approaches are being explored, including the development of next‐generation photoacid‐induced chemically amplified resists, resists based on photoinduced polymer chain scission, molecular glass resists, and metal oxide resists. In this review, recent advances in resist development for next‐generation high NA EUVL applications are presented. The need for improvements in material design, formulation, and optimization to support the semiconductor industry's patterning roadmap will also be discussed.",
+                "source": "openalex",
+                "source_type": "paper",
+                "domain": "",
+                "company": "",
+                "year": 2025,
+                "raw_score": 0.14234305961256577,
+                "evidence_score": 0.946,
+                "reasons": [
+                  "tier=2",
+                  "freshness=1.00",
+                  "domain=litho",
+                  "company_match=1.00"
+                ],
+                "payload": {
+                  "id": "317064490fe28ef7984a01167fdbc771a888fe1c:1",
+                  "doc_uid": "317064490fe28ef7984a01167fdbc771a888fe1c",
+                  "chunk_index": 1,
+                  "source": "openalex",
+                  "source_type": "paper",
+                  "title": "Key Challenges and Opportunities for Advanced Extreme Ultraviolet Lithography Photoresist Materials",
+                  "year": 2025,
+                  "company": "",
+                  "domain": "",
+                  "tags": [
+                    "openalex",
+                    "patterning",
+                    "euv",
+                    "lithography",
+                    "oa_euv_litho"
+                  ],
+                  "text": "o tackle the ultimate resist variability challenge, multiple technical approaches are being explored, including the development of next‐generation photoacid‐induced chemically amplified resists, resists based on photoinduced polymer chain scission, molecular glass resists, and metal oxide resists. In this review, recent advances in resist development for next‐generation high NA EUVL applications are presented. The need for improvements in material design, formulation, and optimization to support the semiconductor industry's patterning roadmap will also be discussed.",
+                  "score": 0.14234305961256577
+                }
+              },
+              {
+                "id": "0b5f4a4b0e70f12d258aac5febe1442a1162ec00:0",
+                "title": "EUV lithography",
+                "text": "EUV lithography\n\nEUV lithography",
+                "source": "asml_press_releases",
+                "source_type": "company_official",
+                "domain": "litho",
+                "company": "ASML",
+                "year": 0,
+                "raw_score": 0.27562111801242234,
+                "evidence_score": 0.9175,
+                "reasons": [
+                  "tier=1",
+                  "freshness=0.45",
+                  "domain=litho",
+                  "company_match=1.00"
+                ],
+                "payload": {
+                  "id": "0b5f4a4b0e70f12d258aac5febe1442a1162ec00:0",
+                  "doc_uid": "0b5f4a4b0e70f12d258aac5febe1442a1162ec00",
+                  "chunk_index": 0,
+                  "source": "asml_press_releases",
+                  "source_type": "company_official",
+                  "title": "EUV lithography",
+                  "year": 0,
+                  "company": "ASML",
+                  "domain": "litho",
+                  "tags": [
+                    "ASML",
+                    "asml",
+                    "equipment",
+                    "litho",
+                    "lithography",
+                    "official"
+                  ],
+                  "text": "EUV lithography\n\nEUV lithography",
+                  "score": 0.27562111801242234
+                }
+              },
+              {
+                "id": "9903564beb4aaf039d7a7e1f0a9e0ece4a760d1e:1",
+                "title": "Platinum-based alloy absorber with improved etching properties for next-generation EUV mask",
+                "text": "t-W alloy thin films using CF<sub>4</sub>/O<sub>2</sub>/Ar gas. As a result, we verified that the etch rate of the implanted alloy was about 1.86 times higher than that of Pt, resulting in a higher sidewall angle in patterns. Furthermore, based on PROLITH 2022a simulation tool, we confirmed that Pt-W alloys showed about 2.4 NILS at 34 nm thickness which is higher than the current Ta-based mask, and the best focus shift has been mitigated by 33 %. In conclusion, Pt-based materials have the potential to apply as the next-generation absorber for EUV masks that can achieve fine patterning and enhance imaging performance.",
+                "source": "openalex",
+                "source_type": "paper",
+                "domain": "",
+                "company": "",
+                "year": 2023,
+                "raw_score": 0.2202377443756754,
+                "evidence_score": 0.9159999999999999,
+                "reasons": [
+                  "tier=2",
+                  "freshness=0.80",
+                  "domain=litho",
+                  "company_match=1.00"
+                ],
+                "payload": {
+                  "id": "9903564beb4aaf039d7a7e1f0a9e0ece4a760d1e:1",
+                  "doc_uid": "9903564beb4aaf039d7a7e1f0a9e0ece4a760d1e",
+                  "chunk_index": 1,
+                  "source": "openalex",
+                  "source_type": "paper",
+                  "title": "Platinum-based alloy absorber with improved etching properties for next-generation EUV mask",
+                  "year": 2023,
+                  "company": "",
+                  "domain": "",
+                  "tags": [
+                    "openalex",
+                    "patterning",
+                    "euv",
+                    "lithography",
+                    "oa_euv_litho"
+                  ],
+                  "text": "t-W alloy thin films using CF<sub>4</sub>/O<sub>2</sub>/Ar gas. As a result, we verified that the etch rate of the implanted alloy was about 1.86 times higher than that of Pt, resulting in a higher sidewall angle in patterns. Furthermore, based on PROLITH 2022a simulation tool, we confirmed that Pt-W alloys showed about 2.4 NILS at 34 nm thickness which is higher than the current Ta-based mask, and the best focus shift has been mitigated by 33 %. In conclusion, Pt-based materials have the potential to apply as the next-generation absorber for EUV masks that can achieve fine patterning and enhance imaging performance.",
+                  "score": 0.2202377443756754
+                }
+              },
+              {
+                "id": "65c921e9ae2b3a2dceb1e3c1a17d437c30f2f878:1",
+                "title": "Roughness improvement by post-development treatment of CAR for high-NA EUV lithography",
+                "text": "ral density (PSD) analysis of LWR. Additionally, we compared the cross–sectional shape of resist patterns before and after treatment to understand the reactions occurring within the resist. The results showed that the LWR decreased by 13.1% for 44nm line/space (L/S) pitch and 4.0% for 28nm L/S pitch after the post–development treatment. Of particular interest, the use of additional processing demonstrated the potential to reduce low–frequency roughness, which is normally very challenging. These results show the potential for the application of CAR in next–generation lithography.",
+                "source": "openalex",
+                "source_type": "paper",
+                "domain": "",
+                "company": "",
+                "year": 2024,
+                "raw_score": 0.1983988425367736,
+                "evidence_score": 0.9159999999999999,
+                "reasons": [
+                  "tier=2",
+                  "freshness=0.80",
+                  "domain=litho",
+                  "company_match=1.00"
+                ],
+                "payload": {
+                  "id": "65c921e9ae2b3a2dceb1e3c1a17d437c30f2f878:1",
+                  "doc_uid": "65c921e9ae2b3a2dceb1e3c1a17d437c30f2f878",
+                  "chunk_index": 1,
+                  "source": "openalex",
+                  "source_type": "paper",
+                  "title": "Roughness improvement by post-development treatment of CAR for high-NA EUV lithography",
+                  "year": 2024,
+                  "company": "",
+                  "domain": "",
+                  "tags": [
+                    "openalex",
+                    "patterning",
+                    "euv",
+                    "lithography",
+                    "oa_euv_litho"
+                  ],
+                  "text": "ral density (PSD) analysis of LWR. Additionally, we compared the cross–sectional shape of resist patterns before and after treatment to understand the reactions occurring within the resist. The results showed that the LWR decreased by 13.1% for 44nm line/space (L/S) pitch and 4.0% for 28nm L/S pitch after the post–development treatment. Of particular interest, the use of additional processing demonstrated the potential to reduce low–frequency roughness, which is normally very challenging. These results show the potential for the application of CAR in next–generation lithography.",
+                  "score": 0.1983988425367736
+                }
+              },
+              {
+                "id": "b2222f53aef7030a8bebc6159ee7312b7b4ac8f0:1",
+                "title": "Negative-tone resists for EUV lithography",
+                "text": "l for printing pillars and isolated lines utilizing dark-field masks. Pillars in hexagonal arrays with pitch below 38nm are patterned with local CD uniformity (LCDU) below 3nm. Thanks to its negative-tone nature, top loss of the resist film is minimal, which results in higher remaining film to sustain the subsequent etch process. The robust design of the molecular core renders the resist film enhanced etch resistance. Pattern transferring into over 15nm silicon layer was demonstrated using a simple stack. The new resists offer a more straightforward solution to print pillars and similar features without tone-inversion process. The negative-tone resists can be combined with the DSA technology to significantly improve cost of ownership. The processes were successfully implemented for both contact hole and line/space patterns with drastically improved pattern quality. LCDU of 1.4nm was achieved for contact hole pattern at pitch of 34nm in hexagonal array. It could be considered as an alternative to EUV double patterning or high-NA EUV processes.",
+                "source": "openalex",
+                "source_type": "paper",
+                "domain": "",
+                "company": "",
+                "year": 2023,
+                "raw_score": 0.1660158596659858,
+                "evidence_score": 0.9159999999999999,
+                "reasons": [
+                  "tier=2",
+                  "freshness=0.80",
+                  "domain=litho",
+                  "company_match=1.00"
+                ],
+                "payload": {
+                  "id": "b2222f53aef7030a8bebc6159ee7312b7b4ac8f0:1",
+                  "doc_uid": "b2222f53aef7030a8bebc6159ee7312b7b4ac8f0",
+                  "chunk_index": 1,
+                  "source": "openalex",
+                  "source_type": "paper",
+                  "title": "Negative-tone resists for EUV lithography",
+                  "year": 2023,
+                  "company": "",
+                  "domain": "",
+                  "tags": [
+                    "openalex",
+                    "patterning",
+                    "euv",
+                    "lithography",
+                    "oa_euv_litho"
+                  ],
+                  "text": "l for printing pillars and isolated lines utilizing dark-field masks. Pillars in hexagonal arrays with pitch below 38nm are patterned with local CD uniformity (LCDU) below 3nm. Thanks to its negative-tone nature, top loss of the resist film is minimal, which results in higher remaining film to sustain the subsequent etch process. The robust design of the molecular core renders the resist film enhanced etch resistance. Pattern transferring into over 15nm silicon layer was demonstrated using a simple stack. The new resists offer a more straightforward solution to print pillars and similar features without tone-inversion process. The negative-tone resists can be combined with the DSA technology to significantly improve cost of ownership. The processes were successfully implemented for both contact hole and line/space patterns with drastically improved pattern quality. LCDU of 1.4nm was achieved for contact hole pattern at pitch of 34nm in hexagonal array. It could be considered as an alternative to EUV double patterning or high-NA EUV processes.",
+                  "score": 0.1660158596659858
+                }
+              },
+              {
+                "id": "1ad0ee5be5a8da2c3c7b720086c86a5fcb4fba4f:doc",
+                "title": "Coater/developer-based patterning techniques to achieve tight pitches with 0.33 NA single exposure",
+                "text": "As the semiconductor industry continues to push the limits of integrated circuit fabrication, reliance on extreme ultraviolet lithography (EUVL) has increased. Additionally, it has become clear that new techniques and methods are needed to mitigate pattern defectivity and roughness after lithography and etch processes and eliminate film-related defects. These approaches require further improvements to the process chemicals and the lithography process equipment to achieve finer patterns. The ESPERTTM (Enhanced Sensitivity develoPER TechnologyTM) technique has been developed and optimized to fulfil this novel development need. The ESPERTTM has demonstrated a capability that can enhance the developing contrast between the EUV exposed and unexposed areas. This paper reviews that 23 nm pitch line and space and sub-40 nm pitch pillars patterns were realized by high NILS illuminations with 0.33 NA single exposure, and we will show the ESPERTTM helped reduce the minimum critical dimension size, defectivity and roughness at the finer patterns.",
+                "source": "openalex",
+                "source_type": "paper",
+                "domain": "",
+                "company": "",
+                "year": 2023,
+                "raw_score": 0.11886792452830189,
+                "evidence_score": 0.9159999999999999,
+                "reasons": [
+                  "tier=2",
+                  "freshness=0.80",
+                  "domain=litho",
+                  "company_match=1.00"
+                ],
+                "payload": {
+                  "id": "1ad0ee5be5a8da2c3c7b720086c86a5fcb4fba4f:doc",
+                  "doc_uid": "1ad0ee5be5a8da2c3c7b720086c86a5fcb4fba4f",
+                  "chunk_index": 0,
+                  "source": "openalex",
+                  "source_type": "paper",
+                  "title": "Coater/developer-based patterning techniques to achieve tight pitches with 0.33 NA single exposure",
+                  "year": 2023,
+                  "company": "",
+                  "domain": "",
+                  "tags": [
+                    "openalex",
+                    "patterning",
+                    "euv",
+                    "lithography",
+                    "oa_euv_litho"
+                  ],
+                  "text": "As the semiconductor industry continues to push the limits of integrated circuit fabrication, reliance on extreme ultraviolet lithography (EUVL) has increased. Additionally, it has become clear that new techniques and methods are needed to mitigate pattern defectivity and roughness after lithography and etch processes and eliminate film-related defects. These approaches require further improvements to the process chemicals and the lithography process equipment to achieve finer patterns. The ESPERTTM (Enhanced Sensitivity develoPER TechnologyTM) technique has been developed and optimized to fulfil this novel development need. The ESPERTTM has demonstrated a capability that can enhance the developing contrast between the EUV exposed and unexposed areas. This paper reviews that 23 nm pitch line and space and sub-40 nm pitch pillars patterns were realized by high NILS illuminations with 0.33 NA single exposure, and we will show the ESPERTTM helped reduce the minimum critical dimension size, defectivity and roughness at the finer patterns.",
+                  "score": 0.11886792452830189
+                }
+              },
+              {
+                "id": "4f036ff955df5c7c9f50ed7650321941cb215fa4:1",
+                "title": "Approaching Angstrom-Scale Resolution in Lithography Using Low-Molecular-Mass Resists (&lt;500 Da)",
+                "text": "amenable to high-resolution electron beam lithography (EBL) and extreme ultraviolet lithography (EUVL) but also unites them mechanistically, giving a consolidated perspective of molecular and chemical processes happening during exposure. Irradiation of the resist leads to the production of secondary electrons that generate radicals in the initiator bonded to metal. This brings about an intramolecular rearrangement and causes solubility switch in the exposed resist. We demonstrate record 1.9–2.0 nm isolated patterns and 7 nm half-pitch dense line-space features over a large area using EBL. With EUVL, 12 nm half-pitch line-space features are shown at a dose of 68 mJ/cm2. In both of these patterning techniques, the line-width roughness was found to be ≤2 nm, a record low value for any resist platform, also leading to a low-performance trade-off metric, Z factor, of 0.6 × 10–8 mJ·nm3. With the ultimate resolution limited by instrumental factors, potential patterning at the level of a unit cell can be envisaged, making low-molecular-mass resists best poised for angstrom-scale lithography.",
+                "source": "openalex",
+                "source_type": "paper",
+                "domain": "",
+                "company": "",
+                "year": 2024,
+                "raw_score": 0.1050125055675472,
+                "evidence_score": 0.9159999999999999,
+                "reasons": [
+                  "tier=2",
+                  "freshness=0.80",
+                  "domain=litho",
+                  "company_match=1.00"
+                ],
+                "payload": {
+                  "id": "4f036ff955df5c7c9f50ed7650321941cb215fa4:1",
+                  "doc_uid": "4f036ff955df5c7c9f50ed7650321941cb215fa4",
+                  "chunk_index": 1,
+                  "source": "openalex",
+                  "source_type": "paper",
+                  "title": "Approaching Angstrom-Scale Resolution in Lithography Using Low-Molecular-Mass Resists (&lt;500 Da)",
+                  "year": 2024,
+                  "company": "",
+                  "domain": "",
+                  "tags": [
+                    "openalex",
+                    "patterning",
+                    "euv",
+                    "lithography",
+                    "oa_euv_litho"
+                  ],
+                  "text": "amenable to high-resolution electron beam lithography (EBL) and extreme ultraviolet lithography (EUVL) but also unites them mechanistically, giving a consolidated perspective of molecular and chemical processes happening during exposure. Irradiation of the resist leads to the production of secondary electrons that generate radicals in the initiator bonded to metal. This brings about an intramolecular rearrangement and causes solubility switch in the exposed resist. We demonstrate record 1.9–2.0 nm isolated patterns and 7 nm half-pitch dense line-space features over a large area using EBL. With EUVL, 12 nm half-pitch line-space features are shown at a dose of 68 mJ/cm2. In both of these patterning techniques, the line-width roughness was found to be ≤2 nm, a record low value for any resist platform, also leading to a low-performance trade-off metric, Z factor, of 0.6 × 10–8 mJ·nm3. With the ultimate resolution limited by instrumental factors, potential patterning at the level of a unit cell can be envisaged, making low-molecular-mass resists best poised for angstrom-scale lithography.",
+                  "score": 0.1050125055675472
+                }
+              }
+            ],
+            "queries": [
+              "EUV 장비 중요성",
+              "EUV 장비 중요성 official company investor relations",
+              "EUV 장비 중요성 paper standard roadmap"
+            ],
+            "playbook": {
+              "evidence_priority": [
+                "official_ir",
+                "official_press_release",
+                "standard",
+                "earnings",
+                "paper",
+                "blog",
+                "news"
+              ],
+              "event_examples": [
+                {
+                  "event": "미국, 추가 AI칩 대중 수출통제 발표",
+                  "impact": [
+                    {
+                      "NVIDIA": "down"
+                    },
+                    {
+                      "AMD": "down"
+                    },
+                    {
+                      "TSMC": "down"
+                    },
+                    {
+                      "Samsung": "neutral_to_down"
+                    },
+                    {
+                      "SK hynix": "neutral_to_down"
+                    }
+                  ]
+                },
+                {
+                  "event": "TSMC 월간 매출 MoM +15% 서프라이즈",
+                  "impact": [
+                    {
+                      "TSMC": "up"
+                    },
+                    {
+                      "ASML": "up"
+                    },
+                    {
+                      "AMAT": "up"
+                    },
+                    {
+                      "Lam Research": "up"
+                    },
+                    {
+                      "Samsung": "relative_weakness"
+                    }
+                  ]
+                },
+                {
+                  "event": "SK하이닉스, HBM4 양산 조기 선언",
+                  "impact": [
+                    {
+                      "SK hynix": "up"
+                    },
+                    {
+                      "NVIDIA": "up"
+                    },
+                    {
+                      "Micron": "down"
+                    },
+                    {
+                      "CoWoS ecosystem": "up"
+                    }
+                  ]
+                },
+                {
+                  "event": "EUV High-NA 장비 양산 출하 시작",
+                  "impact": [
+                    {
+                      "ASML": "up"
+                    },
+                    {
+                      "TSMC": "up"
+                    },
+                    {
+                      "Samsung": "mixed"
+                    },
+                    {
+                      "AMAT": "neutral_to_up"
+                    }
+                  ]
+                },
+                {
+                  "event": "DRAM 고정거래가 전분기 대비 10% 상승",
+                  "impact": [
+                    {
+                      "Samsung": "up"
+                    },
+                    {
+                      "SK hynix": "up"
+                    },
+                    {
+                      "Micron": "up"
+                    },
+                    {
+                      "PC/OEM": "down"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "delta": {
+        "total": -0.017,
+        "grade": "A -> C",
+        "company_score": -0.5,
+        "term_score": 0.667,
+        "evidence_score": -0.5
+      }
+    },
+    {
+      "id": "cxl_pim_memory",
+      "difficulty": "medium",
+      "question": "CXL과 PIM은 실제로 메모리 구조를 바꿀 수 있는가?",
+      "expected": {
+        "longevity_dominant": "3y",
+        "bottleneck_importance": "medium",
+        "expected_beneficiaries": [
+          "INTC",
+          "NVDA"
+        ],
+        "required_terms": [
+          "cxl",
+          "pim",
+          "memory"
+        ]
+      },
+      "baseline": {
+        "score": {
+          "longevity": "3y",
+          "bottleneck": "high",
+          "grade": "B",
+          "company_codes": [
+            "000660",
+            "005930",
+            "INTC",
+            "intc",
+            "samsung",
+            "sk hynix"
+          ],
+          "term_hits": {
+            "cxl": true,
+            "pim": true,
+            "memory": false
+          },
+          "company_score": 0.5,
+          "term_score": 0.667,
+          "longevity_score": 1.0,
+          "bottleneck_score": 0.0,
+          "evidence_score": 0.75,
+          "source_diversity": 0.0,
+          "total": 0.546
+        },
+        "raw": {
+          "longevity": {
+            "1y": "high",
+            "3y": "high",
+            "5y": "medium",
+            "10y": "low",
+            "dominant_horizon": "3y",
+            "reason": "CXL과 PIM 메모리는 현재 데이터 센터와 AI 연산의 수요 증가에 의해 단기적으로 높은 수요를 보이고 있으며, 특히 CXL은 메모리 확장성을 제공하여 여러 제품군에서 활용될 가능성이 높다. 그러나 PIM 메모리는 기술적 성숙도가 낮아 5년 이후 대체 기술이 등장할 가능성이 있다."
+          },
+          "bottleneck": {
+            "is_bottleneck": true,
+            "importance": "high",
+            "substitutability": "hard",
+            "supply_constraint": "medium",
+            "reason": "CXL과 PIM 메모리는 현재 메모리 확장성의 중요한 기술로, 공급 제약이 존재하며 대체 기술이 제한적이다. 특히, CXL은 메모리 대역폭을 확장하는 데 필수적이므로 산업 전체에 큰 영향을 미칠 수 있다."
+          },
+          "company_impact": [
+            {
+              "company": "INTC",
+              "code": "INTC",
+              "stance": "benefit",
+              "confidence": 0.8,
+              "reason": "INTC는 CXL 기술을 통해 메모리 확장성을 강화하고 있으며, 이는 데이터 센터와 AI 시장에서의 경쟁력을 높이는 데 기여할 것이다."
+            },
+            {
+              "company": "SK Hynix",
+              "code": "000660",
+              "stance": "threat",
+              "confidence": 0.7,
+              "reason": "PIM 메모리 기술이 상용화될 경우, SK Hynix의 기존 메모리 제품군에 대한 수요가 감소할 수 있다."
+            },
+            {
+              "company": "Samsung",
+              "code": "005930",
+              "stance": "neutral",
+              "confidence": 0.6,
+              "reason": "Samsung은 CXL 기술을 지원하고 있지만, PIM 메모리의 상용화에 대한 명확한 전략이 부족하여 중립적인 입장이다."
+            }
+          ],
+          "evidence_quality": {
+            "grade": "B",
+            "reason": "CXL과 PIM 메모리에 대한 공식 자료와 연구 논문이 존재하지만, 일부 데이터는 아직 실험 단계에 머물러 있어 추가적인 검증이 필요하다."
+          },
+          "overall_thesis": "CXL과 PIM 메모리는 메모리 확장성에 중요한 역할을 하며, 단기적으로는 높은 수요가 예상되지만, 기술적 성숙도와 대체 기술의 출현에 따라 장기적인 전망은 불확실하다.",
+          "red_flags": [
+            "PIM 메모리의 상용화 지연",
+            "CXL 기술의 경쟁 기술 출현"
+          ],
+          "missing_data": [
+            "CXL과 PIM 메모리의 구체적인 시장 점유율",
+            "기술적 성숙도에 대한 추가 연구 결과"
+          ],
+          "recommendation": "watchlist"
+        }
+      },
+      "rag": {
+        "score": {
+          "longevity": "3y",
+          "bottleneck": "high",
+          "grade": "A",
+          "company_codes": [
+            "000660",
+            "005930",
+            "ASML",
+            "asml",
+            "samsung",
+            "sk hynix"
+          ],
+          "term_hits": {
+            "cxl": true,
+            "pim": true,
+            "memory": true
+          },
+          "company_score": 0.0,
+          "term_score": 1.0,
+          "longevity_score": 1.0,
+          "bottleneck_score": 0.0,
+          "evidence_score": 1.0,
+          "source_diversity": 1.0,
+          "total": 0.6
+        },
+        "raw": {
+          "topic": "CXL과 PIM 메모리 확장성",
+          "company_hint": "INTC",
+          "domain_hint": "memory",
+          "longevity": {
+            "1y": "high",
+            "3y": "high",
+            "5y": "medium",
+            "10y": "medium",
+            "dominant_horizon": "3y",
+            "reason": "The demand for memory technology, particularly in AI applications, is expected to remain strong in the short to medium term due to structural changes in various industries. However, the long-term sustainability may depend on the development of alternative technologies."
+          },
+          "bottleneck": {
+            "is_bottleneck": true,
+            "importance": "high",
+            "substitutability": "hard",
+            "supply_constraint": "high",
+            "reason": "The scalability of AI memory solutions, particularly with CXL and PIM technologies, is critical for meeting the increasing demand. Current supply constraints and the complexity of integration make it a significant bottleneck in the industry."
+          },
+          "company_impact": [
+            {
+              "company": "SK hynix",
+              "code": "000660",
+              "stance": "benefit",
+              "confidence": 0.78,
+              "reason": "SK hynix is positioned to benefit from the growing demand for advanced memory solutions, particularly in AI, as they are actively developing products that address this market."
+            },
+            {
+              "company": "Samsung",
+              "code": "005930",
+              "stance": "benefit",
+              "confidence": 0.78,
+              "reason": "Samsung is also well-positioned to capitalize on the demand for high-performance memory solutions, as evidenced by their focus on AI and advanced memory technologies."
+            },
+            {
+              "company": "ASML",
+              "code": "ASML",
+              "stance": "neutral",
+              "confidence": 0.697,
+              "reason": "ASML's role in providing lithography equipment is critical, but their direct impact on memory technology scalability is limited. They may benefit indirectly from overall industry growth."
+            }
+          ],
+          "evidence_quality": {
+            "grade": "A",
+            "count": 8,
+            "tier1_count": 7,
+            "tier12_count": 8,
+            "source_count": 4,
+            "avg_evidence_score": 0.763,
+            "sources": [
+              "asml_press_releases",
+              "openalex",
+              "samsung_global_newsroom",
+              "skhynix_newsroom"
+            ],
+            "domains": [
+              "ai_demand",
+              "general",
+              "hbm",
+              "memory"
+            ],
+            "reason": "The evidence is derived from multiple high-quality sources, including press releases and industry reports, demonstrating a strong correlation between AI demand and memory technology advancements."
+          },
+          "overall_thesis": "The integration of CXL and PIM technologies in memory solutions presents significant growth potential, driven by AI demands, but faces critical bottlenecks in scalability and supply constraints.",
+          "red_flags": [],
+          "missing_data": [],
+          "recommendation": "investable",
+          "confidence": 0.763,
+          "evidence_pack": {
+            "coverage": {
+              "count": 8,
+              "tier1_count": 7,
+              "tier12_count": 8,
+              "domains": [
+                "ai_demand",
+                "general",
+                "hbm",
+                "memory"
+              ],
+              "sources": [
+                "asml_press_releases",
+                "openalex",
+                "samsung_global_newsroom",
+                "skhynix_newsroom"
+              ],
+              "avg_evidence_score": 0.7629374999999999
+            },
+            "items": [
+              {
+                "id": "5f1bf7cfdc891e2b3df55c11c66a27d4e957eff8:0",
+                "title": "[Editorial] How APV Is Elevating Mobile Video to Professional Standards",
+                "text": "[Editorial] How APV Is Elevating Mobile Video to Professional Standards\n\nThe era of filmmaking with a mobile phone has arrived. As anyone can now shoot, edit and share high-quality video, users increasingly expect greater color accuracy, finer detail and more post-production flexibility. In response, Samsung Electronics has developed the Advanced Professional Video (APV) codec and is working to establish it as a global open standard. […]",
+                "source": "samsung_global_newsroom",
+                "source_type": "company_official",
+                "domain": "ai_demand",
+                "company": "005930",
+                "year": 2026,
+                "raw_score": 0.05011792452830188,
+                "evidence_score": 0.7799999999999999,
+                "reasons": [
+                  "tier=1",
+                  "freshness=1.00",
+                  "domain=ai_demand",
+                  "company_match=0.40"
+                ],
+                "payload": {
+                  "id": "5f1bf7cfdc891e2b3df55c11c66a27d4e957eff8:0",
+                  "doc_uid": "5f1bf7cfdc891e2b3df55c11c66a27d4e957eff8",
+                  "chunk_index": 0,
+                  "source": "samsung_global_newsroom",
+                  "source_type": "company_official",
+                  "title": "[Editorial] How APV Is Elevating Mobile Video to Professional Standards",
+                  "year": 2026,
+                  "company": "005930",
+                  "domain": "ai_demand",
+                  "tags": [
+                    "005930",
+                    "ai_demand",
+                    "ir",
+                    "official",
+                    "press_release",
+                    "samsung"
+                  ],
+                  "text": "[Editorial] How APV Is Elevating Mobile Video to Professional Standards\n\nThe era of filmmaking with a mobile phone has arrived. As anyone can now shoot, edit and share high-quality video, users increasingly expect greater color accuracy, finer detail and more post-production flexibility. In response, Samsung Electronics has developed the Advanced Professional Video (APV) codec and is working to establish it as a global open standard. […]",
+                  "score": 0.05011792452830188
+                }
+              },
+              {
+                "id": "5f2e500df1670f96d8b3e7ec585f4f98a9057454:0",
+                "title": "[User Guide] Galaxy A57 5G and Galaxy A37 5G: Bringing Latest Innovation Within Reach",
+                "text": "[User Guide] Galaxy A57 5G and Galaxy A37 5G: Bringing Latest Innovation Within Reach\n\nSamsung Electronics unveiled Galaxy A57 5G and Galaxy A37 5G, expanding access to its latest mobile innovations. The new Galaxy A series reflects Samsung’s commitment to democratizing AI by delivering advanced experiences at a more accessible price point. Samsung Newsroom explored the devices’ capabilities across AI, camera, design and performance. Awesome Intelligence: AI for Everyday […]",
+                "source": "samsung_global_newsroom",
+                "source_type": "company_official",
+                "domain": "ai_demand",
+                "company": "005930",
+                "year": 2026,
+                "raw_score": 0.043478260869565216,
+                "evidence_score": 0.7799999999999999,
+                "reasons": [
+                  "tier=1",
+                  "freshness=1.00",
+                  "domain=ai_demand",
+                  "company_match=0.40"
+                ],
+                "payload": {
+                  "id": "5f2e500df1670f96d8b3e7ec585f4f98a9057454:0",
+                  "doc_uid": "5f2e500df1670f96d8b3e7ec585f4f98a9057454",
+                  "chunk_index": 0,
+                  "source": "samsung_global_newsroom",
+                  "source_type": "company_official",
+                  "title": "[User Guide] Galaxy A57 5G and Galaxy A37 5G: Bringing Latest Innovation Within Reach",
+                  "year": 2026,
+                  "company": "005930",
+                  "domain": "ai_demand",
+                  "tags": [
+                    "005930",
+                    "ai_demand",
+                    "ir",
+                    "official",
+                    "press_release",
+                    "samsung"
+                  ],
+                  "text": "[User Guide] Galaxy A57 5G and Galaxy A37 5G: Bringing Latest Innovation Within Reach\n\nSamsung Electronics unveiled Galaxy A57 5G and Galaxy A37 5G, expanding access to its latest mobile innovations. The new Galaxy A series reflects Samsung’s commitment to democratizing AI by delivering advanced experiences at a more accessible price point. Samsung Newsroom explored the devices’ capabilities across AI, camera, design and performance. Awesome Intelligence: AI for Everyday […]",
+                  "score": 0.043478260869565216
+                }
+              },
+              {
+                "id": "17d571ced35c380551d93c34195bfd3f7d24ffed:0",
+                "title": "[Interview] From TV to a Work of Art: Samsung’s Design Innovation at the Red Dot Design Award 2026",
+                "text": "[Interview] From TV to a Work of Art: Samsung’s Design Innovation at the Red Dot Design Award 2026\n\nToday, design goes beyond refining a product’s appearance — it embraces user preferences and harmonizes with the surrounding space. Embodying this human-centered design approach, “Expressive Design”, Samsung Electronics achieved a remarkable milestone at the globally renowned Red Dot Design Award 2026, with all 16 of its submitted entries recognized. Samsung Newsroom sat down with designers […]",
+                "source": "samsung_global_newsroom",
+                "source_type": "company_official",
+                "domain": "general",
+                "company": "005930",
+                "year": 2026,
+                "raw_score": 0.041666666666666664,
+                "evidence_score": 0.7799999999999999,
+                "reasons": [
+                  "tier=1",
+                  "freshness=1.00",
+                  "domain=general",
+                  "company_match=0.40"
+                ],
+                "payload": {
+                  "id": "17d571ced35c380551d93c34195bfd3f7d24ffed:0",
+                  "doc_uid": "17d571ced35c380551d93c34195bfd3f7d24ffed",
+                  "chunk_index": 0,
+                  "source": "samsung_global_newsroom",
+                  "source_type": "company_official",
+                  "title": "[Interview] From TV to a Work of Art: Samsung’s Design Innovation at the Red Dot Design Award 2026",
+                  "year": 2026,
+                  "company": "005930",
+                  "domain": "general",
+                  "tags": [
+                    "005930",
+                    "general",
+                    "ir",
+                    "official",
+                    "press_release",
+                    "samsung"
+                  ],
+                  "text": "[Interview] From TV to a Work of Art: Samsung’s Design Innovation at the Red Dot Design Award 2026\n\nToday, design goes beyond refining a product’s appearance — it embraces user preferences and harmonizes with the surrounding space. Embodying this human-centered design approach, “Expressive Design”, Samsung Electronics achieved a remarkable milestone at the globally renowned Red Dot Design Award 2026, with all 16 of its submitted entries recognized. Samsung Newsroom sat down with designers […]",
+                  "score": 0.041666666666666664
+                }
+              },
+              {
+                "id": "704be14b58da5e707646a4d2b0ce00557b79a419:0",
+                "title": "SK hynix Announces 1Q26 Financial Results",
+                "text": "SK hynix Announces 1Q26 Financial Results\n\n<p>News Highlights Reports revenue of 52.5763 trillion won, operating profit of 37.6103 trillion won, net profit of 40.3459 trillion won Record-high quarterly performance driven by increased sales of high value-added products from strong AI demand By launching advanced products, the company will try to address growing market demand in the looming agentic AI era Company [&#8230;]</p>\n<p>The post <a href=\"https://news.skhynix.com/q1-2026-business-results/\">SK hynix Announces 1Q26 Financial Results</a> first appeared on <a href=\"https://news.skhynix.com\">SK hynix Newsroom</a>.</p>",
+                "source": "skhynix_newsroom",
+                "source_type": "company_official",
+                "domain": "memory",
+                "company": "000660",
+                "year": 2026,
+                "raw_score": 0.04,
+                "evidence_score": 0.7799999999999999,
+                "reasons": [
+                  "tier=1",
+                  "freshness=1.00",
+                  "domain=memory",
+                  "company_match=0.40"
+                ],
+                "payload": {
+                  "id": "704be14b58da5e707646a4d2b0ce00557b79a419:0",
+                  "doc_uid": "704be14b58da5e707646a4d2b0ce00557b79a419",
+                  "chunk_index": 0,
+                  "source": "skhynix_newsroom",
+                  "source_type": "company_official",
+                  "title": "SK hynix Announces 1Q26 Financial Results",
+                  "year": 2026,
+                  "company": "000660",
+                  "domain": "memory",
+                  "tags": [
+                    "000660",
+                    "ai_demand",
+                    "financials",
+                    "ir",
+                    "memory",
+                    "official",
+                    "press_release",
+                    "sk_hynix"
+                  ],
+                  "text": "SK hynix Announces 1Q26 Financial Results\n\n<p>News Highlights Reports revenue of 52.5763 trillion won, operating profit of 37.6103 trillion won, net profit of 40.3459 trillion won Record-high quarterly performance driven by increased sales of high value-added products from strong AI demand By launching advanced products, the company will try to address growing market demand in the looming agentic AI era Company [&#8230;]</p>\n<p>The post <a href=\"https://news.skhynix.com/q1-2026-business-results/\">SK hynix Announces 1Q26 Financial Results</a> first appeared on <a href=\"https://news.skhynix.com\">SK hynix Newsroom</a>.</p>",
+                  "score": 0.04
+                }
+              },
+              {
+                "id": "8dc439d2540d53572d8e90b765e3d696e0eed109:0",
+                "title": "[Tech Note EP.1] ‘It’s the Memory’, The Future of AI Will Be Decided by Memory",
+                "text": "[Tech Note EP.1] ‘It’s the Memory’, The Future of AI Will Be Decided by Memory\n\n<p>AI doesn&#8217;t wait. The foundations of every industry are already cracking. This isn&#8217;t a story about one sector. Manufacturing. Finance. Healthcare. Data centers. The entire industrial order is being rebuilt around AI — and it&#8217;s happening now. Knowing about AI is no longer a competitive advantage. You need to see through it. That&#8217;s why our [&#8230;]</p>\n<p>The post <a href=\"https://news.skhynix.com/tech-note-series-ep1/\">[Tech Note EP.1] ‘It’s the Memory’, The Future of AI Will Be Decided by Memory</a> first appeared on <a href=\"https://news.skhynix.com\">SK hynix Newsroom</a>.</p>",
+                "source": "skhynix_newsroom",
+                "source_type": "company_official",
+                "domain": "memory",
+                "company": "000660",
+                "year": 2026,
+                "raw_score": 0.038461538461538464,
+                "evidence_score": 0.7799999999999999,
+                "reasons": [
+                  "tier=1",
+                  "freshness=1.00",
+                  "domain=memory",
+                  "company_match=0.40"
+                ],
+                "payload": {
+                  "id": "8dc439d2540d53572d8e90b765e3d696e0eed109:0",
+                  "doc_uid": "8dc439d2540d53572d8e90b765e3d696e0eed109",
+                  "chunk_index": 0,
+                  "source": "skhynix_newsroom",
+                  "source_type": "company_official",
+                  "title": "[Tech Note EP.1] ‘It’s the Memory’, The Future of AI Will Be Decided by Memory",
+                  "year": 2026,
+                  "company": "000660",
+                  "domain": "memory",
+                  "tags": [
+                    "000660",
+                    "ai_demand",
+                    "ir",
+                    "memory",
+                    "official",
+                    "press_release",
+                    "sk_hynix"
+                  ],
+                  "text": "[Tech Note EP.1] ‘It’s the Memory’, The Future of AI Will Be Decided by Memory\n\n<p>AI doesn&#8217;t wait. The foundations of every industry are already cracking. This isn&#8217;t a story about one sector. Manufacturing. Finance. Healthcare. Data centers. The entire industrial order is being rebuilt around AI — and it&#8217;s happening now. Knowing about AI is no longer a competitive advantage. You need to see through it. That&#8217;s why our [&#8230;]</p>\n<p>The post <a href=\"https://news.skhynix.com/tech-note-series-ep1/\">[Tech Note EP.1] ‘It’s the Memory’, The Future of AI Will Be Decided by Memory</a> first appeared on <a href=\"https://news.skhynix.com\">SK hynix Newsroom</a>.</p>",
+                  "score": 0.038461538461538464
+                }
+              },
+              {
+                "id": "984205e6ca13e5ddd6833f34496fd10b825c3d45:0",
+                "title": "What Brought Dell and SK hynix Together in Las Vegas? From HBM to cSSD, Reaffirming the Limitless Scalability of AI Memory",
+                "text": "What Brought Dell and SK hynix Together in Las Vegas? From HBM to cSSD, Reaffirming the Limitless Scalability of AI Memory\n\n<p>Las Vegas, a city of cutting-edge technology where colorful neon signs and massive media facades light up around the clock. On May 18 (local time), the eyes of global IT leaders once again turned to The Venetian Expo at the heart of the city. Having established itself as a hub for technological innovation by hosting [&#8230;]</p>\n<p>The post <a href=\"https://news.skhynix.com/dtw-2026/\">What Brought Dell and SK hynix Together in Las Vegas? From HBM to cSSD, Reaffirming the Limitless Scalability of AI Memory</a> first appeared on <a href=\"https://news.skhynix.com\">SK hynix Newsroom</a>.</p>",
+                "source": "skhynix_newsroom",
+                "source_type": "company_official",
+                "domain": "hbm",
+                "company": "000660",
+                "year": 2026,
+                "raw_score": 0.03571428571428571,
+                "evidence_score": 0.7799999999999999,
+                "reasons": [
+                  "tier=1",
+                  "freshness=1.00",
+                  "domain=hbm",
+                  "company_match=0.40"
+                ],
+                "payload": {
+                  "id": "984205e6ca13e5ddd6833f34496fd10b825c3d45:0",
+                  "doc_uid": "984205e6ca13e5ddd6833f34496fd10b825c3d45",
+                  "chunk_index": 0,
+                  "source": "skhynix_newsroom",
+                  "source_type": "company_official",
+                  "title": "What Brought Dell and SK hynix Together in Las Vegas? From HBM to cSSD, Reaffirming the Limitless Scalability of AI Memory",
+                  "year": 2026,
+                  "company": "000660",
+                  "domain": "hbm",
+                  "tags": [
+                    "000660",
+                    "ai_demand",
+                    "hbm",
+                    "ir",
+                    "memory",
+                    "official",
+                    "press_release",
+                    "sk_hynix"
+                  ],
+                  "text": "What Brought Dell and SK hynix Together in Las Vegas? From HBM to cSSD, Reaffirming the Limitless Scalability of AI Memory\n\n<p>Las Vegas, a city of cutting-edge technology where colorful neon signs and massive media facades light up around the clock. On May 18 (local time), the eyes of global IT leaders once again turned to The Venetian Expo at the heart of the city. Having established itself as a hub for technological innovation by hosting [&#8230;]</p>\n<p>The post <a href=\"https://news.skhynix.com/dtw-2026/\">What Brought Dell and SK hynix Together in Las Vegas? From HBM to cSSD, Reaffirming the Limitless Scalability of AI Memory</a> first appeared on <a href=\"https://news.skhynix.com\">SK hynix Newsroom</a>.</p>",
+                  "score": 0.03571428571428571
+                }
+              },
+              {
+                "id": "aca62d9a89bf0cb692611211d873c19e12d59fc3:doc",
+                "title": "Hybrid Bonding, Advanced Substrates, Failure Mechanisms, and Thermal Management for Chiplets and Heterogeneous Integration",
+                "text": "If disposing of this product, please recycle the paper.",
+                "source": "openalex",
+                "source_type": "paper",
+                "domain": "",
+                "company": "",
+                "year": 2025,
+                "raw_score": 0.03571428571428571,
+                "evidence_score": 0.7259999999999999,
+                "reasons": [
+                  "tier=2",
+                  "freshness=1.00",
+                  "domain=weak",
+                  "company_match=0.40"
+                ],
+                "payload": {
+                  "id": "aca62d9a89bf0cb692611211d873c19e12d59fc3:doc",
+                  "doc_uid": "aca62d9a89bf0cb692611211d873c19e12d59fc3",
+                  "chunk_index": 0,
+                  "source": "openalex",
+                  "source_type": "paper",
+                  "title": "Hybrid Bonding, Advanced Substrates, Failure Mechanisms, and Thermal Management for Chiplets and Heterogeneous Integration",
+                  "year": 2025,
+                  "company": "",
+                  "domain": "",
+                  "tags": [
+                    "openalex",
+                    "oa_hybrid_bonding",
+                    "wafer_bonding",
+                    "hybrid_bonding",
+                    "chiplet"
+                  ],
+                  "text": "If disposing of this product, please recycle the paper.",
+                  "score": 0.03571428571428571
+                }
+              },
+              {
+                "id": "6f997678d64b0f04c1ec48c9ab33458e80c20f79:0",
+                "title": "See share buyback press releases",
+                "text": "See share buyback press releases\n\nSee share buyback press releases",
+                "source": "asml_press_releases",
+                "source_type": "company_official",
+                "domain": "general",
+                "company": "ASML",
+                "year": 0,
+                "raw_score": 0.047619047619047616,
+                "evidence_score": 0.6974999999999999,
+                "reasons": [
+                  "tier=1",
+                  "freshness=0.45",
+                  "domain=general",
+                  "company_match=0.40"
+                ],
+                "payload": {
+                  "id": "6f997678d64b0f04c1ec48c9ab33458e80c20f79:0",
+                  "doc_uid": "6f997678d64b0f04c1ec48c9ab33458e80c20f79",
+                  "chunk_index": 0,
+                  "source": "asml_press_releases",
+                  "source_type": "company_official",
+                  "title": "See share buyback press releases",
+                  "year": 0,
+                  "company": "ASML",
+                  "domain": "general",
+                  "tags": [
+                    "ASML",
+                    "asml",
+                    "equipment",
+                    "general",
+                    "lithography",
+                    "official"
+                  ],
+                  "text": "See share buyback press releases\n\nSee share buyback press releases",
+                  "score": 0.047619047619047616
+                }
+              }
+            ],
+            "queries": [
+              "CXL과 PIM 메모리 확장성",
+              "CXL과 PIM 메모리 확장성 official company investor relations",
+              "CXL과 PIM 메모리 확장성 paper standard roadmap"
+            ],
+            "playbook": {
+              "evidence_priority": [
+                "official_ir",
+                "official_press_release",
+                "standard",
+                "earnings",
+                "paper",
+                "blog",
+                "news"
+              ],
+              "event_examples": [
+                {
+                  "event": "미국, 추가 AI칩 대중 수출통제 발표",
+                  "impact": [
+                    {
+                      "NVIDIA": "down"
+                    },
+                    {
+                      "AMD": "down"
+                    },
+                    {
+                      "TSMC": "down"
+                    },
+                    {
+                      "Samsung": "neutral_to_down"
+                    },
+                    {
+                      "SK hynix": "neutral_to_down"
+                    }
+                  ]
+                },
+                {
+                  "event": "TSMC 월간 매출 MoM +15% 서프라이즈",
+                  "impact": [
+                    {
+                      "TSMC": "up"
+                    },
+                    {
+                      "ASML": "up"
+                    },
+                    {
+                      "AMAT": "up"
+                    },
+                    {
+                      "Lam Research": "up"
+                    },
+                    {
+                      "Samsung": "relative_weakness"
+                    }
+                  ]
+                },
+                {
+                  "event": "SK하이닉스, HBM4 양산 조기 선언",
+                  "impact": [
+                    {
+                      "SK hynix": "up"
+                    },
+                    {
+                      "NVIDIA": "up"
+                    },
+                    {
+                      "Micron": "down"
+                    },
+                    {
+                      "CoWoS ecosystem": "up"
+                    }
+                  ]
+                },
+                {
+                  "event": "EUV High-NA 장비 양산 출하 시작",
+                  "impact": [
+                    {
+                      "ASML": "up"
+                    },
+                    {
+                      "TSMC": "up"
+                    },
+                    {
+                      "Samsung": "mixed"
+                    },
+                    {
+                      "AMAT": "neutral_to_up"
+                    }
+                  ]
+                },
+                {
+                  "event": "DRAM 고정거래가 전분기 대비 10% 상승",
+                  "impact": [
+                    {
+                      "Samsung": "up"
+                    },
+                    {
+                      "SK hynix": "up"
+                    },
+                    {
+                      "Micron": "up"
+                    },
+                    {
+                      "PC/OEM": "down"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "delta": {
+        "total": 0.054,
+        "grade": "B -> A",
+        "company_score": -0.5,
+        "term_score": 0.333,
+        "evidence_score": 0.25
+      }
+    },
+    {
+      "id": "sic_gan_power",
+      "difficulty": "medium",
+      "question": "SiC와 GaN은 전력 반도체에서 얼마나 오래 중요할까?",
+      "expected": {
+        "longevity_dominant": "5y",
+        "bottleneck_importance": "medium",
+        "expected_beneficiaries": [
+          "AMAT"
+        ],
+        "required_terms": [
+          "sic",
+          "gan",
+          "power"
+        ]
+      },
+      "baseline": {
+        "score": {
+          "longevity": "3y",
+          "bottleneck": "high",
+          "grade": "B",
+          "company_codes": [
+            "AMAT",
+            "TSM",
+            "amat",
+            "tsmc"
+          ],
+          "term_hits": {
+            "sic": true,
+            "gan": true,
+            "power": false
+          },
+          "company_score": 1.0,
+          "term_score": 0.667,
+          "longevity_score": 0.0,
+          "bottleneck_score": 0.0,
+          "evidence_score": 0.75,
+          "source_diversity": 0.0,
+          "total": 0.446
+        },
+        "raw": {
+          "longevity": {
+            "1y": "high",
+            "3y": "high",
+            "5y": "medium",
+            "10y": "medium",
+            "dominant_horizon": "3y",
+            "reason": "SiC와 GaN 전력 반도체는 전기차, 재생 에너지 및 고효율 전력 변환 장치에서의 수요 증가로 인해 단기적으로는 높은 수요가 예상되며, 3년 내에 지속적인 성장이 예상된다. 그러나 5년 이상에서는 대체 기술인 실리콘 기반 반도체의 발전과 함께 경쟁이 심화될 가능성이 있다."
+          },
+          "bottleneck": {
+            "is_bottleneck": true,
+            "importance": "high",
+            "substitutability": "hard",
+            "supply_constraint": "high",
+            "reason": "SiC와 GaN의 생산 공정은 복잡하고 고도의 기술력을 요구하며, 현재 공급망에서의 리드타임과 수율 문제가 발생하고 있다. 이는 산업 전체의 전력 반도체 성능과 원가에 큰 영향을 미칠 수 있다."
+          },
+          "company_impact": [
+            {
+              "company": "AMAT",
+              "code": "AMAT",
+              "stance": "benefit",
+              "confidence": 0.8,
+              "reason": "AMAT는 SiC 및 GaN 제조 공정에 필요한 장비를 공급하고 있으며, 이 기술의 수요 증가로 인해 매출 증가가 예상된다."
+            },
+            {
+              "company": "TSMC",
+              "code": "TSM",
+              "stance": "neutral",
+              "confidence": 0.6,
+              "reason": "TSMC는 SiC 및 GaN 기술을 활용한 제품을 생산하고 있지만, 이 기술의 발전이 기존 실리콘 기반 제품과의 경쟁을 초래할 수 있어 중립적인 입장이다."
+            }
+          ],
+          "evidence_quality": {
+            "grade": "B",
+            "reason": "공식 자료와 산업 보고서에서 SiC와 GaN의 수요 증가 및 공급 문제에 대한 언급이 있으며, 여러 연구 결과가 이를 뒷받침하고 있다."
+          },
+          "overall_thesis": "SiC와 GaN 전력 반도체는 단기적으로 높은 수요가 예상되지만, 공급 제약과 대체 기술의 발전으로 인해 중장기적으로는 불확실성이 존재한다.",
+          "red_flags": [
+            "대체 기술의 빠른 발전",
+            "공급망의 불안정성"
+          ],
+          "missing_data": [
+            "구체적인 시장 성장률",
+            "주요 제조업체의 생산 능력"
+          ],
+          "recommendation": "watchlist"
+        }
+      },
+      "rag": {
+        "score": {
+          "longevity": "3y",
+          "bottleneck": "high",
+          "grade": "A",
+          "company_codes": [
+            "000660",
+            "005930",
+            "samsung",
+            "sk hynix"
+          ],
+          "term_hits": {
+            "sic": true,
+            "gan": true,
+            "power": true
+          },
+          "company_score": 0.0,
+          "term_score": 1.0,
+          "longevity_score": 0.0,
+          "bottleneck_score": 0.0,
+          "evidence_score": 1.0,
+          "source_diversity": 1.0,
+          "total": 0.4
+        },
+        "raw": {
+          "topic": "SiC와 GaN 전력 반도체",
+          "company_hint": "AMAT",
+          "domain_hint": "power",
+          "longevity": {
+            "1y": "high",
+            "3y": "high",
+            "5y": "medium",
+            "10y": "medium",
+            "dominant_horizon": "3y",
+            "reason": "The demand for SiC and GaN power semiconductors is expected to grow significantly due to their applications in AI and high-performance computing, which are projected to sustain demand over the next few years."
+          },
+          "bottleneck": {
+            "is_bottleneck": true,
+            "importance": "high",
+            "substitutability": "hard",
+            "supply_constraint": "high",
+            "reason": "The production of SiC and GaN semiconductors faces supply constraints due to limited manufacturing capabilities and the complexity of the materials, making them a critical bottleneck in the power semiconductor industry."
+          },
+          "company_impact": [
+            {
+              "company": "Samsung",
+              "code": "005930",
+              "stance": "benefit",
+              "confidence": 0.8,
+              "reason": "Samsung's investment in advanced semiconductor technologies positions it to benefit from the growing demand for SiC and GaN in AI and power applications."
+            },
+            {
+              "company": "SK Hynix",
+              "code": "000660",
+              "stance": "benefit",
+              "confidence": 0.8,
+              "reason": "SK Hynix's focus on AI memory technologies aligns with the increasing need for efficient power semiconductors, providing a competitive advantage."
+            }
+          ],
+          "evidence_quality": {
+            "grade": "A",
+            "count": 8,
+            "tier1_count": 5,
+            "tier12_count": 8,
+            "source_count": 4,
+            "avg_evidence_score": 0.757,
+            "sources": [
+              "asml_press_releases",
+              "openalex",
+              "samsung_global_newsroom",
+              "skhynix_newsroom"
+            ],
+            "domains": [
+              "ai_demand",
+              "general",
+              "hbm",
+              "memory"
+            ],
+            "reason": "The evidence is derived from multiple high-quality sources, including official press releases and industry reports, indicating a strong foundation for the assessment."
+          },
+          "overall_thesis": "SiC and GaN power semiconductors are poised for significant growth driven by demand in AI and high-performance applications, though supply constraints present a critical bottleneck.",
+          "red_flags": [],
+          "missing_data": [],
+          "recommendation": "investable",
+          "confidence": 0.757,
+          "evidence_pack": {
+            "coverage": {
+              "count": 8,
+              "tier1_count": 5,
+              "tier12_count": 8,
+              "domains": [
+                "ai_demand",
+                "general",
+                "hbm",
+                "memory"
+              ],
+              "sources": [
+                "asml_press_releases",
+                "openalex",
+                "samsung_global_newsroom",
+                "skhynix_newsroom"
+              ],
+              "avg_evidence_score": 0.7569374999999999
+            },
+            "items": [
+              {
+                "id": "8fa6b4143847e7e799810af43bcb2cb2e32580ac:0",
+                "title": "Samsung Solve for Tomorrow Wins Merit Award at 2026 Global Views ESG Corporate Sustainability Awards",
+                "text": "Samsung Solve for Tomorrow Wins Merit Award at 2026 Global Views ESG Corporate Sustainability Awards\n\nSamsung Solve for Tomorrow was recently honored with the Merit Award in the Education Promotion category at the 2026 Global Views ESG Corporate Sustainability Awards. This recognition comes after the program has earned widespread acclaim from educators and students alike for its robust training framework since its 2020 debut in Taiwan. Organized by Global Views […]",
+                "source": "samsung_global_newsroom",
+                "source_type": "company_official",
+                "domain": "ai_demand",
+                "company": "005930",
+                "year": 2026,
+                "raw_score": 0.23437251154642458,
+                "evidence_score": 0.7799999999999999,
+                "reasons": [
+                  "tier=1",
+                  "freshness=1.00",
+                  "domain=ai_demand",
+                  "company_match=0.40"
+                ],
+                "payload": {
+                  "id": "8fa6b4143847e7e799810af43bcb2cb2e32580ac:0",
+                  "doc_uid": "8fa6b4143847e7e799810af43bcb2cb2e32580ac",
+                  "chunk_index": 0,
+                  "source": "samsung_global_newsroom",
+                  "source_type": "company_official",
+                  "title": "Samsung Solve for Tomorrow Wins Merit Award at 2026 Global Views ESG Corporate Sustainability Awards",
+                  "year": 2026,
+                  "company": "005930",
+                  "domain": "ai_demand",
+                  "tags": [
+                    "005930",
+                    "ai_demand",
+                    "ir",
+                    "official",
+                    "press_release",
+                    "samsung"
+                  ],
+                  "text": "Samsung Solve for Tomorrow Wins Merit Award at 2026 Global Views ESG Corporate Sustainability Awards\n\nSamsung Solve for Tomorrow was recently honored with the Merit Award in the Education Promotion category at the 2026 Global Views ESG Corporate Sustainability Awards. This recognition comes after the program has earned widespread acclaim from educators and students alike for its robust training framework since its 2020 debut in Taiwan. Organized by Global Views […]",
+                  "score": 0.23437251154642458
+                }
+              },
+              {
+                "id": "e91bde96e5078ef706e1cac9293f399a1d136324:0",
+                "title": "SK hynix received 2026 IEEE Corporate Innovation Award for Driving AI Computing Expansion with HBM",
+                "text": "SK hynix received 2026 IEEE Corporate Innovation Award for Driving AI Computing Expansion with HBM\n\n<p>News Highlights Seoul, April 26, 2026&#160;– SK hynix Inc. (or “the company”,&#160;www.skhynix.com) announced today that it received the Corporate Innovation Award at the &#8216;2026 IEEE1&#160;Honors Ceremony&#8217; held in New York on the 24th (local time). &#160;1IEEE: The Institute of Electrical and Electronics Engineers IEEE is the world’s largest technical professional organization dedicated to advancing technology [&#8230;]</p>\n<p>The post <a href=\"https://news.skhynix.com/2026-ieee-awards-recipient/\">SK hynix received 2026 IEEE Corporate Innovation Award for Driving AI Computing Expansion with HBM</a> first appeared on <a href=\"https://news.skhynix.com\">SK hynix Newsroom</a>.</p>",
+                "source": "skhynix_newsroom",
+                "source_type": "company_official",
+                "domain": "hbm",
+                "company": "000660",
+                "year": 2026,
+                "raw_score": 0.2278197165153687,
+                "evidence_score": 0.7799999999999999,
+                "reasons": [
+                  "tier=1",
+                  "freshness=1.00",
+                  "domain=hbm",
+                  "company_match=0.40"
+                ],
+                "payload": {
+                  "id": "e91bde96e5078ef706e1cac9293f399a1d136324:0",
+                  "doc_uid": "e91bde96e5078ef706e1cac9293f399a1d136324",
+                  "chunk_index": 0,
+                  "source": "skhynix_newsroom",
+                  "source_type": "company_official",
+                  "title": "SK hynix received 2026 IEEE Corporate Innovation Award for Driving AI Computing Expansion with HBM",
+                  "year": 2026,
+                  "company": "000660",
+                  "domain": "hbm",
+                  "tags": [
+                    "000660",
+                    "ai_demand",
+                    "hbm",
+                    "ir",
+                    "memory",
+                    "official",
+                    "press_release",
+                    "sk_hynix"
+                  ],
+                  "text": "SK hynix received 2026 IEEE Corporate Innovation Award for Driving AI Computing Expansion with HBM\n\n<p>News Highlights Seoul, April 26, 2026&#160;– SK hynix Inc. (or “the company”,&#160;www.skhynix.com) announced today that it received the Corporate Innovation Award at the &#8216;2026 IEEE1&#160;Honors Ceremony&#8217; held in New York on the 24th (local time). &#160;1IEEE: The Institute of Electrical and Electronics Engineers IEEE is the world’s largest technical professional organization dedicated to advancing technology [&#8230;]</p>\n<p>The post <a href=\"https://news.skhynix.com/2026-ieee-awards-recipient/\">SK hynix received 2026 IEEE Corporate Innovation Award for Driving AI Computing Expansion with HBM</a> first appeared on <a href=\"https://news.skhynix.com\">SK hynix Newsroom</a>.</p>",
+                  "score": 0.2278197165153687
+                }
+              },
+              {
+                "id": "dac5d19048064a2549145a203823d430ef75925f:0",
+                "title": "Samsung Wallet’s New ‘Trips’ Feature Enables Seamless Journeys for Global Travelers",
+                "text": "Samsung Wallet’s New ‘Trips’ Feature Enables Seamless Journeys for Global Travelers\n\nSamsung Electronics today announced the launch of “Trips,” a new feature in Samsung Wallet designed to help Samsung Galaxy users organize and manage travel-related experiences in one place. Created for travelers who want a seamless experience and faster access to important details during a journey, Trips brings eligible travel items together in Samsung Wallet to offer key travel […]",
+                "source": "samsung_global_newsroom",
+                "source_type": "company_official",
+                "domain": "ai_demand",
+                "company": "005930",
+                "year": 2026,
+                "raw_score": 0.22529285099052543,
+                "evidence_score": 0.7799999999999999,
+                "reasons": [
+                  "tier=1",
+                  "freshness=1.00",
+                  "domain=ai_demand",
+                  "company_match=0.40"
+                ],
+                "payload": {
+                  "id": "dac5d19048064a2549145a203823d430ef75925f:0",
+                  "doc_uid": "dac5d19048064a2549145a203823d430ef75925f",
+                  "chunk_index": 0,
+                  "source": "samsung_global_newsroom",
+                  "source_type": "company_official",
+                  "title": "Samsung Wallet’s New ‘Trips’ Feature Enables Seamless Journeys for Global Travelers",
+                  "year": 2026,
+                  "company": "005930",
+                  "domain": "ai_demand",
+                  "tags": [
+                    "005930",
+                    "ai_demand",
+                    "ir",
+                    "official",
+                    "press_release",
+                    "samsung"
+                  ],
+                  "text": "Samsung Wallet’s New ‘Trips’ Feature Enables Seamless Journeys for Global Travelers\n\nSamsung Electronics today announced the launch of “Trips,” a new feature in Samsung Wallet designed to help Samsung Galaxy users organize and manage travel-related experiences in one place. Created for travelers who want a seamless experience and faster access to important details during a journey, Trips brings eligible travel items together in Samsung Wallet to offer key travel […]",
+                  "score": 0.22529285099052543
+                }
+              },
+              {
+                "id": "2065803bec299b8564fc16e9706506df17dc7a16:0",
+                "title": "SK hynix Honored with Gold Tower Order and Presidential Citation at the 61st Invention Day Ceremony, Proving AI Memory Technological Leadership",
+                "text": "SK hynix Honored with Gold Tower Order and Presidential Citation at the 61st Invention Day Ceremony, Proving AI Memory Technological Leadership\n\n<p>The 61st Invention Day ceremony SK hynix announced that Ahn Hyun, Chief Development Officer (CDO), and Hyungjin Choi, Technical Leader of NAND Development received the Gold Tower Order of Industrial Service Merit and the Presidential Citation, respectively, at the 61st Invention Day ceremony, held on May 19 at COEX Magok Le West Hall in Gangseo-gu, [&#8230;]</p>\n<p>The post <a href=\"https://news.skhynix.com/invention-day-2026/\">SK hynix Honored with Gold Tower Order and Presidential Citation at the 61st Invention Day Ceremony, Proving AI Memory Technological Leadership</a> first appeared on <a href=\"https://news.skhynix.com\">SK hynix Newsroom</a>.</p>",
+                "source": "skhynix_newsroom",
+                "source_type": "company_official",
+                "domain": "memory",
+                "company": "000660",
+                "year": 2026,
+                "raw_score": 0.21915279362087872,
+                "evidence_score": 0.7799999999999999,
+                "reasons": [
+                  "tier=1",
+                  "freshness=1.00",
+                  "domain=memory",
+                  "company_match=0.40"
+                ],
+                "payload": {
+                  "id": "2065803bec299b8564fc16e9706506df17dc7a16:0",
+                  "doc_uid": "2065803bec299b8564fc16e9706506df17dc7a16",
+                  "chunk_index": 0,
+                  "source": "skhynix_newsroom",
+                  "source_type": "company_official",
+                  "title": "SK hynix Honored with Gold Tower Order and Presidential Citation at the 61st Invention Day Ceremony, Proving AI Memory Technological Leadership",
+                  "year": 2026,
+                  "company": "000660",
+                  "domain": "memory",
+                  "tags": [
+                    "000660",
+                    "ai_demand",
+                    "ir",
+                    "memory",
+                    "official",
+                    "press_release",
+                    "sk_hynix"
+                  ],
+                  "text": "SK hynix Honored with Gold Tower Order and Presidential Citation at the 61st Invention Day Ceremony, Proving AI Memory Technological Leadership\n\n<p>The 61st Invention Day ceremony SK hynix announced that Ahn Hyun, Chief Development Officer (CDO), and Hyungjin Choi, Technical Leader of NAND Development received the Gold Tower Order of Industrial Service Merit and the Presidential Citation, respectively, at the 61st Invention Day ceremony, held on May 19 at COEX Magok Le West Hall in Gangseo-gu, [&#8230;]</p>\n<p>The post <a href=\"https://news.skhynix.com/invention-day-2026/\">SK hynix Honored with Gold Tower Order and Presidential Citation at the 61st Invention Day Ceremony, Proving AI Memory Technological Leadership</a> first appeared on <a href=\"https://news.skhynix.com\">SK hynix Newsroom</a>.</p>",
+                  "score": 0.21915279362087872
+                }
+              },
+              {
+                "id": "988751e352a132a84f83b4e757c18a8673a4c2a0:0",
+                "title": "2022 Roadmap on integrated quantum photonics",
+                "text": "2022 Roadmap on integrated quantum photonics\n\nIntegrated photonics is at the heart of many classical technologies, from optical communications to biosensors, LIDAR, and data center fiber interconnects. There is strong evidence that these integrated technologies will play a key role in quantum systems as they grow from few-qubit prototypes to tens of thousands of qubits. The underlying laser and optical quantum technologies, with the required functionality and performance, can only be realized through the integration of these components onto quantum photonic integrated circuits (QPICs) with accompanying electronics. In the last decade, remarkable advances in quantum photonic integration and a dramatic reduction in optical losses have enabled benchtop experiments to be scaled down to prototype chips with improvements in efficiency, robustness, and key performance metrics. The reduction in size, weight, power, and improvement in stability that will be enabled by QPICs will play a key role in increasing the degree of complexity and scale in quantum demonstrations. In the next decade, with sustained research, development, and investment in the quantum photonic ecosystem (i.e. PIC-based",
+                "source": "openalex",
+                "source_type": "paper",
+                "domain": "",
+                "company": "",
+                "year": 2022,
+                "raw_score": 0.05634920634920634,
+                "evidence_score": 0.7559999999999999,
+                "reasons": [
+                  "tier=2",
+                  "freshness=0.60",
+                  "domain=weak",
+                  "company_match=1.00"
+                ],
+                "payload": {
+                  "id": "988751e352a132a84f83b4e757c18a8673a4c2a0:0",
+                  "doc_uid": "988751e352a132a84f83b4e757c18a8673a4c2a0",
+                  "chunk_index": 0,
+                  "source": "openalex",
+                  "source_type": "paper",
+                  "title": "2022 Roadmap on integrated quantum photonics",
+                  "year": 2022,
+                  "company": "",
+                  "domain": "",
+                  "tags": [
+                    "openalex",
+                    "oa_tc_bonding",
+                    "tc_bonding",
+                    "packaging",
+                    "flip_chip"
+                  ],
+                  "text": "2022 Roadmap on integrated quantum photonics\n\nIntegrated photonics is at the heart of many classical technologies, from optical communications to biosensors, LIDAR, and data center fiber interconnects. There is strong evidence that these integrated technologies will play a key role in quantum systems as they grow from few-qubit prototypes to tens of thousands of qubits. The underlying laser and optical quantum technologies, with the required functionality and performance, can only be realized through the integration of these components onto quantum photonic integrated circuits (QPICs) with accompanying electronics. In the last decade, remarkable advances in quantum photonic integration and a dramatic reduction in optical losses have enabled benchtop experiments to be scaled down to prototype chips with improvements in efficiency, robustness, and key performance metrics. The reduction in size, weight, power, and improvement in stability that will be enabled by QPICs will play a key role in increasing the degree of complexity and scale in quantum demonstrations. In the next decade, with sustained research, development, and investment in the quantum photonic ecosystem (i.e. PIC-based",
+                  "score": 0.05634920634920634
+                }
+              },
+              {
+                "id": "370044a03216bd4d80d1599d4d5d8b1d9f99e139:doc",
+                "title": "Recent advances in ultraviolet nanophotonics: from plasmonics and metamaterials to metasurfaces",
+                "text": "Abstract Nanophotonic devices, composed of metals, dielectrics, or semiconductors, enable precise and high‐spatial‐resolution manipulation of electromagnetic waves by leveraging diverse light–matter interaction mechanisms at subwavelength length scales. Their compact size, light weight, versatile functionality and unprecedented performance are rapidly revolutionizing how optical devices and systems are constructed across the infrared, visible, and ultraviolet spectra. Here, we review recent advances and future opportunities of nanophotonic elements operating in the ultraviolet spectral region, which include plasmonic devices, optical metamaterials, and optical metasurfaces. We discuss their working principles, material platforms, fabrication, and characterization techniques, followed by representative device applications across various interdisciplinary areas such as imaging, sensing and spectroscopy. We conclude this review by elaborating on future opportunities and challenges for ultraviolet nanophotonic devices.",
+                "source": "openalex",
+                "source_type": "paper",
+                "domain": "",
+                "company": "",
+                "year": 2021,
+                "raw_score": 0.043478260869565216,
+                "evidence_score": 0.7559999999999999,
+                "reasons": [
+                  "tier=2",
+                  "freshness=0.60",
+                  "domain=weak",
+                  "company_match=1.00"
+                ],
+                "payload": {
+                  "id": "370044a03216bd4d80d1599d4d5d8b1d9f99e139:doc",
+                  "doc_uid": "370044a03216bd4d80d1599d4d5d8b1d9f99e139",
+                  "chunk_index": 0,
+                  "source": "openalex",
+                  "source_type": "paper",
+                  "title": "Recent advances in ultraviolet nanophotonics: from plasmonics and metamaterials to metasurfaces",
+                  "year": 2021,
+                  "company": "",
+                  "domain": "",
+                  "tags": [
+                    "openalex",
+                    "patterning",
+                    "euv",
+                    "lithography",
+                    "oa_euv_litho"
+                  ],
+                  "text": "Abstract Nanophotonic devices, composed of metals, dielectrics, or semiconductors, enable precise and high‐spatial‐resolution manipulation of electromagnetic waves by leveraging diverse light–matter interaction mechanisms at subwavelength length scales. Their compact size, light weight, versatile functionality and unprecedented performance are rapidly revolutionizing how optical devices and systems are constructed across the infrared, visible, and ultraviolet spectra. Here, we review recent advances and future opportunities of nanophotonic elements operating in the ultraviolet spectral region, which include plasmonic devices, optical metamaterials, and optical metasurfaces. We discuss their working principles, material platforms, fabrication, and characterization techniques, followed by representative device applications across various interdisciplinary areas such as imaging, sensing and spectroscopy. We conclude this review by elaborating on future opportunities and challenges for ultraviolet nanophotonic devices.",
+                  "score": 0.043478260869565216
+                }
+              },
+              {
+                "id": "ec0fb9685efffc8e50b37c599c6a60753693c11a:doc",
+                "title": "Future Technology Outlook on DRAM/Flash Memories for More Moore and More Than Moore",
+                "text": "As memory devices continue to scale down below the 10nm node, approaching an atomic scale, they encounter challenges in both device physics limits and in structure patterning. This poses a significant huddle for the semiconductor industry as it transitions into the era of AI and data-centric computing. In order to sustain scaling technology that has been crucial for the semiconductor industry’s growth, it is imperative to embrace innovative cell structures such as 3dimensional (3D) vertical cell stacking, as well as explore new materials beyond silicon channels (e.g., oxide semiconductors, ferroelectric materials), and 3D heterogeneous integration facilitated by wafer bonding technology must be adopted. This paper aims to investigate the future technological directions and potential candidates for DRAM and NAND Flash memory, in order to support the demands of the emerging AI industry.",
+                "source": "openalex",
+                "source_type": "paper",
+                "domain": "",
+                "company": "",
+                "year": 2025,
+                "raw_score": 0.048484848484848485,
+                "evidence_score": 0.7259999999999999,
+                "reasons": [
+                  "tier=2",
+                  "freshness=1.00",
+                  "domain=weak",
+                  "company_match=0.40"
+                ],
+                "payload": {
+                  "id": "ec0fb9685efffc8e50b37c599c6a60753693c11a:doc",
+                  "doc_uid": "ec0fb9685efffc8e50b37c599c6a60753693c11a",
+                  "chunk_index": 0,
+                  "source": "openalex",
+                  "source_type": "paper",
+                  "title": "Future Technology Outlook on DRAM/Flash Memories for More Moore and More Than Moore",
+                  "year": 2025,
+                  "company": "",
+                  "domain": "",
+                  "tags": [
+                    "openalex",
+                    "3d_nand",
+                    "nand",
+                    "oa_3d_nand",
+                    "flash_memory"
+                  ],
+                  "text": "As memory devices continue to scale down below the 10nm node, approaching an atomic scale, they encounter challenges in both device physics limits and in structure patterning. This poses a significant huddle for the semiconductor industry as it transitions into the era of AI and data-centric computing. In order to sustain scaling technology that has been crucial for the semiconductor industry’s growth, it is imperative to embrace innovative cell structures such as 3dimensional (3D) vertical cell stacking, as well as explore new materials beyond silicon channels (e.g., oxide semiconductors, ferroelectric materials), and 3D heterogeneous integration facilitated by wafer bonding technology must be adopted. This paper aims to investigate the future technological directions and potential candidates for DRAM and NAND Flash memory, in order to support the demands of the emerging AI industry.",
+                  "score": 0.048484848484848485
+                }
+              },
+              {
+                "id": "6f997678d64b0f04c1ec48c9ab33458e80c20f79:0",
+                "title": "See share buyback press releases",
+                "text": "See share buyback press releases\n\nSee share buyback press releases",
+                "source": "asml_press_releases",
+                "source_type": "company_official",
+                "domain": "general",
+                "company": "ASML",
+                "year": 0,
+                "raw_score": 0.043478260869565216,
+                "evidence_score": 0.6974999999999999,
+                "reasons": [
+                  "tier=1",
+                  "freshness=0.45",
+                  "domain=general",
+                  "company_match=0.40"
+                ],
+                "payload": {
+                  "id": "6f997678d64b0f04c1ec48c9ab33458e80c20f79:0",
+                  "doc_uid": "6f997678d64b0f04c1ec48c9ab33458e80c20f79",
+                  "chunk_index": 0,
+                  "source": "asml_press_releases",
+                  "source_type": "company_official",
+                  "title": "See share buyback press releases",
+                  "year": 0,
+                  "company": "ASML",
+                  "domain": "general",
+                  "tags": [
+                    "ASML",
+                    "asml",
+                    "equipment",
+                    "general",
+                    "lithography",
+                    "official"
+                  ],
+                  "text": "See share buyback press releases\n\nSee share buyback press releases",
+                  "score": 0.043478260869565216
+                }
+              }
+            ],
+            "queries": [
+              "SiC와 GaN 전력 반도체",
+              "SiC와 GaN 전력 반도체 official company investor relations",
+              "SiC와 GaN 전력 반도체 paper standard roadmap"
+            ],
+            "playbook": {
+              "evidence_priority": [
+                "official_ir",
+                "official_press_release",
+                "standard",
+                "earnings",
+                "paper",
+                "blog",
+                "news"
+              ],
+              "event_examples": [
+                {
+                  "event": "미국, 추가 AI칩 대중 수출통제 발표",
+                  "impact": [
+                    {
+                      "NVIDIA": "down"
+                    },
+                    {
+                      "AMD": "down"
+                    },
+                    {
+                      "TSMC": "down"
+                    },
+                    {
+                      "Samsung": "neutral_to_down"
+                    },
+                    {
+                      "SK hynix": "neutral_to_down"
+                    }
+                  ]
+                },
+                {
+                  "event": "TSMC 월간 매출 MoM +15% 서프라이즈",
+                  "impact": [
+                    {
+                      "TSMC": "up"
+                    },
+                    {
+                      "ASML": "up"
+                    },
+                    {
+                      "AMAT": "up"
+                    },
+                    {
+                      "Lam Research": "up"
+                    },
+                    {
+                      "Samsung": "relative_weakness"
+                    }
+                  ]
+                },
+                {
+                  "event": "SK하이닉스, HBM4 양산 조기 선언",
+                  "impact": [
+                    {
+                      "SK hynix": "up"
+                    },
+                    {
+                      "NVIDIA": "up"
+                    },
+                    {
+                      "Micron": "down"
+                    },
+                    {
+                      "CoWoS ecosystem": "up"
+                    }
+                  ]
+                },
+                {
+                  "event": "EUV High-NA 장비 양산 출하 시작",
+                  "impact": [
+                    {
+                      "ASML": "up"
+                    },
+                    {
+                      "TSMC": "up"
+                    },
+                    {
+                      "Samsung": "mixed"
+                    },
+                    {
+                      "AMAT": "neutral_to_up"
+                    }
+                  ]
+                },
+                {
+                  "event": "DRAM 고정거래가 전분기 대비 10% 상승",
+                  "impact": [
+                    {
+                      "Samsung": "up"
+                    },
+                    {
+                      "SK hynix": "up"
+                    },
+                    {
+                      "Micron": "up"
+                    },
+                    {
+                      "PC/OEM": "down"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "delta": {
+        "total": -0.046,
+        "grade": "B -> A",
+        "company_score": -1.0,
+        "term_score": 0.333,
+        "evidence_score": 0.25
+      }
+    }
+  ]
+}

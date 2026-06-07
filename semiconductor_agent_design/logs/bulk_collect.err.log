@@ -1,0 +1,513 @@
+2026-05-30 06:02:24,807 | INFO | run_tech_once | Tech collection step start: company_official_sources
+2026-05-30 06:02:24,815 | INFO | app.collectors.company_official_collector | === company official collector START ===
+2026-05-30 06:02:26,414 | INFO | httpx | HTTP Request: GET https://news.samsung.com/global/feed "HTTP/1.1 200 OK"
+2026-05-30 06:06:31,721 | INFO | app.collectors.company_official_collector | Official RSS done | source=samsung_global_newsroom entries=50 inserted=0
+2026-05-30 06:06:33,889 | INFO | httpx | HTTP Request: GET https://news.skhynix.com/feed/ "HTTP/1.1 502 Bad Gateway"
+2026-05-30 06:06:33,893 | WARNING | app.collectors.company_official_collector | Official RSS fetch failed source=skhynix_newsroom error=Server error '502 Bad Gateway' for url 'https://news.skhynix.com/feed/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-05-30 06:06:35,475 | INFO | httpx | HTTP Request: GET https://investor.nvidia.com/investor-resources/rss/default.aspx "HTTP/1.1 403 Forbidden"
+2026-05-30 06:06:35,475 | WARNING | app.collectors.company_official_collector | Official RSS fetch failed source=nvidia_ir_rss error=Client error '403 Forbidden' for url 'https://investor.nvidia.com/investor-resources/rss/default.aspx'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+2026-05-30 06:06:38,483 | INFO | httpx | HTTP Request: GET https://www.nvidia.com/en-us/about-nvidia/rss/ "HTTP/1.1 200 OK"
+2026-05-30 06:06:39,251 | INFO | app.collectors.company_official_collector | Official RSS done | source=nvidia_newsroom entries=0 inserted=0
+2026-05-30 06:07:00,959 | WARNING | app.collectors.company_official_collector | Official RSS fetch failed source=micron_ir error=The read operation timed out
+2026-05-30 06:07:22,248 | WARNING | app.collectors.company_official_collector | Official RSS fetch failed source=applied_materials_ir error=The read operation timed out
+2026-05-30 06:07:24,959 | INFO | httpx | HTTP Request: GET https://investor.tsmc.com/english/monthly-revenue "HTTP/1.1 403 Forbidden"
+2026-05-30 06:07:24,962 | WARNING | app.collectors.company_official_collector | Official HTML fetch failed source=tsmc_monthly_revenue error=Client error '403 Forbidden' for url 'https://investor.tsmc.com/english/monthly-revenue'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+2026-05-30 06:07:27,103 | INFO | httpx | HTTP Request: GET https://www.asml.com/en/news/press-releases "HTTP/1.1 200 OK"
+2026-05-30 06:08:01,809 | INFO | app.collectors.company_official_collector | Official HTML done | source=asml_press_releases candidates=13 inserted=0
+2026-05-30 06:08:01,810 | INFO | app.collectors.company_official_collector | === company official collector DONE | inserted=0 ===
+2026-05-30 06:08:01,811 | INFO | run_tech_once | Tech collection step done: company_official_sources
+2026-05-30 06:08:01,812 | INFO | run_tech_once | Tech collection step start: rss_all_sources
+2026-05-30 06:08:01,812 | INFO | app.collectors.news_collector | RSS collect start | source=semiconductor_engineering url=https://semiengineering.com/feed
+2026-05-30 06:08:05,239 | INFO | app.collectors.news_collector | RSS parsed | source=semiconductor_engineering entries=10
+2026-05-30 06:08:24,764 | INFO | app.collectors.news_collector | RSS source done | source=semiconductor_engineering inserted=10
+2026-05-30 06:08:24,765 | INFO | app.collectors.news_collector | RSS collect start | source=eetimes url=https://www.eetimes.com/feed/
+2026-05-30 06:08:25,590 | INFO | app.collectors.news_collector | RSS parsed | source=eetimes entries=10
+2026-05-30 06:08:33,398 | INFO | app.collectors.news_collector | RSS source done | source=eetimes inserted=14
+2026-05-30 06:08:33,399 | INFO | app.collectors.news_collector | RSS collect start | source=ieee_spectrum url=https://spectrum.ieee.org/feeds/feed.rss
+2026-05-30 06:08:34,094 | INFO | app.collectors.news_collector | RSS parsed | source=ieee_spectrum entries=30
+2026-05-30 06:09:35,445 | INFO | app.collectors.news_collector | RSS source done | source=ieee_spectrum inserted=44
+2026-05-30 06:09:35,446 | INFO | app.collectors.news_collector | RSS collect done | source_type=rss_news inserted_total=44
+2026-05-30 06:09:35,447 | INFO | run_tech_once | Tech collection step done: rss_all_sources
+2026-05-30 06:09:35,447 | INFO | run_tech_once | Tech collection step start: tech_blogs
+2026-05-30 06:09:35,448 | INFO | app.collectors.news_collector | RSS collect start | source=chips_and_cheese url=https://chipsandcheese.substack.com/feed
+2026-05-30 06:09:37,424 | INFO | app.collectors.news_collector | RSS parsed | source=chips_and_cheese entries=20
+2026-05-30 06:09:50,991 | INFO | app.collectors.news_collector | RSS source done | source=chips_and_cheese inserted=7
+2026-05-30 06:09:50,992 | INFO | app.collectors.news_collector | RSS collect start | source=real_world_tech url=https://www.realworldtech.com/index.xml
+2026-05-30 06:09:51,629 | INFO | app.collectors.news_collector | RSS parsed | source=real_world_tech entries=0
+2026-05-30 06:09:51,630 | INFO | app.collectors.news_collector | RSS source done | source=real_world_tech inserted=7
+2026-05-30 06:09:51,630 | INFO | app.collectors.news_collector | RSS collect start | source=skhynix_newsroom url=https://news.skhynix.com/feed/
+2026-05-30 06:10:02,710 | INFO | app.collectors.news_collector | RSS parsed | source=skhynix_newsroom entries=9
+2026-05-30 06:10:12,662 | INFO | app.collectors.news_collector | RSS source done | source=skhynix_newsroom inserted=12
+2026-05-30 06:10:12,696 | INFO | app.collectors.news_collector | RSS collect done | source_type=tech_blog inserted_total=12
+2026-05-30 06:10:12,720 | INFO | run_tech_once | Tech collection step done: tech_blogs
+2026-05-30 06:10:12,742 | INFO | run_tech_once | Tech collection step start: arxiv_new_papers
+2026-05-30 06:10:12,831 | INFO | app.collectors.paper_collector | arXiv query start | id=dram_yield max_results=200
+2026-05-30 06:10:13,986 | INFO | httpx | HTTP Request: GET https://export.arxiv.org/api/query?search_query=%28all%3ADRAM%20OR%20all%3A%22dynamic%20random%20access%20memory%22%29%20AND%20%28all%3Ayield%20OR%20all%3A%22defect%20density%22%20OR%20all%3A%22process%20variation%22%20OR%20all%3A%22parametric%20yield%22%29%20AND%20%28all%3Asemiconductor%20OR%20all%3A%22memory%20fabrication%22%29&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending "HTTP/1.1 200 OK"
+2026-05-30 06:10:13,990 | INFO | app.collectors.paper_collector | arXiv query done | id=dram_yield fetched=0 upserted=0 rejected=0 year_rejected=0 year_min=2023 year_max=None
+2026-05-30 06:10:13,991 | INFO | app.collectors.paper_collector | arXiv query start | id=hbm_tsv_packaging max_results=200
+2026-05-30 06:10:14,983 | INFO | httpx | HTTP Request: GET https://export.arxiv.org/api/query?search_query=%28all%3AHBM%20OR%20all%3A%22high%20bandwidth%20memory%22%29%20AND%20%28all%3ATSV%20OR%20all%3A%22through-silicon%20via%22%20OR%20all%3A%223D%20stacking%22%29%20AND%20%28all%3Apackaging%20OR%20all%3Ainterconnect%20OR%20all%3Abonding%29&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending "HTTP/1.1 200 OK"
+2026-05-30 06:10:18,957 | INFO | app.collectors.paper_collector | paper rejected | query_id=hbm_tsv_packaging title=Monarch: A Durable Polymorphic Memory For Data Intensive Applications reason=year_out_of_range year=2021 min=2023 max=None
+2026-05-30 06:10:18,959 | INFO | app.collectors.paper_collector | paper rejected | query_id=hbm_tsv_packaging title=DSPatch: Dual Spatial Pattern Prefetcher reason=year_out_of_range year=2019 min=2023 max=None
+2026-05-30 06:10:18,959 | INFO | app.collectors.paper_collector | arXiv query done | id=hbm_tsv_packaging fetched=3 upserted=1 rejected=2 year_rejected=2 year_min=2023 year_max=None
+2026-05-30 06:10:18,960 | INFO | app.collectors.paper_collector | arXiv query start | id=nand_3d_vertical max_results=200
+2026-05-30 06:10:20,783 | INFO | httpx | HTTP Request: GET https://export.arxiv.org/api/query?search_query=%28all%3ANAND%20OR%20all%3A%223D%20NAND%22%20OR%20all%3A%22vertical%20memory%22%29%20AND%20%28all%3Aflash%20OR%20all%3Areliability%20OR%20all%3Aendurance%20OR%20all%3A%22retention%22%29%20AND%20%28all%3Asemiconductor%20OR%20all%3Afabrication%29&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending "HTTP/1.1 200 OK"
+2026-05-30 06:10:25,882 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2510.15275v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:10:27,007 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2510.15275v1 "HTTP/1.1 200 OK"
+2026-05-30 06:10:51,309 | INFO | app.collectors.paper_collector | arXiv PDF processed | doc_uid=a4b96f12a793152a34b6e52bb3f06900efbbc956 processed=1
+2026-05-30 06:10:57,145 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2503.17241v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:10:57,837 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2503.17241v1 "HTTP/1.1 200 OK"
+2026-05-30 06:11:32,116 | INFO | app.collectors.paper_collector | arXiv PDF processed | doc_uid=5d382e2a187dbba304783a5dd6fb552c3cb1f65c processed=2
+2026-05-30 06:11:38,159 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2407.07552v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:11:38,802 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2407.07552v1 "HTTP/1.1 200 OK"
+2026-05-30 06:12:10,159 | INFO | app.collectors.paper_collector | arXiv PDF processed | doc_uid=fba3aec654df94ab5cfbcfa652620c2e8105223e processed=3
+2026-05-30 06:12:17,211 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2406.19618v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:12:17,749 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2406.19618v1 "HTTP/1.1 200 OK"
+2026-05-30 06:12:50,699 | INFO | app.collectors.paper_collector | arXiv PDF processed | doc_uid=322a01b04d88d120cc043f00177e727d89b3c940 processed=4
+2026-05-30 06:12:50,699 | INFO | app.collectors.paper_collector | paper rejected | query_id=nand_3d_vertical title=The Critical Role of Charge Balance on the Memory Characteristics of Ferroelectric Field-Effect Transistors reason=year_out_of_range year=2021 min=2023 max=None
+2026-05-30 06:12:50,700 | INFO | app.collectors.paper_collector | paper rejected | query_id=nand_3d_vertical title=Investigation of Data Deletion Vulnerabilities in NAND Flash Memory Based Storage reason=year_out_of_range year=2020 min=2023 max=None
+2026-05-30 06:12:50,700 | INFO | app.collectors.paper_collector | paper rejected | query_id=nand_3d_vertical title=Quantum Annealing Machines Based on Semiconductor Nanostructures reason=year_out_of_range year=2018 min=2023 max=None
+2026-05-30 06:12:50,701 | INFO | app.collectors.paper_collector | paper rejected | query_id=nand_3d_vertical title=Quantum Annealing Machine based on Floating Gate Array reason=year_out_of_range year=2017 min=2023 max=None
+2026-05-30 06:12:50,702 | INFO | app.collectors.paper_collector | paper rejected | query_id=nand_3d_vertical title=Threshold Voltage-Defined Switches for Programmable Gates reason=year_out_of_range year=2015 min=2023 max=None
+2026-05-30 06:12:50,702 | INFO | app.collectors.paper_collector | paper rejected | query_id=nand_3d_vertical title=A Cache Management Strategy to Replace Wear Leveling Techniques for Embedded Flash Memory reason=year_out_of_range year=2012 min=2023 max=None
+2026-05-30 06:12:50,702 | INFO | app.collectors.paper_collector | arXiv query done | id=nand_3d_vertical fetched=10 upserted=4 rejected=6 year_rejected=6 year_min=2023 year_max=None
+2026-05-30 06:12:50,703 | INFO | app.collectors.paper_collector | arXiv query start | id=euv_lithography max_results=200
+2026-05-30 06:13:01,682 | INFO | httpx | HTTP Request: GET https://export.arxiv.org/api/query?search_query=%28all%3AEUV%20OR%20all%3A%22extreme%20ultraviolet%22%29%20AND%20%28all%3Alithography%20OR%20all%3Apatterning%20OR%20all%3Aoverlay%20OR%20all%3Astochastic%29%20AND%20%28all%3Asemiconductor%20OR%20all%3Amanufacturing%29&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending "HTTP/1.1 200 OK"
+2026-05-30 06:13:08,294 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2605.24199v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:13:08,330 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2605.24199v1 "HTTP/1.1 200 OK"
+2026-05-30 06:13:42,962 | INFO | app.collectors.paper_collector | arXiv PDF processed | doc_uid=bef89aae3688f51777c0ca843f76a217e95e830f processed=5
+2026-05-30 06:13:49,696 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2605.12143v2.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:13:49,733 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2605.12143v2 "HTTP/1.1 200 OK"
+2026-05-30 06:14:20,226 | INFO | app.collectors.paper_collector | arXiv PDF processed | doc_uid=0d334d1cf16c9c00f4ab203b0dd918340f684c58 processed=6
+2026-05-30 06:15:04,879 | INFO | app.collectors.paper_collector | arXiv PDF processed | doc_uid=1dfbf3431bbff978c6548c8c16dfdd285bce6a6b processed=7
+2026-05-30 06:15:49,084 | INFO | app.collectors.paper_collector | arXiv PDF processed | doc_uid=6458d66ade9a28a5f895a516c6887f62802baafc processed=8
+2026-05-30 06:15:55,126 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2511.12788v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:15:55,441 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2511.12788v1 "HTTP/1.1 200 OK"
+2026-05-30 06:16:45,357 | INFO | app.collectors.paper_collector | arXiv PDF processed | doc_uid=e31e37b1a3d742a455e6e5accde4950993a87818 processed=9
+2026-05-30 06:16:45,363 | INFO | app.collectors.paper_collector | paper rejected | query_id=euv_lithography title=High-quality Blazed Gratings through Synergy between E-Beam lithography and Robust Characterisation Techniques reason=missing_root_keyword score=None
+2026-05-30 06:16:51,449 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2505.10192v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:16:52,117 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2505.10192v1 "HTTP/1.1 200 OK"
+2026-05-30 06:17:26,328 | INFO | app.collectors.paper_collector | arXiv PDF processed | doc_uid=acbe82054fdaf133526eae4114dbb4d7a4778eec processed=10
+2026-05-30 06:17:32,288 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2505.07639v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:17:32,328 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2505.07639v1 "HTTP/1.1 200 OK"
+2026-05-30 06:18:03,319 | INFO | app.collectors.paper_collector | arXiv PDF processed | doc_uid=073d9c20016e65b3eef09f92001b20f80587cc70 processed=11
+2026-05-30 06:18:10,185 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2505.07346v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:18:10,719 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2505.07346v1 "HTTP/1.1 200 OK"
+2026-05-30 06:18:37,955 | INFO | app.collectors.paper_collector | arXiv PDF processed | doc_uid=f81b1126b9bc02c91df241a777c8b3bca0c75ffe processed=12
+2026-05-30 06:18:37,957 | INFO | app.collectors.paper_collector | paper rejected | query_id=euv_lithography title=Modeling PFAS in Semiconductor Manufacturing to Quantify Trade-offs in Energy Efficiency and Environmental Impact of Computing Systems reason=exclude_keyword score=None
+2026-05-30 06:18:44,092 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2502.18445v4.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:18:44,746 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2502.18445v4 "HTTP/1.1 200 OK"
+2026-05-30 06:19:11,492 | INFO | app.collectors.paper_collector | arXiv PDF processed | doc_uid=a9e2fba5f7c078f235ae0a57a7e656135fe3d516 processed=13
+2026-05-30 06:19:17,096 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2501.14541v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:19:17,367 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2501.14541v1 "HTTP/1.1 200 OK"
+2026-05-30 06:19:44,248 | INFO | app.collectors.paper_collector | arXiv PDF processed | doc_uid=d1d2f9ed0fb7b335206b2c55f6166e1714003b3f processed=14
+2026-05-30 06:20:08,434 | INFO | app.collectors.paper_collector | arXiv PDF processed | doc_uid=b1b0297ab70fe9901e2d1916513e7d0a1001150e processed=15
+2026-05-30 06:20:14,008 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2409.06619v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:20:15,616 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2409.06619v1 "HTTP/1.1 200 OK"
+2026-05-30 06:21:40,831 | INFO | app.collectors.paper_collector | arXiv PDF processed | doc_uid=aab104e6f3a4d721a7e5320a9aad0ae4704f6acd processed=16
+2026-05-30 06:21:47,269 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2402.18234v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:21:47,302 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2402.18234v1 "HTTP/1.1 200 OK"
+2026-05-30 06:22:19,459 | INFO | app.collectors.paper_collector | arXiv PDF processed | doc_uid=6d11b203c428fbf76318ed1325a79e34540faa4e processed=17
+2026-05-30 06:22:25,292 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2311.14780v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:22:26,548 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2311.14780v1 "HTTP/1.1 200 OK"
+2026-05-30 06:23:21,345 | INFO | app.collectors.paper_collector | arXiv PDF processed | doc_uid=c9518d62c30c59d1b71ca790ba31066234fccfb6 processed=18
+2026-05-30 06:23:59,893 | INFO | app.collectors.paper_collector | arXiv PDF processed | doc_uid=be210afe4c9178a135d636199c640f2f19f86824 processed=19
+2026-05-30 06:24:05,653 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2311.11439v2.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:24:06,853 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2311.11439v2 "HTTP/1.1 200 OK"
+2026-05-30 06:24:54,346 | INFO | app.collectors.paper_collector | arXiv PDF processed | doc_uid=2fa092fa0bac555dc59d6b00c300a49ae735c284 processed=20
+2026-05-30 06:25:00,392 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2310.01268v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:25:00,608 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2310.01268v1 "HTTP/1.1 200 OK"
+2026-05-30 06:25:32,749 | INFO | app.collectors.paper_collector | arXiv PDF processed | doc_uid=8a74e728263aa3a6adb6c1ce821a54138526bef5 processed=21
+2026-05-30 06:25:32,750 | INFO | app.collectors.paper_collector | paper rejected | query_id=euv_lithography title=AFM-based Hamaker Constant Determination with Blind Tip Reconstruction reason=year_out_of_range year=2022 min=2023 max=None
+2026-05-30 06:25:32,751 | INFO | app.collectors.paper_collector | paper rejected | query_id=euv_lithography title=Realistic mask generation for matter-wave lithography via machine learning reason=year_out_of_range year=2022 min=2023 max=None
+2026-05-30 06:25:32,751 | INFO | app.collectors.paper_collector | paper rejected | query_id=euv_lithography title=Self-probed ptychography from semiconductor high-harmonic generation reason=year_out_of_range year=2022 min=2023 max=None
+2026-05-30 06:25:32,751 | INFO | app.collectors.paper_collector | paper rejected | query_id=euv_lithography title=Miniature Plasma Source for In-Situ Scanner Cleaning reason=year_out_of_range year=2021 min=2023 max=None
+2026-05-30 06:25:32,752 | INFO | app.collectors.paper_collector | paper rejected | query_id=euv_lithography title=EUV-induced Hydrogen Plasma : Pulsed Mode Operation and Confinement in Scanner reason=year_out_of_range year=2021 min=2023 max=None
+2026-05-30 06:25:32,752 | INFO | app.collectors.paper_collector | paper rejected | query_id=euv_lithography title=Plasma-assisted Discharges and Charging in EUV-induced Plasma reason=year_out_of_range year=2020 min=2023 max=None
+2026-05-30 06:25:32,753 | INFO | app.collectors.paper_collector | paper rejected | query_id=euv_lithography title=Extreme Ultraviolet and Soft X-Ray Diffraction Efficiency of a Blazed Reflection Grating Fabricated by Thermally Activated Selective Topography Equilibration reason=year_out_of_range year=2020 min=2023 max=None
+2026-05-30 06:25:32,753 | INFO | app.collectors.paper_collector | paper rejected | query_id=euv_lithography title=Fast-freezing kinetics inside a droplet impacting on a cold surface reason=year_out_of_range year=2020 min=2023 max=None
+2026-05-30 06:25:32,754 | INFO | app.collectors.paper_collector | paper rejected | query_id=euv_lithography title=Patterning Sn-based EUV resists with low-energy electrons reason=year_out_of_range year=2019 min=2023 max=None
+2026-05-30 06:25:32,755 | INFO | app.collectors.paper_collector | paper rejected | query_id=euv_lithography title=GPU Acceleration of Real-Time Control Loops reason=year_out_of_range year=2019 min=2023 max=None
+2026-05-30 06:25:32,755 | INFO | app.collectors.paper_collector | paper rejected | query_id=euv_lithography title=Characteristic diffuse scattering from distinct line roughnesses reason=year_out_of_range year=2018 min=2023 max=None
+2026-05-30 06:25:32,756 | INFO | app.collectors.paper_collector | paper rejected | query_id=euv_lithography title=Grazing incidence interaction of Sn particles with EUV Lithography ruthenium mirrors reason=year_out_of_range year=2010 min=2023 max=None
+2026-05-30 06:25:32,756 | INFO | app.collectors.paper_collector | arXiv query done | id=euv_lithography fetched=31 upserted=17 rejected=14 year_rejected=12 year_min=2023 year_max=None
+2026-05-30 06:25:32,757 | INFO | app.collectors.paper_collector | arXiv query start | id=tc_thermo_compression_bonding max_results=200
+2026-05-30 06:25:59,715 | INFO | httpx | HTTP Request: GET https://export.arxiv.org/api/query?search_query=%28all%3A%22TC%20bonding%22%20OR%20all%3A%22thermo-compression%20bonding%22%20OR%20all%3A%22hybrid%20bonding%22%29%20AND%20%28all%3Apackaging%20OR%20all%3Ainterconnect%20OR%20all%3Amicrobump%29%20AND%20%28all%3AHBM%20OR%20all%3A%22advanced%20package%22%29&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending "HTTP/1.1 429 Too Many Requests"
+2026-05-30 06:25:59,721 | WARNING | app.collectors.paper_collector | arXiv query failed | id=tc_thermo_compression_bonding error=Client error '429 Too Many Requests' for url 'https://export.arxiv.org/api/query?search_query=%28all%3A%22TC%20bonding%22%20OR%20all%3A%22thermo-compression%20bonding%22%20OR%20all%3A%22hybrid%20bonding%22%29%20AND%20%28all%3Apackaging%20OR%20all%3Ainterconnect%20OR%20all%3Amicrobump%29%20AND%20%28all%3AHBM%20OR%20all%3A%22advanced%20package%22%29&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-05-30 06:25:59,722 | INFO | app.collectors.paper_collector | arXiv query start | id=defect_density_yield_model max_results=200
+2026-05-30 06:26:00,705 | INFO | httpx | HTTP Request: GET https://export.arxiv.org/api/query?search_query=%28all%3Asemiconductor%29%20AND%20%28all%3A%22defect%20density%22%20OR%20all%3Ayield%20OR%20all%3A%22yield%20model%22%20OR%20all%3Apoisson%29%20AND%20%28all%3Amodel%20OR%20all%3Aprediction%20OR%20all%3Aestimation%29&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending "HTTP/1.1 200 OK"
+2026-05-30 06:26:17,660 | INFO | app.collectors.paper_collector | paper rejected | query_id=defect_density_yield_model title=Reconstructing temporal multi-relational firm networks at scale using large language models. The case of the semiconductor industry reason=exclude_keyword score=None
+2026-05-30 06:26:49,549 | WARNING | app.collectors.paper_collector | arXiv PDF process failed | doc_uid=c17b442676bc0d86e6066c9058ac55be14fcfff7 error='utf-8' codec can't encode character '\ud835' in position 1056: surrogates not allowed
+2026-05-30 06:28:09,690 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2603.03534v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:28:10,468 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2603.03534v1 "HTTP/1.1 200 OK"
+2026-05-30 06:28:55,430 | INFO | app.collectors.paper_collector | arXiv PDF processed | doc_uid=e35dbf7331d8afc34e9536ffad6117e71b50b80d processed=22
+2026-05-30 06:29:02,101 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2603.02391v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:29:02,732 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2603.02391v1 "HTTP/1.1 200 OK"
+2026-05-30 06:29:48,695 | INFO | app.collectors.paper_collector | arXiv PDF processed | doc_uid=e88aa2a3ee2ec6276c8043a67879571ac53a9d61 processed=23
+2026-05-30 06:29:54,856 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2603.02051v2.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:29:55,574 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2603.02051v2 "HTTP/1.1 200 OK"
+2026-05-30 06:30:26,091 | INFO | app.collectors.paper_collector | arXiv PDF processed | doc_uid=574dca2d6b1edf120198391e7d8b31253f6c80c5 processed=24
+2026-05-30 06:30:31,514 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2602.21392v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:30:32,069 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2602.21392v1 "HTTP/1.1 200 OK"
+2026-05-30 06:31:01,010 | INFO | app.collectors.paper_collector | arXiv PDF processed | doc_uid=df1522f5878d9a2cdaa5dc61b2464285fe7d2df7 processed=25
+2026-05-30 06:31:11,589 | INFO | app.collectors.paper_collector | paper rejected | query_id=defect_density_yield_model title=QEIL v2: Heterogeneous Computing for Edge Intelligence via Roofline-Derived Pareto-Optimal Energy Modeling and Multi-Objective Orchestration reason=exclude_keyword score=None
+2026-05-30 06:35:18,144 | INFO | app.collectors.paper_collector | paper rejected | query_id=defect_density_yield_model title=Optimal regularity of subsonic steady-states solution of Euler-Poisson equations for semiconductors with sonic boundary reason=score_below_threshold score=0.4
+2026-05-30 06:35:31,879 | INFO | app.collectors.paper_collector | paper rejected | query_id=defect_density_yield_model title=Robustness of electron charge shuttling: Architectures, pulses, charge defects and noise thresholds reason=score_below_threshold score=0.475
+2026-05-30 06:38:12,561 | INFO | app.collectors.paper_collector | paper rejected | query_id=defect_density_yield_model title=Gate Tunable Lateral 2D pn Junctions: An Analytical Study of Its Electrostatics reason=score_below_threshold score=0.4375
+2026-05-30 06:38:12,568 | INFO | app.collectors.paper_collector | paper rejected | query_id=defect_density_yield_model title=Measuring spatially-resolved potential drops at semiconductor hetero-interfaces using 4D-STEM reason=exclude_keyword score=None
+2026-05-30 06:38:17,103 | INFO | app.collectors.paper_collector | paper rejected | query_id=defect_density_yield_model title=Quantum transport in interacting nanodevices: from quantum dots to single-molecule transistors reason=year_out_of_range year=2022 min=2023 max=None
+2026-05-30 06:38:17,104 | INFO | app.collectors.paper_collector | paper rejected | query_id=defect_density_yield_model title=Charge transport in doped conjugated polymers for organic thermoelectrics reason=year_out_of_range year=2022 min=2023 max=None
+2026-05-30 06:38:17,104 | INFO | app.collectors.paper_collector | paper rejected | query_id=defect_density_yield_model title=Tunable Capacitor For Superconducting Qubits Using an InAs/InGaAs Heterostructure reason=year_out_of_range year=2022 min=2023 max=None
+2026-05-30 06:38:17,104 | INFO | app.collectors.paper_collector | paper rejected | query_id=defect_density_yield_model title=Jumping kinetic Monte Carlo: Fast and accurate simulations of partially delocalised charge transport in organic semiconductors reason=year_out_of_range year=2022 min=2023 max=None
+2026-05-30 06:38:17,104 | INFO | app.collectors.paper_collector | paper rejected | query_id=defect_density_yield_model title=Degradation Prediction of Semiconductor Lasers using Conditional Variational Autoencoder reason=year_out_of_range year=2022 min=2023 max=None
+2026-05-30 06:38:17,104 | INFO | app.collectors.paper_collector | paper rejected | query_id=defect_density_yield_model title=Impact of photoexcitation on secondary electron emission: a Monte Carlo study reason=year_out_of_range year=2022 min=2023 max=None
+2026-05-30 06:38:17,110 | INFO | app.collectors.paper_collector | arXiv query done | id=defect_density_yield_model fetched=200 upserted=188 rejected=12 year_rejected=6 year_min=2023 year_max=None
+2026-05-30 06:38:17,113 | INFO | app.collectors.paper_collector | arXiv query start | id=finfet_gaa_nanosheet max_results=200
+2026-05-30 06:38:18,327 | INFO | httpx | HTTP Request: GET https://export.arxiv.org/api/query?search_query=%28all%3AFinFET%20OR%20all%3AGAA%20OR%20all%3Ananosheet%29%20AND%20%28all%3Atransistor%20OR%20all%3A%22process%20integration%22%20OR%20all%3A%22device%20architecture%22%29%20AND%20%28all%3Asemiconductor%20OR%20all%3ACMOS%29&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending "HTTP/1.1 200 OK"
+2026-05-30 06:39:35,590 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Fast time-domain current measurement for quantum dot charge sensing using a homemade cryogenic transimpedance amplifier reason=year_out_of_range year=2022 min=2023 max=None
+2026-05-30 06:39:35,597 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Process, Bias and Temperature Scalable CMOS Analog Computing Circuits for Machine Learning reason=year_out_of_range year=2022 min=2023 max=None
+2026-05-30 06:39:35,599 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Room-temperature printing of ultrathin Quasi-2D GaN semiconductor via liquid metal gallium surface confined nitridation reaction reason=year_out_of_range year=2022 min=2023 max=None
+2026-05-30 06:39:35,599 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Zero Bias Power Detector Circuits based on MoS$_2$ Field Effect Transistors on Wafer-Scale Flexible Substrates reason=year_out_of_range year=2022 min=2023 max=None
+2026-05-30 06:39:35,599 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=The Preliminary design of DC Magnet Power Supply System for ITER Static Magnetic Field Test facility reason=year_out_of_range year=2021 min=2023 max=None
+2026-05-30 06:39:35,599 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Theory of the in-plane photoelectric effect in two-dimensional electron systems reason=year_out_of_range year=2021 min=2023 max=None
+2026-05-30 06:39:35,599 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Accelerated Lifetime Testing and Analysis of Delta-doped Silicon Test Structures reason=year_out_of_range year=2021 min=2023 max=None
+2026-05-30 06:39:35,599 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Performance of a Kinetic-Inductance Traveling-Wave Parametric Amplifier at 4 Kelvin: Toward an Alternative to Semiconductor Amplifiers reason=year_out_of_range year=2021 min=2023 max=None
+2026-05-30 06:39:35,599 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Realization of graphene logics in an exciton-enhanced insulating phase reason=year_out_of_range year=2021 min=2023 max=None
+2026-05-30 06:39:35,599 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Device-to-System Performance Evaluation: from Transistor/Interconnect Modeling to VLSI Physical Design and Neural-Network Predictor reason=year_out_of_range year=2021 min=2023 max=None
+2026-05-30 06:39:35,599 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Influences of ALD Al$_2$O$_3$ on the surface band-bending of c-plane, Ga-face GaN and the implication to GaN-collector npn heterojunction bipolar transistors reason=year_out_of_range year=2021 min=2023 max=None
+2026-05-30 06:39:35,599 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Atomic-Scale Probing of Heterointerface Phonon Bridges in Nitride Semiconductor reason=year_out_of_range year=2021 min=2023 max=None
+2026-05-30 06:39:35,599 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Interfacial ferroelectricity in marginally twisted 2D semiconductors reason=year_out_of_range year=2021 min=2023 max=None
+2026-05-30 06:39:35,599 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Analysis and Modeling of an 11.8 GHz Fin Resonant Body Transistor in a 14nm FinFET CMOS Process reason=year_out_of_range year=2021 min=2023 max=None
+2026-05-30 06:39:35,607 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=X-Band Fin Resonant Body Transistors in 14nm CMOS Technology reason=year_out_of_range year=2021 min=2023 max=None
+2026-05-30 06:39:35,607 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Circuit-aware Device Modeling of Energy-efficient Monolayer WS$_2$ Trench-FinFETs reason=year_out_of_range year=2021 min=2023 max=None
+2026-05-30 06:39:35,609 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Observation of flat bands in gated semiconductor artificial graphene reason=year_out_of_range year=2021 min=2023 max=None
+2026-05-30 06:39:35,609 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Room-temperature bipolar valleytronic transistor in MoS2/WSe2 heterostructures reason=year_out_of_range year=2021 min=2023 max=None
+2026-05-30 06:39:35,609 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Tunable Doping of Rhenium and Vanadium into Transition Metal Dichalcogenides for Two-Dimensional Electronics reason=year_out_of_range year=2021 min=2023 max=None
+2026-05-30 06:39:35,609 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Demonstration and operation of quantum harmonic oscillators in an AlGaAs-GaAs heterostructure reason=year_out_of_range year=2021 min=2023 max=None
+2026-05-30 06:39:35,609 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Compact spin qubits using the common gate structure of fin field-effect transistors reason=year_out_of_range year=2020 min=2023 max=None
+2026-05-30 06:39:35,609 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Power Side-Channel Attacks in Negative Capacitance Transistor (NCFET) reason=year_out_of_range year=2020 min=2023 max=None
+2026-05-30 06:39:35,609 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Ultra-fast quantum-well infared photodetectors operating at 10¥ìm with flat response up to 70GHz at room temperature reason=year_out_of_range year=2020 min=2023 max=None
+2026-05-30 06:39:35,615 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Quantum Paracrystalline Shear Modes of the Electron Liquid reason=year_out_of_range year=2020 min=2023 max=None
+2026-05-30 06:39:35,615 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Bismuth-doped Ga2O3 as candidate for p-type transparent conducting material reason=year_out_of_range year=2019 min=2023 max=None
+2026-05-30 06:39:35,615 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Scaling-up atomically thin coplanar semiconductor-metal circuitry via phase engineered chemical assembly reason=year_out_of_range year=2019 min=2023 max=None
+2026-05-30 06:39:35,615 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Non-equilibrium Green's function predictions of band tails and band gap narrowing in III-V semiconductors and nanodevices reason=year_out_of_range year=2019 min=2023 max=None
+2026-05-30 06:39:35,615 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=A Ferroelectric Semiconductor Field-Effect Transistor reason=year_out_of_range year=2018 min=2023 max=None
+2026-05-30 06:39:35,615 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Scalable in operando strain tuning in nanophotonic waveguides enabling three-quantum dot superradiance reason=year_out_of_range year=2018 min=2023 max=None
+2026-05-30 06:39:35,619 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=p-GaAs nanowire MESFETs with near-thermal limit gating reason=year_out_of_range year=2018 min=2023 max=None
+2026-05-30 06:39:35,619 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Detection of Rashba spin splitting in 2D organic-inorganic perovskite via precessional carrier spin relaxation reason=year_out_of_range year=2018 min=2023 max=None
+2026-05-30 06:39:35,619 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Tuning Rashba Spin-Orbit Coupling in Gated Multilayer InSe reason=year_out_of_range year=2018 min=2023 max=None
+2026-05-30 06:39:35,619 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=High Performance n- and p-Type Field-Effect Transistors Based on Hybridly Surface-Passivated Colloidal PbS Nanosheets reason=year_out_of_range year=2018 min=2023 max=None
+2026-05-30 06:39:35,621 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Up to 40 % reduction of the GaAs band gap energy via strain engineering in core/shell nanowires reason=year_out_of_range year=2018 min=2023 max=None
+2026-05-30 06:39:35,623 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Analog Circuit Applications based on Ambipolar Graphene/MoTe2 Vertical Transistors reason=year_out_of_range year=2018 min=2023 max=None
+2026-05-30 06:39:35,623 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Large current modulation and tunneling magnetoresistance change by a side-gate electric field in a GaMnAs-based vertical spin metal-oxide-semiconductor field-effect transistor reason=year_out_of_range year=2018 min=2023 max=None
+2026-05-30 06:39:35,623 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Effect of NBTI/PBTI Aging and Process Variations on Write Failures in MOSFET and FinFET Flip-Flops reason=year_out_of_range year=2017 min=2023 max=None
+2026-05-30 06:39:35,625 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Near-thermal limit gating in heavily-doped III-V semiconductor nanowires using polymer electrolytes reason=year_out_of_range year=2017 min=2023 max=None
+2026-05-30 06:39:35,625 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Intrinsic p-type W-based transition metal dichalcogenide by substitutional Ta-doping reason=year_out_of_range year=2017 min=2023 max=None
+2026-05-30 06:39:35,626 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Ferroelectric control of the giant Rashba spin orbit coupling in GeTe(111)/InP(111) superlattice reason=year_out_of_range year=2017 min=2023 max=None
+2026-05-30 06:39:35,626 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Neutron-induced strike: Study of multiple node charge collection in 14nm FinFETs reason=year_out_of_range year=2017 min=2023 max=None
+2026-05-30 06:39:35,628 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Parasitic Bipolar Leakage in III-V FETs: Impact of Substrate Architecture reason=year_out_of_range year=2017 min=2023 max=None
+2026-05-30 06:39:35,628 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=C3N: a Two Dimensional Semiconductor Material with High stiffness,Superior Stability and Bending Poisson's Effect reason=year_out_of_range year=2017 min=2023 max=None
+2026-05-30 06:39:35,628 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Screening limited switching performance of multilayer 2D semiconductor FETs: the case for SnS reason=year_out_of_range year=2016 min=2023 max=None
+2026-05-30 06:39:35,628 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Probing Carrier Transport and Structure-property Relationship of Highly Ordered Organic Semiconductors at Two-dimensional Limit reason=year_out_of_range year=2016 min=2023 max=None
+2026-05-30 06:39:35,628 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Photovoltaic effect in individual asymmetrically contacted lead sulfide nanosheets reason=year_out_of_range year=2015 min=2023 max=None
+2026-05-30 06:39:35,632 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Tailoring the height of ultrathin PbS nanosheets and their application as field-effect transistors reason=year_out_of_range year=2015 min=2023 max=None
+2026-05-30 06:39:35,632 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Induced superconductivity in high mobility two dimensional electron gas in GaAs heterostructures reason=year_out_of_range year=2015 min=2023 max=None
+2026-05-30 06:39:35,632 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Inhomogeneity in barrier height at graphene/Si (GaAs) Schottky junctions reason=year_out_of_range year=2015 min=2023 max=None
+2026-05-30 06:39:35,632 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Extremely high mobility over 5000 cm2/Vs obtained from MoS2 nanosheet transistor with NiOx Schottky gate reason=year_out_of_range year=2014 min=2023 max=None
+2026-05-30 06:39:35,635 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=A high-sensitivity gate-based charge sensor in silicon reason=year_out_of_range year=2014 min=2023 max=None
+2026-05-30 06:39:35,635 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Electrical spin protection and manipulation via gate-locked spin-orbit fields reason=year_out_of_range year=2014 min=2023 max=None
+2026-05-30 06:39:35,635 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Single Crystalline InGaAs Nanopillar Grown on Polysilicon with Dimensions beyond Substrate Grain Size Limit reason=year_out_of_range year=2013 min=2023 max=None
+2026-05-30 06:39:35,635 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Electrical control of phonon mediated spin relaxation rate in semiconductor quantum dots: the Rashba vs the Dresselhaus spin-orbit couplings reason=year_out_of_range year=2013 min=2023 max=None
+2026-05-30 06:39:35,638 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Energy relaxation of exciton-polariton condensates in quasi-1D microcavities reason=year_out_of_range year=2013 min=2023 max=None
+2026-05-30 06:39:35,638 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Neutron and proton tests of different technologies for the upgrade of the cold readout electronics of the ATLAS Hadronic End-cap Calorimeter reason=year_out_of_range year=2013 min=2023 max=None
+2026-05-30 06:39:35,640 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Doppler velocimetry of spin propagation in a two-dimensional electron gas reason=year_out_of_range year=2012 min=2023 max=None
+2026-05-30 06:39:35,640 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Neutron and proton tests of different technologies for the upgrade of cold readout electronics of the ATLAS Hadronic Endcap Calorimeter reason=year_out_of_range year=2012 min=2023 max=None
+2026-05-30 06:39:35,641 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Spin Hall transistor with electrical spin injection reason=year_out_of_range year=2012 min=2023 max=None
+2026-05-30 06:39:35,641 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Energy bands of atomic monolayers of various materials: Possibility of energy gap engineering reason=year_out_of_range year=2010 min=2023 max=None
+2026-05-30 06:39:35,641 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Unipolar Resistance Switching in Amorphous High-k dielectrics Based on Correlated Barrier Hopping Theory reason=year_out_of_range year=2009 min=2023 max=None
+2026-05-30 06:39:35,641 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Enhanced annealing, high Curie temperature and low-voltage gating in (Ga,Mn)As: A surface oxide control study reason=year_out_of_range year=2008 min=2023 max=None
+2026-05-30 06:39:35,641 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Thermal Design of Power Semiconductor Modules for Mobile Communication Systems reason=year_out_of_range year=2007 min=2023 max=None
+2026-05-30 06:39:35,641 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Radio-frequency point-contact electrometer reason=year_out_of_range year=2007 min=2023 max=None
+2026-05-30 06:39:35,645 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Probing energy barriers and quantum confined states of buried semiconductor heterostructures with ballistic carrier injection: An experimental study reason=year_out_of_range year=2006 min=2023 max=None
+2026-05-30 06:39:35,645 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Minority Carrier Diffusion Lengths for High Purity Liquid Phase Epitaxial GaAs reason=year_out_of_range year=2004 min=2023 max=None
+2026-05-30 06:39:35,647 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Conductance modulation in spin field-efect transistors under finite bias voltages reason=year_out_of_range year=2004 min=2023 max=None
+2026-05-30 06:39:35,647 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Effect of bulk inversion asymmetry on the Datta-Das transistor reason=year_out_of_range year=2003 min=2023 max=None
+2026-05-30 06:39:35,648 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Spin injection through the depletion layer: a theory of spin-polarized p-n junctions and solar cells reason=year_out_of_range year=2001 min=2023 max=None
+2026-05-30 06:39:35,648 | INFO | app.collectors.paper_collector | paper rejected | query_id=finfet_gaa_nanosheet title=Many-body exchange-correlation effects in the lowest subband of semiconductor quantum wires reason=year_out_of_range year=1993 min=2023 max=None
+2026-05-30 06:39:35,648 | INFO | app.collectors.paper_collector | arXiv query done | id=finfet_gaa_nanosheet fetched=98 upserted=28 rejected=70 year_rejected=70 year_min=2023 year_max=None
+2026-05-30 06:39:35,650 | INFO | app.collectors.paper_collector | arXiv query start | id=cxl_pim_memory_systems max_results=150
+2026-05-30 06:39:39,991 | INFO | httpx | HTTP Request: GET https://export.arxiv.org/api/query?search_query=%28all%3ACXL%20OR%20all%3A%22compute%20express%20link%22%20OR%20all%3APIM%20OR%20all%3A%22processing%20in%20memory%22%29%20AND%20%28all%3Amemory%20OR%20all%3A%22memory%20expansion%22%20OR%20all%3Abandwidth%20OR%20all%3Alatency%29%20AND%20%28all%3Aarchitecture%20OR%20all%3Asystem%20OR%20all%3Adevice%29&start=0&max_results=150&sortBy=submittedDate&sortOrder=descending "HTTP/1.1 200 OK"
+2026-05-30 06:39:59,088 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=MATE: Solving Contextual Markov Decision Processes with Memory of Accumulated Transition Embeddings reason=missing_domain_keyword score=None
+2026-05-30 06:39:59,094 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=Empowering IoT Security: On-Device Intrusion Detection in Resource Constrained Devices reason=missing_domain_keyword score=None
+2026-05-30 06:40:04,469 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=Sieve: Dynamic Expert-Aware PIM Acceleration for Evolving Mixture-of-Experts Models reason=exclude_keyword score=None
+2026-05-30 06:40:04,474 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=PoHAR: Understanding Hyperlocal Human Activities with Pollution Sensor Networks reason=missing_domain_keyword score=None
+2026-05-30 06:40:04,474 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=TokenStack: A Heterogeneous HBM-PIM Architecture and Runtime for Efficient LLM Inference reason=exclude_keyword score=None
+2026-05-30 06:40:04,474 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=AME-PIM: Can Memory be Your Next Tensor Accelerator? reason=score_below_threshold score=0.4975
+2026-05-30 06:40:10,138 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=HybridGen: Efficient LLM Generative Inference via CPU-GPU Hybrid Computing reason=exclude_keyword score=None
+2026-05-30 06:40:10,142 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=AQPIM: Breaking the PIM Capacity Wall for LLMs with In-Memory Activation Quantization reason=exclude_keyword score=None
+2026-05-30 06:40:11,985 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=Predictive Multi-Tier Memory Management for KV Cache in Large-Scale GPU Inference reason=exclude_keyword score=None
+2026-05-30 06:40:30,979 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=CXLRAMSim v1.0: System-Level Exploration of CXL Memory Expander Cards reason=exclude_keyword score=None
+2026-05-30 06:40:33,484 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=Data Gravity and the Energy Limits of Computation reason=exclude_keyword score=None
+2026-05-30 06:40:41,231 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=Pooling Engram Conditional Memory in Large Language Models using CXL reason=exclude_keyword score=None
+2026-05-30 06:40:41,233 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=PIM-SHERPA: Software Method for On-device LLM Inference by Resolving PIM Memory Attribute and Layout Inconsistencies reason=exclude_keyword score=None
+2026-05-30 06:40:55,053 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=MemEmo: Evaluating Emotion in Memory Systems of Agents reason=exclude_keyword score=None
+2026-05-30 06:40:59,352 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=DARTH-PUM: A Hybrid Processing-Using-Memory Architecture reason=exclude_keyword score=None
+2026-05-30 06:40:59,357 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=Systematic Review of Lightweight Cryptographic Algorithms reason=exclude_keyword score=None
+2026-05-30 06:41:01,919 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=PAM: Processing Across Memory Hierarchy for Efficient KV-centric LLM Serving System reason=exclude_keyword score=None
+2026-05-30 06:41:01,922 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=Area-Efficient In-Memory Computing for Mixture-of-Experts via Multiplexing and Caching reason=score_below_threshold score=0.445
+2026-05-30 06:41:16,663 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=Enhancing Conversational Agents via Task-Oriented Adversarial Memory Adaptation reason=score_below_threshold score=0.37
+2026-05-30 06:41:16,670 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=PRIMAL: Processing-In-Memory Based Low-Rank Adaptation for LLM Inference Accelerator reason=exclude_keyword score=None
+2026-05-30 06:41:16,672 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=CD-PIM: A High-Bandwidth and Compute-Efficient LPDDR5-Based PIM for Low-Batch LLM Acceleration on Edge-Device reason=exclude_keyword score=None
+2026-05-30 06:41:20,849 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=Challenges and Research Directions for Large Language Model Inference Hardware reason=missing_domain_keyword score=None
+2026-05-30 06:41:32,431 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=TraCT: Disaggregated LLM Serving with CXL Shared Memory KV Cache at Rack-Scale reason=exclude_keyword score=None
+2026-05-30 06:41:34,926 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=CHIME: Chiplet-based Heterogeneous Near-Memory Acceleration for Edge Multimodal LLM Inference reason=exclude_keyword score=None
+2026-05-30 06:41:37,859 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=CXL-SpecKV: A Disaggregated FPGA Speculative KV-Cache for Datacenter LLM Serving reason=exclude_keyword score=None
+2026-05-30 06:41:37,861 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=RACAM: Enhancing DRAM with Reuse-Aware Computation and Automated Mapping for ML Inference reason=exclude_keyword score=None
+2026-05-30 06:41:40,725 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=Context-Aware Mixture-of-Experts Inference on CXL-Enabled GPU-NDP Systems reason=exclude_keyword score=None
+2026-05-30 06:41:46,256 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=Edge Deployment of Small Language Models, a comprehensive comparison of CPU, GPU and NPU backends reason=missing_domain_keyword score=None
+2026-05-30 06:41:49,124 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=Beluga: A CXL-Based Memory Architecture for Scalable and Efficient LLM KVCache Management reason=exclude_keyword score=None
+2026-05-30 06:41:49,126 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=End-to-End Transformer Acceleration Through Processing-in-Memory Architectures reason=exclude_keyword score=None
+2026-05-30 06:41:49,126 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=DCC: Data-Centric Compilation of Machine Learning Kernels for Processing-In-Memory Architectures reason=exclude_keyword score=None
+2026-05-30 06:41:51,782 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=Dissecting and Re-architecting 3D NAND Flash PIM Arrays for Efficient Single-Batch Token Generation in LLMs reason=exclude_keyword score=None
+2026-05-30 06:41:54,139 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=Sangam: Chiplet-Based DRAM-PIM Accelerator with CXL Integration for LLM Inferencing reason=exclude_keyword score=None
+2026-05-30 06:42:01,491 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=P3-LLM: An Integrated NPU-PIM Accelerator for Edge LLM Inference Using Hybrid Numerical Formats reason=exclude_keyword score=None
+2026-05-30 06:42:08,725 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=UMDAM: A Unified Data Layout and DRAM Address Mapping for Heterogenous NPU-PIM reason=exclude_keyword score=None
+2026-05-30 06:42:08,727 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=Scalable Processing-Near-Memory for 1M-Token LLM Inference: CXL-Enabled KV-Cache Management Beyond GPU Limits reason=exclude_keyword score=None
+2026-05-30 06:42:08,727 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=HyperGraphX: Graph Transductive Learning with Hyperdimensional Computing and Message Passing reason=missing_domain_keyword score=None
+2026-05-30 06:42:23,628 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=DL-PIM: Improving Data Locality in Processing-in-Memory Systems reason=score_below_threshold score=0.4925
+2026-05-30 06:42:25,975 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=UPMEM Unleashed: Software Secrets for Speed reason=score_below_threshold score=0.4725
+2026-05-30 06:42:25,975 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=SAIL: SRAM-Accelerated LLM Inference System with Lookup-Table-based GEMV reason=exclude_keyword score=None
+2026-05-30 06:42:32,203 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=LEAP: LLM Inference on Scalable PIM-NoC Architecture with Balanced Dataflow and Fine-Grained Parallelism reason=exclude_keyword score=None
+2026-05-30 06:42:32,205 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=CompAir: Synergizing Complementary PIMs and In-Transit NoC Computation for Efficient LLM Acceleration reason=exclude_keyword score=None
+2026-05-30 06:42:32,207 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=HPIM: Heterogeneous Processing-In-Memory-based Accelerator for Large Language Models Inference reason=exclude_keyword score=None
+2026-05-30 06:42:46,682 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=TRACE: Unlocking Effective CXL Bandwidth via Lossless Compression and Precision Scaling reason=exclude_keyword score=None
+2026-05-30 06:42:54,479 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=CXLAimPod: CXL Memory is all you need in AI era reason=exclude_keyword score=None
+2026-05-30 06:43:02,783 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=Designing Memory-Augmented AR Agents for Spatiotemporal Reasoning in Personalized Task Assistance reason=exclude_keyword score=None
+2026-05-30 06:43:06,518 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=Tasa: Thermal-aware 3D-Stacked Architecture Design with Bandwidth Sharing for LLM Inference reason=exclude_keyword score=None
+2026-05-30 06:43:06,518 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=LP-Spec: Leveraging LPDDR PIM for Efficient LLM Mobile Speculative Inference with Architecture-Dataflow Co-Optimization reason=exclude_keyword score=None
+2026-05-30 06:43:10,770 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=A Customized Memory-aware Architecture for Biological Sequence Alignment reason=score_below_threshold score=0.4225
+2026-05-30 06:43:13,495 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=Pimba: A Processing-in-Memory Acceleration for Post-Transformer Large Language Model Serving reason=exclude_keyword score=None
+2026-05-30 06:43:13,495 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=A Memory-Efficient Framework for Deformable Transformer with Neural Architecture Search reason=score_below_threshold score=0.4925
+2026-05-30 06:43:13,495 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=SLIM: A Heterogeneous Accelerator for Edge Inference of Sparse Large Language Model via Adaptive Thresholding reason=exclude_keyword score=None
+2026-05-30 06:43:13,501 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=Compute Can't Handle the Truth: Why Communication Tax Prioritizes Memory and Interconnects in Modern AI Infrastructure reason=exclude_keyword score=None
+2026-05-30 06:43:13,502 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=Analysis and Optimized CXL-Attached Memory Allocation for Long-Context LLM Fine-Tuning reason=exclude_keyword score=None
+2026-05-30 06:43:34,896 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=Mainframe-Style Channel Controllers for Modern Disaggregated Memory Systems reason=score_below_threshold score=0.4925
+2026-05-30 06:43:40,308 | INFO | app.collectors.paper_collector | paper rejected | query_id=cxl_pim_memory_systems title=Ghidorah: Fast LLM Inference on Edge with Speculative Decoding and Hetero-Core Parallelism reason=exclude_keyword score=None
+2026-05-30 06:43:40,308 | INFO | app.collectors.paper_collector | arXiv query done | id=cxl_pim_memory_systems fetched=150 upserted=94 rejected=56 year_rejected=0 year_min=2023 year_max=None
+2026-05-30 06:43:40,316 | INFO | app.collectors.paper_collector | arXiv query start | id=power_semiconductors_sic_gan max_results=150
+2026-05-30 06:43:44,361 | INFO | httpx | HTTP Request: GET https://export.arxiv.org/api/query?search_query=%28all%3ASiC%20OR%20all%3A%22silicon%20carbide%22%20OR%20all%3AGaN%20OR%20all%3A%22gallium%20nitride%22%29%20AND%20%28all%3Apower%20OR%20all%3Adevice%20OR%20all%3Aconverter%20OR%20all%3Ainverter%29%20AND%20%28all%3Asemiconductor%20OR%20all%3Aelectronics%29&start=0&max_results=150&sortBy=submittedDate&sortOrder=descending "HTTP/1.1 200 OK"
+2026-05-30 06:43:46,905 | INFO | app.collectors.paper_collector | paper rejected | query_id=power_semiconductors_sic_gan title=Nuclear-Electron Hyperfine Coupling of the Shallow States Associated with Vacancies in Gallium Nitride reason=score_below_threshold score=0.42
+2026-05-30 06:44:33,688 | INFO | app.collectors.paper_collector | paper rejected | query_id=power_semiconductors_sic_gan title=Privacy-Preserving EHR Data Transformation via Geometric Operators: A Human-AI Co-Design Technical Report reason=exclude_keyword score=None
+2026-05-30 06:46:54,694 | INFO | app.collectors.paper_collector | paper rejected | query_id=power_semiconductors_sic_gan title=Imaging of electrical signals in a quantum SiC microscope reason=exclude_keyword score=None
+2026-05-30 06:47:40,227 | INFO | app.collectors.paper_collector | paper rejected | query_id=power_semiconductors_sic_gan title=Density functional theory study of effect of NO annealing on electronic structure and carrier-scattering property of 4H-SiC(0001)/SiO$_2$ interface reason=score_below_threshold score=0.3975
+2026-05-30 06:47:56,517 | INFO | app.collectors.paper_collector | paper rejected | query_id=power_semiconductors_sic_gan title=Intense Hard X-ray Emissions in C-class Flares: A Statistical Study with ASO-S/HXI Data reason=score_below_threshold score=0.4725
+2026-05-30 06:50:05,582 | INFO | app.collectors.paper_collector | arXiv query done | id=power_semiconductors_sic_gan fetched=150 upserted=145 rejected=5 year_rejected=0 year_min=2023 year_max=None
+2026-05-30 06:50:05,586 | INFO | app.collectors.paper_collector | arXiv query start | id=materials_reliability_failure_analysis max_results=150
+2026-05-30 06:50:53,763 | INFO | httpx | HTTP Request: GET https://export.arxiv.org/api/query?search_query=%28all%3Asemiconductor%20OR%20all%3Awafer%20OR%20all%3Athin-film%29%20AND%20%28all%3Areliability%20OR%20all%3A%22failure%20analysis%22%20OR%20all%3Aelectromigration%20OR%20all%3Adefect%20OR%20all%3Ametrology%29%20AND%20%28all%3Amaterials%20OR%20all%3Adevice%20OR%20all%3Amanufacturing%29&start=0&max_results=150&sortBy=submittedDate&sortOrder=descending "HTTP/1.1 503 Service Unavailable"
+2026-05-30 06:50:53,768 | WARNING | app.collectors.paper_collector | arXiv query failed | id=materials_reliability_failure_analysis error=Server error '503 Service Unavailable' for url 'https://export.arxiv.org/api/query?search_query=%28all%3Asemiconductor%20OR%20all%3Awafer%20OR%20all%3Athin-film%29%20AND%20%28all%3Areliability%20OR%20all%3A%22failure%20analysis%22%20OR%20all%3Aelectromigration%20OR%20all%3Adefect%20OR%20all%3Ametrology%29%20AND%20%28all%3Amaterials%20OR%20all%3Adevice%20OR%20all%3Amanufacturing%29&start=0&max_results=150&sortBy=submittedDate&sortOrder=descending'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503
+2026-05-30 06:50:53,772 | INFO | app.collectors.paper_collector | arXiv query start | id=eda_chiplet_ucie max_results=150
+2026-05-30 06:51:41,121 | INFO | httpx | HTTP Request: GET https://export.arxiv.org/api/query?search_query=%28all%3AEDA%20OR%20all%3Achiplet%20OR%20all%3AUCIe%20OR%20all%3A%22die-to-die%22%29%20AND%20%28all%3Aarchitecture%20OR%20all%3Aintegration%20OR%20all%3Ainterconnect%20OR%20all%3Apackaging%29%20AND%20%28all%3Asemiconductor%20OR%20all%3Asystem%29&start=0&max_results=150&sortBy=submittedDate&sortOrder=descending "HTTP/1.1 503 Service Unavailable"
+2026-05-30 06:51:41,125 | WARNING | app.collectors.paper_collector | arXiv query failed | id=eda_chiplet_ucie error=Server error '503 Service Unavailable' for url 'https://export.arxiv.org/api/query?search_query=%28all%3AEDA%20OR%20all%3Achiplet%20OR%20all%3AUCIe%20OR%20all%3A%22die-to-die%22%29%20AND%20%28all%3Aarchitecture%20OR%20all%3Aintegration%20OR%20all%3Ainterconnect%20OR%20all%3Apackaging%29%20AND%20%28all%3Asemiconductor%20OR%20all%3Asystem%29&start=0&max_results=150&sortBy=submittedDate&sortOrder=descending'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503
+2026-05-30 06:51:41,125 | INFO | app.collectors.paper_collector | arXiv query start | id=advanced_packaging_substrate max_results=150
+2026-05-30 06:52:29,252 | INFO | httpx | HTTP Request: GET https://export.arxiv.org/api/query?search_query=%28all%3Apackaging%20OR%20all%3Ainterposer%20OR%20all%3Asubstrate%20OR%20all%3A%22glass%20substrate%22%20OR%20all%3A%22hybrid%20bonding%22%29%20AND%20%28all%3A2.5D%20OR%20all%3A3D%20OR%20all%3Aassembly%20OR%20all%3Abonding%20OR%20all%3Aintegration%29%20AND%20%28all%3Asemiconductor%20OR%20all%3Achiplet%29&start=0&max_results=150&sortBy=submittedDate&sortOrder=descending "HTTP/1.1 429 Unknown Error"
+2026-05-30 06:52:29,260 | WARNING | app.collectors.paper_collector | arXiv query failed | id=advanced_packaging_substrate error=Client error '429 Unknown Error' for url 'https://export.arxiv.org/api/query?search_query=%28all%3Apackaging%20OR%20all%3Ainterposer%20OR%20all%3Asubstrate%20OR%20all%3A%22glass%20substrate%22%20OR%20all%3A%22hybrid%20bonding%22%29%20AND%20%28all%3A2.5D%20OR%20all%3A3D%20OR%20all%3Aassembly%20OR%20all%3Abonding%20OR%20all%3Aintegration%29%20AND%20%28all%3Asemiconductor%20OR%20all%3Achiplet%29&start=0&max_results=150&sortBy=submittedDate&sortOrder=descending'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-05-30 06:52:29,260 | INFO | app.collectors.paper_collector | arXiv query start | id=sensors_analog_interface max_results=150
+2026-05-30 06:53:01,947 | INFO | httpx | HTTP Request: GET https://export.arxiv.org/api/query?search_query=%28all%3ACIS%20OR%20all%3ARFIC%20OR%20all%3APMIC%20OR%20all%3AFPGA%20OR%20all%3A%22image%20sensor%22%29%20AND%20%28all%3Asemiconductor%20OR%20all%3Adevice%20OR%20all%3Acircuit%29%20AND%20%28all%3Aarchitecture%20OR%20all%3Atechnology%20OR%20all%3Aintegration%29&start=0&max_results=150&sortBy=submittedDate&sortOrder=descending "HTTP/1.1 429 Unknown Error"
+2026-05-30 06:53:01,947 | WARNING | app.collectors.paper_collector | arXiv query failed | id=sensors_analog_interface error=Client error '429 Unknown Error' for url 'https://export.arxiv.org/api/query?search_query=%28all%3ACIS%20OR%20all%3ARFIC%20OR%20all%3APMIC%20OR%20all%3AFPGA%20OR%20all%3A%22image%20sensor%22%29%20AND%20%28all%3Asemiconductor%20OR%20all%3Adevice%20OR%20all%3Acircuit%29%20AND%20%28all%3Aarchitecture%20OR%20all%3Atechnology%20OR%20all%3Aintegration%29&start=0&max_results=150&sortBy=submittedDate&sortOrder=descending'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-05-30 06:53:01,950 | INFO | app.collectors.paper_collector | arXiv query start | id=standards_roadmaps max_results=100
+2026-05-30 06:53:53,215 | WARNING | app.collectors.paper_collector | arXiv query failed | id=standards_roadmaps error=The read operation timed out
+2026-05-30 06:53:53,234 | INFO | app.collectors.paper_collector | monitor_arxiv_new_papers done | upserted_total=477 pdf_processed=25
+2026-05-30 06:53:53,712 | INFO | run_tech_once | Tech collection step done: arxiv_new_papers
+2026-05-30 06:53:53,851 | INFO | run_tech_once | Tech collection step start: arxiv_company_papers
+2026-05-30 06:53:54,296 | INFO | app.collectors.paper_collector | Company arXiv query start | id=company_skhynix_arxiv_memory max_results=40
+2026-05-30 06:54:15,986 | WARNING | app.collectors.paper_collector | Company arXiv query failed | id=company_skhynix_arxiv_memory error=The read operation timed out
+2026-05-30 06:54:15,986 | INFO | app.collectors.paper_collector | Company arXiv query start | id=company_samsung_arxiv_memory max_results=40
+2026-05-30 06:54:37,254 | WARNING | app.collectors.paper_collector | Company arXiv query failed | id=company_samsung_arxiv_memory error=The read operation timed out
+2026-05-30 06:54:37,256 | INFO | app.collectors.paper_collector | Company arXiv query start | id=company_samsung_arxiv_process max_results=40
+2026-05-30 06:54:58,547 | WARNING | app.collectors.paper_collector | Company arXiv query failed | id=company_samsung_arxiv_process error=The read operation timed out
+2026-05-30 06:54:58,551 | INFO | app.collectors.paper_collector | Company arXiv query start | id=company_hanmi_arxiv_packaging max_results=30
+2026-05-30 06:55:11,235 | INFO | httpx | HTTP Request: GET https://export.arxiv.org/api/query?search_query=%28all%3A%22Hanmi%20Semiconductor%22%20OR%20all%3AHanmi%29%20AND%20%28all%3Apackaging%20OR%20all%3Ahybrid%20bonding%20OR%20all%3ATSV%20OR%20all%3Ainterposer%20OR%20all%3Ainspection%29&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending "HTTP/1.1 200 OK"
+2026-05-30 06:55:11,246 | INFO | app.collectors.paper_collector | Company arXiv query done | id=company_hanmi_arxiv_packaging fetched=0 upserted=0 rejected=0 year_rejected=0 year_min=2023 year_max=None
+2026-05-30 06:55:11,246 | INFO | app.collectors.paper_collector | Company arXiv query start | id=company_amat_arxiv_equipment max_results=30
+2026-05-30 06:55:21,290 | INFO | httpx | HTTP Request: GET https://export.arxiv.org/api/query?search_query=%28all%3A%22Applied%20Materials%22%20OR%20all%3AAMAT%29%20AND%20%28all%3Aetch%20OR%20all%3Adeposition%20OR%20all%3AALD%20OR%20all%3AALE%20OR%20all%3Ainspection%20OR%20all%3Ametrology%29&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending "HTTP/1.1 200 OK"
+2026-05-30 06:55:27,518 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2604.17103v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:55:27,751 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2604.17103v1 "HTTP/1.1 200 OK"
+2026-05-30 06:56:02,342 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2604.06656v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:56:03,243 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2604.06656v1 "HTTP/1.1 200 OK"
+2026-05-30 06:56:53,859 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2505.06876v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:56:54,493 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2505.06876v1 "HTTP/1.1 200 OK"
+2026-05-30 06:57:33,002 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2407.19701v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:57:33,899 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2407.19701v1 "HTTP/1.1 200 OK"
+2026-05-30 06:57:35,357 | WARNING | pypdf._reader | Ignoring wrong pointing object 6 0 (offset 0)
+2026-05-30 06:57:35,358 | WARNING | pypdf._reader | Ignoring wrong pointing object 8 0 (offset 0)
+2026-05-30 06:57:35,358 | WARNING | pypdf._reader | Ignoring wrong pointing object 10 0 (offset 0)
+2026-05-30 06:57:35,358 | WARNING | pypdf._reader | Ignoring wrong pointing object 18 0 (offset 0)
+2026-05-30 06:57:35,361 | WARNING | pypdf._reader | Ignoring wrong pointing object 20 0 (offset 0)
+2026-05-30 06:57:35,361 | WARNING | pypdf._reader | Ignoring wrong pointing object 25 0 (offset 0)
+2026-05-30 06:57:35,361 | WARNING | pypdf._reader | Ignoring wrong pointing object 46 0 (offset 0)
+2026-05-30 06:57:35,361 | WARNING | pypdf._reader | Ignoring wrong pointing object 49 0 (offset 0)
+2026-05-30 06:57:35,361 | WARNING | pypdf._reader | Ignoring wrong pointing object 50 0 (offset 0)
+2026-05-30 06:57:35,361 | WARNING | pypdf._reader | Ignoring wrong pointing object 65 0 (offset 0)
+2026-05-30 06:57:35,361 | WARNING | pypdf._reader | Ignoring wrong pointing object 67 0 (offset 0)
+2026-05-30 06:57:35,361 | WARNING | pypdf._reader | Ignoring wrong pointing object 75 0 (offset 0)
+2026-05-30 06:57:35,361 | WARNING | pypdf._reader | Ignoring wrong pointing object 80 0 (offset 0)
+2026-05-30 06:57:35,361 | WARNING | pypdf._reader | Ignoring wrong pointing object 100 0 (offset 0)
+2026-05-30 06:57:35,369 | WARNING | pypdf._reader | Ignoring wrong pointing object 102 0 (offset 0)
+2026-05-30 06:57:35,369 | WARNING | pypdf._reader | Ignoring wrong pointing object 104 0 (offset 0)
+2026-05-30 06:57:35,369 | WARNING | pypdf._reader | Ignoring wrong pointing object 106 0 (offset 0)
+2026-05-30 06:57:35,369 | WARNING | pypdf._reader | Ignoring wrong pointing object 127 0 (offset 0)
+2026-05-30 06:57:35,369 | WARNING | pypdf._reader | Ignoring wrong pointing object 152 0 (offset 0)
+2026-05-30 06:57:35,369 | WARNING | pypdf._reader | Ignoring wrong pointing object 159 0 (offset 0)
+2026-05-30 06:57:35,369 | WARNING | pypdf._reader | Ignoring wrong pointing object 170 0 (offset 0)
+2026-05-30 06:57:35,369 | WARNING | pypdf._reader | Ignoring wrong pointing object 200 0 (offset 0)
+2026-05-30 06:57:35,369 | WARNING | pypdf._reader | Ignoring wrong pointing object 213 0 (offset 0)
+2026-05-30 06:57:35,378 | WARNING | pypdf._reader | Ignoring wrong pointing object 217 0 (offset 0)
+2026-05-30 06:57:35,378 | WARNING | pypdf._reader | Ignoring wrong pointing object 235 0 (offset 0)
+2026-05-30 06:58:16,478 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2309.15663v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:58:17,688 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2309.15663v1 "HTTP/1.1 200 OK"
+2026-05-30 06:58:53,561 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2302.11422v2.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:58:54,691 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2302.11422v2 "HTTP/1.1 200 OK"
+2026-05-30 06:59:03,556 | WARNING | pypdf._reader | incorrect startxref pointer(3)
+2026-05-30 06:59:03,573 | WARNING | pypdf._reader | parsing for Object Streams
+2026-05-30 06:59:44,055 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2301.04823v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 06:59:44,304 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2301.04823v1 "HTTP/1.1 200 OK"
+2026-05-30 07:00:15,321 | INFO | app.collectors.paper_collector | Company arXiv query done | id=company_amat_arxiv_equipment fetched=30 upserted=7 rejected=23 year_rejected=17 year_min=2023 year_max=None
+2026-05-30 07:00:15,321 | INFO | app.collectors.paper_collector | Company arXiv query start | id=company_asml_arxiv_litho max_results=30
+2026-05-30 07:00:28,863 | INFO | httpx | HTTP Request: GET https://export.arxiv.org/api/query?search_query=%28all%3AASML%20OR%20all%3A%22high-NA%22%20OR%20all%3AEUV%29%20AND%20%28all%3Alithography%20OR%20all%3Ascanner%20OR%20all%3Apellicle%20OR%20all%3Apatterning%29&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending "HTTP/1.1 200 OK"
+2026-05-30 07:00:41,071 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2605.21430v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 07:00:41,102 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2605.21430v1 "HTTP/1.1 200 OK"
+2026-05-30 07:00:42,422 | WARNING | pypdf._reader | Ignoring wrong pointing object 6 0 (offset 0)
+2026-05-30 07:00:42,422 | WARNING | pypdf._reader | Ignoring wrong pointing object 8 0 (offset 0)
+2026-05-30 07:00:42,422 | WARNING | pypdf._reader | Ignoring wrong pointing object 10 0 (offset 0)
+2026-05-30 07:00:42,422 | WARNING | pypdf._reader | Ignoring wrong pointing object 12 0 (offset 0)
+2026-05-30 07:00:42,426 | WARNING | pypdf._reader | Ignoring wrong pointing object 14 0 (offset 0)
+2026-05-30 07:00:42,426 | WARNING | pypdf._reader | Ignoring wrong pointing object 16 0 (offset 0)
+2026-05-30 07:00:42,426 | WARNING | pypdf._reader | Ignoring wrong pointing object 18 0 (offset 0)
+2026-05-30 07:00:42,427 | WARNING | pypdf._reader | Ignoring wrong pointing object 20 0 (offset 0)
+2026-05-30 07:00:42,427 | WARNING | pypdf._reader | Ignoring wrong pointing object 23 0 (offset 0)
+2026-05-30 07:00:42,427 | WARNING | pypdf._reader | Ignoring wrong pointing object 29 0 (offset 0)
+2026-05-30 07:00:42,430 | WARNING | pypdf._reader | Ignoring wrong pointing object 37 0 (offset 0)
+2026-05-30 07:00:42,430 | WARNING | pypdf._reader | Ignoring wrong pointing object 39 0 (offset 0)
+2026-05-30 07:00:42,430 | WARNING | pypdf._reader | Ignoring wrong pointing object 45 0 (offset 0)
+2026-05-30 07:00:42,430 | WARNING | pypdf._reader | Ignoring wrong pointing object 47 0 (offset 0)
+2026-05-30 07:00:42,430 | WARNING | pypdf._reader | Ignoring wrong pointing object 52 0 (offset 0)
+2026-05-30 07:00:42,430 | WARNING | pypdf._reader | Ignoring wrong pointing object 54 0 (offset 0)
+2026-05-30 07:00:42,435 | WARNING | pypdf._reader | Ignoring wrong pointing object 68 0 (offset 0)
+2026-05-30 07:00:42,435 | WARNING | pypdf._reader | Ignoring wrong pointing object 70 0 (offset 0)
+2026-05-30 07:00:42,435 | WARNING | pypdf._reader | Ignoring wrong pointing object 88 0 (offset 0)
+2026-05-30 07:01:24,819 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2604.16664v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 07:01:24,847 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2604.16664v1 "HTTP/1.1 200 OK"
+2026-05-30 07:02:28,719 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2512.08359v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 07:02:29,488 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2512.08359v1 "HTTP/1.1 200 OK"
+2026-05-30 07:03:21,807 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2512.07161v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 07:03:22,081 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2512.07161v1 "HTTP/1.1 200 OK"
+2026-05-30 07:04:08,457 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2511.04382v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 07:04:09,383 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2511.04382v1 "HTTP/1.1 200 OK"
+2026-05-30 07:05:09,049 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2508.05412v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 07:05:10,312 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2508.05412v1 "HTTP/1.1 200 OK"
+2026-05-30 07:05:15,541 | WARNING | app.collectors.paper_collector | Company arXiv PDF process failed | doc_uid=2ac9310779b167ca66bb034a1ef840996b041599 error='utf-8' codec can't encode characters in position 1404-1405: surrogates not allowed
+2026-05-30 07:05:22,904 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2508.00433v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 07:05:23,215 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2508.00433v1 "HTTP/1.1 200 OK"
+2026-05-30 07:05:24,509 | WARNING | pypdf._reader | Ignoring wrong pointing object 6 0 (offset 0)
+2026-05-30 07:05:24,511 | WARNING | pypdf._reader | Ignoring wrong pointing object 8 0 (offset 0)
+2026-05-30 07:05:24,511 | WARNING | pypdf._reader | Ignoring wrong pointing object 10 0 (offset 0)
+2026-05-30 07:05:24,511 | WARNING | pypdf._reader | Ignoring wrong pointing object 12 0 (offset 0)
+2026-05-30 07:05:24,511 | WARNING | pypdf._reader | Ignoring wrong pointing object 14 0 (offset 0)
+2026-05-30 07:05:24,511 | WARNING | pypdf._reader | Ignoring wrong pointing object 16 0 (offset 0)
+2026-05-30 07:05:24,511 | WARNING | pypdf._reader | Ignoring wrong pointing object 23 0 (offset 0)
+2026-05-30 07:05:24,511 | WARNING | pypdf._reader | Ignoring wrong pointing object 26 0 (offset 0)
+2026-05-30 07:05:24,511 | WARNING | pypdf._reader | Ignoring wrong pointing object 43 0 (offset 0)
+2026-05-30 07:05:24,511 | WARNING | pypdf._reader | Ignoring wrong pointing object 68 0 (offset 0)
+2026-05-30 07:05:57,405 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2507.03640v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 07:05:58,576 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2507.03640v1 "HTTP/1.1 200 OK"
+2026-05-30 07:06:57,119 | INFO | app.collectors.paper_collector | Company arXiv query done | id=company_asml_arxiv_litho fetched=30 upserted=16 rejected=14 year_rejected=0 year_min=2023 year_max=None
+2026-05-30 07:06:57,119 | INFO | app.collectors.paper_collector | Company arXiv query start | id=company_kla_arxiv_metrology max_results=30
+2026-05-30 07:06:59,066 | INFO | httpx | HTTP Request: GET https://export.arxiv.org/api/query?search_query=%28all%3AKLA%20OR%20all%3A%22KLA%20Corporation%22%29%20AND%20%28all%3Ametrology%20OR%20all%3Ainspection%20OR%20all%3Adefect%20OR%20all%3Ayield%29&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending "HTTP/1.1 200 OK"
+2026-05-30 07:06:59,070 | INFO | app.collectors.paper_collector | Company arXiv query done | id=company_kla_arxiv_metrology fetched=1 upserted=0 rejected=1 year_rejected=0 year_min=2023 year_max=None
+2026-05-30 07:06:59,072 | INFO | app.collectors.paper_collector | Company arXiv query start | id=company_lrcx_arxiv_equipment max_results=30
+2026-05-30 07:07:01,214 | INFO | httpx | HTTP Request: GET https://export.arxiv.org/api/query?search_query=%28all%3A%22Lam%20Research%22%20OR%20all%3ALam%29%20AND%20%28all%3Aetch%20OR%20all%3Adeposition%20OR%20all%3Ametrology%20OR%20all%3Ainspection%20OR%20all%3Apackaging%29&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending "HTTP/1.1 200 OK"
+2026-05-30 07:07:07,973 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2605.01982v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 07:07:08,282 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2605.01982v1 "HTTP/1.1 200 OK"
+2026-05-30 07:08:04,618 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2604.19120v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 07:08:04,838 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2604.19120v1 "HTTP/1.1 200 OK"
+2026-05-30 07:08:57,416 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2602.15729v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 07:08:58,061 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2602.15729v1 "HTTP/1.1 200 OK"
+2026-05-30 07:09:56,289 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2512.03392v3.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 07:09:56,542 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2512.03392v3 "HTTP/1.1 200 OK"
+2026-05-30 07:10:48,756 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2512.02607v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 07:10:49,517 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2512.02607v1 "HTTP/1.1 200 OK"
+2026-05-30 07:11:45,181 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2502.09736v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 07:11:45,486 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2502.09736v1 "HTTP/1.1 200 OK"
+2026-05-30 07:12:31,882 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2501.16646v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 07:12:32,742 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2501.16646v1 "HTTP/1.1 200 OK"
+2026-05-30 07:13:06,435 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2411.07313v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 07:13:06,679 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2411.07313v1 "HTTP/1.1 200 OK"
+2026-05-30 07:13:55,069 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2404.13673v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 07:13:55,291 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2404.13673v1 "HTTP/1.1 200 OK"
+2026-05-30 07:16:00,371 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2403.00723v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 07:16:00,672 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2403.00723v1 "HTTP/1.1 200 OK"
+2026-05-30 07:16:34,639 | INFO | app.collectors.paper_collector | Company arXiv query done | id=company_lrcx_arxiv_equipment fetched=30 upserted=10 rejected=20 year_rejected=0 year_min=2023 year_max=None
+2026-05-30 07:16:34,642 | INFO | app.collectors.paper_collector | Company arXiv query start | id=company_micron_arxiv_memory max_results=30
+2026-05-30 07:16:37,231 | INFO | httpx | HTTP Request: GET https://export.arxiv.org/api/query?search_query=%28all%3AMicron%20OR%20all%3A%22Micron%20Technology%22%29%20AND%20%28all%3AHBM%20OR%20all%3ADRAM%20OR%20all%3ALPDDR%20OR%20all%3ADDR5%20OR%20all%3Amemory%29&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending "HTTP/1.1 200 OK"
+2026-05-30 07:16:44,271 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2605.12948v1.pdf "HTTP/1.1 301 Moved Permanently"
+2026-05-30 07:16:44,318 | INFO | httpx | HTTP Request: GET https://arxiv.org/pdf/2605.12948v1 "HTTP/1.1 200 OK"
+2026-05-30 07:18:18,288 | INFO | app.collectors.paper_collector | Company arXiv query done | id=company_micron_arxiv_memory fetched=30 upserted=22 rejected=8 year_rejected=0 year_min=2023 year_max=None
+2026-05-30 07:18:18,298 | INFO | app.collectors.paper_collector | Company arXiv query start | id=company_nvidia_arxiv_ai_memory max_results=30
+2026-05-30 07:18:21,299 | INFO | httpx | HTTP Request: GET https://export.arxiv.org/api/query?search_query=%28all%3ANVIDIA%20OR%20all%3AGPU%29%20AND%20%28all%3AHBM%20OR%20all%3Amemory%20OR%20all%3Abandwidth%20OR%20all%3Aaccelerator%29&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending "HTTP/1.1 200 OK"
+2026-05-30 07:18:37,883 | INFO | app.collectors.paper_collector | Company arXiv query done | id=company_nvidia_arxiv_ai_memory fetched=30 upserted=7 rejected=23 year_rejected=0 year_min=2023 year_max=None
+2026-05-30 07:18:37,891 | INFO | app.collectors.paper_collector | Company arXiv query start | id=company_tsmc_arxiv_foundry max_results=30
+2026-05-30 07:18:39,767 | INFO | httpx | HTTP Request: GET https://export.arxiv.org/api/query?search_query=%28all%3ATSMC%20OR%20all%3A%22Taiwan%20Semiconductor%22%29%20AND%20%28all%3ACoWoS%20OR%20all%3Afoundry%20OR%20all%3Apackaging%20OR%20all%3AEUV%20OR%20all%3A2nm%29&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending "HTTP/1.1 200 OK"
+2026-05-30 07:18:49,539 | INFO | app.collectors.paper_collector | Company arXiv query done | id=company_tsmc_arxiv_foundry fetched=5 upserted=4 rejected=1 year_rejected=1 year_min=2023 year_max=None
+2026-05-30 07:18:49,539 | INFO | app.collectors.paper_collector | Company arXiv query start | id=company_intel_arxiv_foundry max_results=30
+2026-05-30 07:18:52,319 | INFO | httpx | HTTP Request: GET https://export.arxiv.org/api/query?search_query=%28all%3AIntel%20OR%20all%3A%22Intel%20Foundry%22%29%20AND%20%28all%3A18A%20OR%20all%3Afoundry%20OR%20all%3Achiplet%20OR%20all%3Abackside%20power%20OR%20all%3AGAA%29&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending "HTTP/1.1 200 OK"
+2026-05-30 07:19:29,191 | INFO | app.collectors.paper_collector | Company arXiv query done | id=company_intel_arxiv_foundry fetched=30 upserted=17 rejected=13 year_rejected=0 year_min=2023 year_max=None
+2026-05-30 07:19:29,197 | INFO | app.collectors.paper_collector | monitor_arxiv_company_papers done | upserted_total=83 pdf_processed=25
+2026-05-30 07:19:29,199 | INFO | run_tech_once | Tech collection step done: arxiv_company_papers
+2026-05-30 07:19:29,199 | INFO | run_tech_once | Tech collection step start: openalex_company_priority_papers
+2026-05-30 07:19:29,199 | INFO | app.collectors.paper_collector | === collect_openalex_company_priority_papers START ===
+2026-05-30 07:19:29,199 | INFO | app.collectors.paper_collector | Company OA query: id=company_skhynix_priority_hbm company=000660 min_year=2022
+2026-05-30 07:19:31,646 | INFO | httpx | HTTP Request: GET https://api.openalex.org/works?search=SK%20hynix%20HBM%20DRAM%20hybrid%20bonding%20TSV%20CXL%20PIM%20packaging&filter=publication_year%3A2022-&per-page=50&cursor=%2A&mailto=taland797%40gmail.com&select=id%2Cdoi%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cprimary_location%2Copen_access%2Ccited_by_count%2Cauthorships%2Cconcepts%2Ctopics "HTTP/1.1 200 OK"
+2026-05-30 07:19:44,071 | INFO | app.collectors.paper_collector | Company OA query done | id=company_skhynix_priority_hbm fetched=3 ingested=3
+2026-05-30 07:19:44,576 | INFO | app.collectors.paper_collector | Company OA query: id=company_skhynix_priority_reliability company=000660 min_year=2022
+2026-05-30 07:19:47,095 | INFO | httpx | HTTP Request: GET https://api.openalex.org/works?search=SK%20hynix%20memory%20yield%20reliability%20defect%20density%20electromigration&filter=publication_year%3A2022-&per-page=50&cursor=%2A&mailto=taland797%40gmail.com&select=id%2Cdoi%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cprimary_location%2Copen_access%2Ccited_by_count%2Cauthorships%2Cconcepts%2Ctopics "HTTP/1.1 200 OK"
+2026-05-30 07:19:56,513 | INFO | app.collectors.paper_collector | Company OA query done | id=company_skhynix_priority_reliability fetched=4 ingested=4
+2026-05-30 07:19:57,019 | INFO | app.collectors.paper_collector | Company OA query: id=company_samsung_priority_memory company=005930 min_year=2022
+2026-05-30 07:20:00,225 | INFO | httpx | HTTP Request: GET https://api.openalex.org/works?search=Samsung%20HBM%20DRAM%20GAA%20EUV%20advanced%20packaging%20lithography&filter=publication_year%3A2022-&per-page=50&cursor=%2A&mailto=taland797%40gmail.com&select=id%2Cdoi%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cprimary_location%2Copen_access%2Ccited_by_count%2Cauthorships%2Cconcepts%2Ctopics "HTTP/1.1 200 OK"
+2026-05-30 07:20:07,365 | INFO | app.collectors.paper_collector | Company OA query done | id=company_samsung_priority_memory fetched=3 ingested=3
+2026-05-30 07:20:07,874 | INFO | app.collectors.paper_collector | Company OA query: id=company_samsung_priority_process company=005930 min_year=2022
+2026-05-30 07:20:10,997 | INFO | httpx | HTTP Request: GET https://api.openalex.org/works?search=Samsung%20semiconductor%20yield%20metrology%20inspection%20backside%20power&filter=publication_year%3A2022-&per-page=50&cursor=%2A&mailto=taland797%40gmail.com&select=id%2Cdoi%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cprimary_location%2Copen_access%2Ccited_by_count%2Cauthorships%2Cconcepts%2Ctopics "HTTP/1.1 200 OK"
+2026-05-30 07:20:25,215 | INFO | app.collectors.paper_collector | Company OA query done | id=company_samsung_priority_process fetched=5 ingested=5
+2026-05-30 07:20:25,723 | INFO | app.collectors.paper_collector | Company OA query: id=company_hanmi_priority_equipment company=042700 min_year=2022
+2026-05-30 07:20:28,190 | INFO | httpx | HTTP Request: GET https://api.openalex.org/works?search=Hanmi%20Semiconductor%20OSAT%20packaging%20substrate%20yield%20inspection%20reliability&filter=publication_year%3A2022-&per-page=50&cursor=%2A&mailto=taland797%40gmail.com&select=id%2Cdoi%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cprimary_location%2Copen_access%2Ccited_by_count%2Cauthorships%2Cconcepts%2Ctopics "HTTP/1.1 200 OK"
+2026-05-30 07:20:28,190 | INFO | app.collectors.paper_collector | Company OA query done | id=company_hanmi_priority_equipment fetched=0 ingested=0
+2026-05-30 07:20:28,695 | INFO | app.collectors.paper_collector | Company OA query: id=company_hanmi_priority_packaging company=042700 min_year=2022
+2026-05-30 07:20:30,650 | INFO | httpx | HTTP Request: GET https://api.openalex.org/works?search=Hanmi%20Semiconductor%20advanced%20packaging%20hybrid%20bonding%20TSV%20interposer%20metrology%20inspection&filter=publication_year%3A2022-&per-page=50&cursor=%2A&mailto=taland797%40gmail.com&select=id%2Cdoi%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cprimary_location%2Copen_access%2Ccited_by_count%2Cauthorships%2Cconcepts%2Ctopics "HTTP/1.1 200 OK"
+2026-05-30 07:20:30,652 | INFO | app.collectors.paper_collector | Company OA query done | id=company_hanmi_priority_packaging fetched=0 ingested=0
+2026-05-30 07:20:31,154 | INFO | app.collectors.paper_collector | Company OA query: id=company_amat_priority_equipment company=AMAT min_year=2022
+2026-05-30 07:20:33,890 | INFO | httpx | HTTP Request: GET https://api.openalex.org/works?search=Applied%20Materials%20etch%20deposition%20ALD%20ALE%20metrology%20inspection%20semiconductor%20equipment&filter=publication_year%3A2022-&per-page=50&cursor=%2A&mailto=taland797%40gmail.com&select=id%2Cdoi%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cprimary_location%2Copen_access%2Ccited_by_count%2Cauthorships%2Cconcepts%2Ctopics "HTTP/1.1 200 OK"
+2026-05-30 07:20:50,644 | INFO | app.collectors.paper_collector | Company OA query done | id=company_amat_priority_equipment fetched=7 ingested=7
+2026-05-30 07:20:51,151 | INFO | app.collectors.paper_collector | Company OA query: id=company_asml_priority_litho company=ASML min_year=2022
+2026-05-30 07:20:54,309 | INFO | httpx | HTTP Request: GET https://api.openalex.org/works?search=ASML%20High-NA%20EUV%20lithography%20pellicle%20scanner%20stochastic&filter=publication_year%3A2022-&per-page=50&cursor=%2A&mailto=taland797%40gmail.com&select=id%2Cdoi%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cprimary_location%2Copen_access%2Ccited_by_count%2Cauthorships%2Cconcepts%2Ctopics "HTTP/1.1 200 OK"
+2026-05-30 07:21:11,575 | INFO | app.collectors.paper_collector | Company OA query done | id=company_asml_priority_litho fetched=7 ingested=7
+2026-05-30 07:21:12,084 | INFO | app.collectors.paper_collector | Company OA query: id=company_kla_priority_metrology company=KLAC min_year=2022
+2026-05-30 07:21:14,246 | INFO | httpx | HTTP Request: GET https://api.openalex.org/works?search=KLA%20metrology%20inspection%20defect%20detection%20yield%20semiconductor&filter=publication_year%3A2022-&per-page=50&cursor=%2A&mailto=taland797%40gmail.com&select=id%2Cdoi%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cprimary_location%2Copen_access%2Ccited_by_count%2Cauthorships%2Cconcepts%2Ctopics "HTTP/1.1 200 OK"
+2026-05-30 07:22:22,279 | INFO | app.collectors.paper_collector | Company OA query done | id=company_kla_priority_metrology fetched=24 ingested=24
+2026-05-30 07:22:22,786 | INFO | app.collectors.paper_collector | Company OA query: id=company_lrcx_priority_equipment company=LRCX min_year=2022
+2026-05-30 07:22:25,252 | INFO | httpx | HTTP Request: GET https://api.openalex.org/works?search=Lam%20Research%20etch%20deposition%20metrology%20advanced%20packaging%20semiconductor%20equipment&filter=publication_year%3A2022-&per-page=50&cursor=%2A&mailto=taland797%40gmail.com&select=id%2Cdoi%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cprimary_location%2Copen_access%2Ccited_by_count%2Cauthorships%2Cconcepts%2Ctopics "HTTP/1.1 200 OK"
+2026-05-30 07:23:32,994 | INFO | app.collectors.paper_collector | Company OA query done | id=company_lrcx_priority_equipment fetched=24 ingested=24
+2026-05-30 07:23:33,496 | INFO | app.collectors.paper_collector | Company OA query: id=company_micron_priority_memory company=MU min_year=2022
+2026-05-30 07:23:35,961 | INFO | httpx | HTTP Request: GET https://api.openalex.org/works?search=Micron%20HBM%20DRAM%20LPDDR%20DDR5%20memory%20scaling&filter=publication_year%3A2022-&per-page=50&cursor=%2A&mailto=taland797%40gmail.com&select=id%2Cdoi%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cprimary_location%2Copen_access%2Ccited_by_count%2Cauthorships%2Cconcepts%2Ctopics "HTTP/1.1 200 OK"
+2026-05-30 07:24:12,941 | INFO | app.collectors.paper_collector | Company OA query done | id=company_micron_priority_memory fetched=9 ingested=9
+2026-05-30 07:24:13,445 | INFO | app.collectors.paper_collector | Company OA query: id=company_nvidia_priority_memory company=NVDA min_year=2022
+2026-05-30 07:24:15,463 | INFO | httpx | HTTP Request: GET https://api.openalex.org/works?search=NVIDIA%20HBM%20memory%20bandwidth%20CXL%20data%20center%20accelerator&filter=publication_year%3A2022-&per-page=50&cursor=%2A&mailto=taland797%40gmail.com&select=id%2Cdoi%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cprimary_location%2Copen_access%2Ccited_by_count%2Cauthorships%2Cconcepts%2Ctopics "HTTP/1.1 200 OK"
+2026-05-30 07:24:19,178 | INFO | httpx | HTTP Request: GET https://api.openalex.org/works?search=NVIDIA%20HBM%20memory%20bandwidth%20CXL%20data%20center%20accelerator&filter=publication_year%3A2022-&per-page=50&cursor=IlsxLjM5NDk3MzUsIDE3NzU2OTI4MDAwMDAsICdodHRwczovL29wZW5hbGV4Lm9yZy9XNzE1MzY3MDYzMiddIg%3D%3D&mailto=taland797%40gmail.com&select=id%2Cdoi%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cprimary_location%2Copen_access%2Ccited_by_count%2Cauthorships%2Cconcepts%2Ctopics "HTTP/1.1 200 OK"
+2026-05-30 07:32:02,657 | INFO | app.collectors.paper_collector | Company OA query done | id=company_nvidia_priority_memory fetched=86 ingested=86
+2026-05-30 07:32:03,168 | INFO | app.collectors.paper_collector | === collect_openalex_company_priority_papers DONE | fetched=172 ingested=172 ===
+2026-05-30 07:32:03,180 | INFO | run_tech_once | Tech collection step done: openalex_company_priority_papers
