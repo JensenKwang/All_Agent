@@ -1,0 +1,1154 @@
+{
+  "agent": "Market Agent",
+  "generated_at": "2026-06-07 10:43:38",
+  "n_assets": 10,
+  "reports": [
+    {
+      "agent": "Market Agent",
+      "as_of_date": "2026-06-05",
+      "target": {
+        "asset_code": "000660",
+        "asset_name": "SK Hynix",
+        "market": "KR_STOCK"
+      },
+      "stance": "Neutral",
+      "confidence": "Low",
+      "decision_basis": {
+        "positive_blocks": [
+          "trend",
+          "relative_strength"
+        ],
+        "negative_blocks": [
+          "flow"
+        ],
+        "mixed_blocks": [
+          "momentum",
+          "risk"
+        ]
+      },
+      "technical_view": {
+        "view": "Bullish",
+        "bullish_evidence_count": 5,
+        "bearish_evidence_count": 0,
+        "evidence": [
+          "MA30>MA60>MA120 정배열",
+          "종가 MA60 대비 50.47% 상회",
+          "종가 MA120 대비 93.32% 상회",
+          "60일 수익률 147.61% 양수",
+          "120일 수익률 281.92% 양수"
+        ],
+        "limitations": []
+      },
+      "momentum_view": {
+        "view": "Mixed",
+        "positive_evidence_count": 2,
+        "negative_evidence_count": 2,
+        "evidence": [
+          "RSI14 54.2 안정 구간",
+          "MACD histogram 음수",
+          "MACD < signal",
+          "ROC60 147.61% 양수"
+        ],
+        "risk_flags": [],
+        "limitations": []
+      },
+      "flow_view": {
+        "view": "Distribution",
+        "foreign_20d": -14243799.0,
+        "institution_20d": 2583181.0,
+        "total_flow_20d": -11660618.0,
+        "evidence": [
+          "외국인 20일 순매수 -14,243,799주 음수",
+          "기관 20일 순매수 2,583,181주 양수",
+          "합산 20일 수급 -11,660,618주 음수"
+        ],
+        "risk_flags": [],
+        "limitations": []
+      },
+      "relative_strength_view": {
+        "view": "Outperforming",
+        "average_relative_strength_20d": 0.12807156558123234,
+        "evidence": [
+          "KOSPI 대비 20일 상대강도 12.81% 개선"
+        ],
+        "risk_flags": [],
+        "limitations": []
+      },
+      "risk_view": {
+        "view": "Moderate",
+        "high_risk_count": 1,
+        "moderate_risk_count": 0,
+        "evidence": [
+          "52주 낙폭 -12.40% 제한적"
+        ],
+        "risk_flags": [
+          "20일 변동성 5.69% 높음"
+        ],
+        "limitations": []
+      },
+      "timing_readiness": {
+        "score": 56,
+        "zone": "Neutral",
+        "supporting_signals": [
+          "이동평균 정배열",
+          "RSI 안정 상승 구간",
+          "ROC60 양수",
+          "기관 순매수",
+          "상대강도 개선"
+        ],
+        "caution_signals": [
+          "MACD < signal",
+          "MACD histogram 음수",
+          "합산 수급 음수",
+          "외국인 순매도",
+          "변동성 높음",
+          "risk Moderate"
+        ]
+      },
+      "evidence": [
+        "MA30>MA60>MA120 정배열",
+        "종가 MA60 대비 50.47% 상회",
+        "종가 MA120 대비 93.32% 상회",
+        "60일 수익률 147.61% 양수",
+        "120일 수익률 281.92% 양수",
+        "RSI14 54.2 안정 구간",
+        "MACD histogram 음수",
+        "MACD < signal"
+      ],
+      "limitations": [],
+      "risk_flags": [
+        "20일 변동성 5.69% 높음"
+      ],
+      "rationale": "SK Hynix: Neutral (신뢰도 Low). 우호 블록=['trend', 'relative_strength'], 경계=['flow']. Timing 56점(Neutral)."
+    },
+    {
+      "agent": "Market Agent",
+      "as_of_date": "2026-06-05",
+      "target": {
+        "asset_code": "005930",
+        "asset_name": "Samsung Electronics",
+        "market": "KR_STOCK"
+      },
+      "stance": "Positive",
+      "confidence": "Medium",
+      "decision_basis": {
+        "positive_blocks": [
+          "trend",
+          "momentum",
+          "relative_strength"
+        ],
+        "negative_blocks": [
+          "flow"
+        ],
+        "mixed_blocks": [
+          "risk"
+        ]
+      },
+      "technical_view": {
+        "view": "Bullish",
+        "bullish_evidence_count": 5,
+        "bearish_evidence_count": 0,
+        "evidence": [
+          "MA30>MA60>MA120 정배열",
+          "종가 MA60 대비 39.97% 상회",
+          "종가 MA120 대비 71.31% 상회",
+          "60일 수익률 89.63% 양수",
+          "120일 수익률 213.04% 양수"
+        ],
+        "limitations": []
+      },
+      "momentum_view": {
+        "view": "Positive",
+        "positive_evidence_count": 4,
+        "negative_evidence_count": 0,
+        "evidence": [
+          "RSI14 58.8 안정 구간",
+          "MACD histogram 양수",
+          "MACD > signal",
+          "ROC60 89.63% 양수"
+        ],
+        "risk_flags": [],
+        "limitations": []
+      },
+      "flow_view": {
+        "view": "Distribution",
+        "foreign_20d": -101237096.0,
+        "institution_20d": 28380898.0,
+        "total_flow_20d": -72856198.0,
+        "evidence": [
+          "외국인 20일 순매수 -101,237,096주 음수",
+          "기관 20일 순매수 28,380,898주 양수",
+          "합산 20일 수급 -72,856,198주 음수"
+        ],
+        "risk_flags": [],
+        "limitations": []
+      },
+      "relative_strength_view": {
+        "view": "Outperforming",
+        "average_relative_strength_20d": 0.12583691648632334,
+        "evidence": [
+          "KOSPI 대비 20일 상대강도 12.58% 개선"
+        ],
+        "risk_flags": [],
+        "limitations": []
+      },
+      "risk_view": {
+        "view": "Moderate",
+        "high_risk_count": 1,
+        "moderate_risk_count": 0,
+        "evidence": [
+          "52주 낙폭 -8.74% 제한적"
+        ],
+        "risk_flags": [
+          "20일 변동성 4.74% 높음"
+        ],
+        "limitations": []
+      },
+      "timing_readiness": {
+        "score": 81,
+        "zone": "Strong Entry Zone",
+        "supporting_signals": [
+          "이동평균 정배열",
+          "MACD > signal",
+          "MACD histogram 양수",
+          "RSI 안정 상승 구간",
+          "ROC60 양수",
+          "기관 순매수",
+          "상대강도 개선"
+        ],
+        "caution_signals": [
+          "합산 수급 음수",
+          "외국인 순매도",
+          "변동성 높음",
+          "risk Moderate"
+        ]
+      },
+      "evidence": [
+        "MA30>MA60>MA120 정배열",
+        "종가 MA60 대비 39.97% 상회",
+        "종가 MA120 대비 71.31% 상회",
+        "60일 수익률 89.63% 양수",
+        "120일 수익률 213.04% 양수",
+        "RSI14 58.8 안정 구간",
+        "MACD histogram 양수",
+        "MACD > signal"
+      ],
+      "limitations": [],
+      "risk_flags": [
+        "20일 변동성 4.74% 높음"
+      ],
+      "rationale": "Samsung Electronics: Positive (신뢰도 Medium). 우호 블록=['trend', 'momentum', 'relative_strength'], 경계=['flow']. Timing 81점(Strong Entry Zone)."
+    },
+    {
+      "agent": "Market Agent",
+      "as_of_date": "2026-06-05",
+      "target": {
+        "asset_code": "042700",
+        "asset_name": "Hanmi Semiconductor",
+        "market": "KR_STOCK"
+      },
+      "stance": "Cautious",
+      "confidence": "High",
+      "decision_basis": {
+        "positive_blocks": [],
+        "negative_blocks": [
+          "trend",
+          "momentum",
+          "flow",
+          "relative_strength",
+          "risk"
+        ],
+        "mixed_blocks": []
+      },
+      "technical_view": {
+        "view": "MildBearish",
+        "bullish_evidence_count": 3,
+        "bearish_evidence_count": 3,
+        "evidence": [
+          "MA30>MA60>MA120 정배열",
+          "종가 MA60 대비 -9.17% 하회",
+          "종가 MA120 대비 14.74% 상회",
+          "60일 수익률 -7.21% 음수",
+          "120일 수익률 143.76% 양수",
+          "52주 고점 대비 낙폭 -30.89%"
+        ],
+        "limitations": []
+      },
+      "momentum_view": {
+        "view": "Negative",
+        "positive_evidence_count": 0,
+        "negative_evidence_count": 4,
+        "evidence": [
+          "MACD histogram 음수",
+          "MACD < signal",
+          "ROC60 -7.21% 음수"
+        ],
+        "risk_flags": [
+          "RSI 29.8 과매도"
+        ],
+        "limitations": []
+      },
+      "flow_view": {
+        "view": "StrongDistribution",
+        "foreign_20d": -1482995.0,
+        "institution_20d": -594386.0,
+        "total_flow_20d": -2077381.0,
+        "evidence": [
+          "외국인 20일 순매수 -1,482,995주 음수",
+          "기관 20일 순매수 -594,386주 음수",
+          "합산 20일 수급 -2,077,381주 음수"
+        ],
+        "risk_flags": [],
+        "limitations": []
+      },
+      "relative_strength_view": {
+        "view": "Underperforming",
+        "average_relative_strength_20d": -0.3332765878133309,
+        "evidence": [
+          "KOSPI 대비 20일 상대강도 -33.33% 약화"
+        ],
+        "risk_flags": [],
+        "limitations": []
+      },
+      "risk_view": {
+        "view": "High",
+        "high_risk_count": 2,
+        "moderate_risk_count": 1,
+        "evidence": [],
+        "risk_flags": [
+          "52주 낙폭 -30.89%",
+          "20일 변동성 7.20% 높음",
+          "RSI 29.8 과매도"
+        ],
+        "limitations": []
+      },
+      "timing_readiness": {
+        "score": 0,
+        "zone": "Avoid",
+        "supporting_signals": [
+          "이동평균 정배열"
+        ],
+        "caution_signals": [
+          "MACD < signal",
+          "MACD histogram 음수",
+          "RSI 과매도",
+          "ROC60 음수",
+          "합산 수급 음수",
+          "외국인 순매도",
+          "기관 순매도",
+          "상대강도 약화"
+        ]
+      },
+      "evidence": [
+        "MA30>MA60>MA120 정배열",
+        "종가 MA60 대비 -9.17% 하회",
+        "종가 MA120 대비 14.74% 상회",
+        "60일 수익률 -7.21% 음수",
+        "120일 수익률 143.76% 양수",
+        "52주 고점 대비 낙폭 -30.89%",
+        "MACD histogram 음수",
+        "MACD < signal"
+      ],
+      "limitations": [],
+      "risk_flags": [
+        "RSI 29.8 과매도",
+        "52주 낙폭 -30.89%",
+        "20일 변동성 7.20% 높음",
+        "RSI 29.8 과매도"
+      ],
+      "rationale": "Hanmi Semiconductor: Cautious (신뢰도 High). 우호 블록=[], 경계=['trend', 'momentum', 'flow', 'relative_strength', 'risk']. Timing 0점(Avoid)."
+    },
+    {
+      "agent": "Market Agent",
+      "as_of_date": "2026-06-05",
+      "target": {
+        "asset_code": "KQ11",
+        "asset_name": "KOSDAQ",
+        "market": "KR_INDEX"
+      },
+      "stance": "Neutral",
+      "confidence": "Medium",
+      "decision_basis": {
+        "positive_blocks": [],
+        "negative_blocks": [
+          "trend",
+          "momentum"
+        ],
+        "mixed_blocks": [
+          "risk"
+        ]
+      },
+      "technical_view": {
+        "view": "MildBearish",
+        "bullish_evidence_count": 2,
+        "bearish_evidence_count": 3,
+        "evidence": [
+          "MA30>MA60>MA120 정배열",
+          "종가 MA60 대비 -11.60% 하회",
+          "종가 MA120 대비 -7.10% 하회",
+          "60일 수익률 -9.06% 음수",
+          "120일 수익률 7.81% 양수"
+        ],
+        "limitations": []
+      },
+      "momentum_view": {
+        "view": "Negative",
+        "positive_evidence_count": 0,
+        "negative_evidence_count": 4,
+        "evidence": [
+          "MACD histogram 음수",
+          "MACD < signal",
+          "ROC60 -9.06% 음수"
+        ],
+        "risk_flags": [
+          "RSI 29.9 과매도"
+        ],
+        "limitations": []
+      },
+      "flow_view": {
+        "view": "NotAvailable",
+        "foreign_20d": null,
+        "institution_20d": null,
+        "total_flow_20d": null,
+        "evidence": [],
+        "risk_flags": [],
+        "limitations": [
+          "수급 데이터 없음"
+        ]
+      },
+      "relative_strength_view": {
+        "view": "NotAvailable",
+        "average_relative_strength_20d": null,
+        "evidence": [],
+        "risk_flags": [],
+        "limitations": [
+          "상대강도 benchmark 없음"
+        ]
+      },
+      "risk_view": {
+        "view": "Moderate",
+        "high_risk_count": 0,
+        "moderate_risk_count": 3,
+        "evidence": [],
+        "risk_flags": [
+          "52주 낙폭 -18.25% 조정",
+          "20일 변동성 2.74% 중간",
+          "RSI 29.9 과매도"
+        ],
+        "limitations": []
+      },
+      "timing_readiness": {
+        "score": 19,
+        "zone": "Avoid",
+        "supporting_signals": [
+          "이동평균 정배열"
+        ],
+        "caution_signals": [
+          "MACD < signal",
+          "MACD histogram 음수",
+          "RSI 과매도",
+          "ROC60 음수",
+          "수급 데이터 부재",
+          "상대강도 benchmark 부재",
+          "52주 조정 구간",
+          "변동성 중간"
+        ]
+      },
+      "evidence": [
+        "MA30>MA60>MA120 정배열",
+        "종가 MA60 대비 -11.60% 하회",
+        "종가 MA120 대비 -7.10% 하회",
+        "60일 수익률 -9.06% 음수",
+        "120일 수익률 7.81% 양수",
+        "MACD histogram 음수",
+        "MACD < signal",
+        "ROC60 -9.06% 음수"
+      ],
+      "limitations": [
+        "수급 데이터 없음",
+        "상대강도 benchmark 없음"
+      ],
+      "risk_flags": [
+        "RSI 29.9 과매도",
+        "52주 낙폭 -18.25% 조정",
+        "20일 변동성 2.74% 중간",
+        "RSI 29.9 과매도"
+      ],
+      "rationale": "KOSDAQ: Neutral (신뢰도 Medium). 우호 블록=[], 경계=['trend', 'momentum']. Timing 19점(Avoid)."
+    },
+    {
+      "agent": "Market Agent",
+      "as_of_date": "2026-06-06",
+      "target": {
+        "asset_code": "KRW=X",
+        "asset_name": "USD/KRW",
+        "market": "FX"
+      },
+      "stance": "Neutral",
+      "confidence": "Medium",
+      "decision_basis": {
+        "positive_blocks": [
+          "trend",
+          "momentum"
+        ],
+        "negative_blocks": [],
+        "mixed_blocks": [
+          "risk"
+        ]
+      },
+      "technical_view": {
+        "view": "Bullish",
+        "bullish_evidence_count": 5,
+        "bearish_evidence_count": 0,
+        "evidence": [
+          "MA30>MA60>MA120 정배열",
+          "종가 MA60 대비 4.45% 상회",
+          "종가 MA120 대비 5.78% 상회",
+          "60일 수익률 3.80% 양수",
+          "120일 수익률 5.76% 양수"
+        ],
+        "limitations": []
+      },
+      "momentum_view": {
+        "view": "Positive",
+        "positive_evidence_count": 3,
+        "negative_evidence_count": 1,
+        "evidence": [
+          "MACD histogram 양수",
+          "MACD > signal",
+          "ROC60 3.80% 양수"
+        ],
+        "risk_flags": [
+          "RSI 77.3 과열"
+        ],
+        "limitations": []
+      },
+      "flow_view": {
+        "view": "NotAvailable",
+        "foreign_20d": null,
+        "institution_20d": null,
+        "total_flow_20d": null,
+        "evidence": [],
+        "risk_flags": [],
+        "limitations": [
+          "수급 데이터 없음"
+        ]
+      },
+      "relative_strength_view": {
+        "view": "NotAvailable",
+        "average_relative_strength_20d": null,
+        "evidence": [],
+        "risk_flags": [],
+        "limitations": [
+          "상대강도 benchmark 없음"
+        ]
+      },
+      "risk_view": {
+        "view": "Moderate",
+        "high_risk_count": 1,
+        "moderate_risk_count": 0,
+        "evidence": [
+          "52주 낙폭 0.00% 제한적",
+          "20일 변동성 0.63% 낮음"
+        ],
+        "risk_flags": [
+          "RSI 77.3 과열"
+        ],
+        "limitations": []
+      },
+      "timing_readiness": {
+        "score": 84,
+        "zone": "Strong Entry Zone",
+        "supporting_signals": [
+          "이동평균 정배열",
+          "MACD > signal",
+          "MACD histogram 양수",
+          "ROC60 양수",
+          "변동성 낮음"
+        ],
+        "caution_signals": [
+          "RSI 과열 접근",
+          "수급 데이터 부재",
+          "상대강도 benchmark 부재",
+          "risk Moderate"
+        ]
+      },
+      "evidence": [
+        "MA30>MA60>MA120 정배열",
+        "종가 MA60 대비 4.45% 상회",
+        "종가 MA120 대비 5.78% 상회",
+        "60일 수익률 3.80% 양수",
+        "120일 수익률 5.76% 양수",
+        "MACD histogram 양수",
+        "MACD > signal",
+        "ROC60 3.80% 양수"
+      ],
+      "limitations": [
+        "수급 데이터 없음",
+        "상대강도 benchmark 없음"
+      ],
+      "risk_flags": [
+        "RSI 77.3 과열",
+        "RSI 77.3 과열"
+      ],
+      "rationale": "USD/KRW: Neutral (신뢰도 Medium). 우호 블록=['trend', 'momentum'], 경계=[]. Timing 84점(Strong Entry Zone)."
+    },
+    {
+      "agent": "Market Agent",
+      "as_of_date": "2026-06-05",
+      "target": {
+        "asset_code": "KS11",
+        "asset_name": "KOSPI",
+        "market": "KR_INDEX"
+      },
+      "stance": "Neutral",
+      "confidence": "High",
+      "decision_basis": {
+        "positive_blocks": [
+          "trend",
+          "momentum"
+        ],
+        "negative_blocks": [],
+        "mixed_blocks": []
+      },
+      "technical_view": {
+        "view": "Bullish",
+        "bullish_evidence_count": 5,
+        "bearish_evidence_count": 0,
+        "evidence": [
+          "MA30>MA60>MA120 정배열",
+          "종가 MA60 대비 23.92% 상회",
+          "종가 MA120 대비 42.33% 상회",
+          "60일 수익률 55.38% 양수",
+          "120일 수익률 102.57% 양수"
+        ],
+        "limitations": []
+      },
+      "momentum_view": {
+        "view": "Positive",
+        "positive_evidence_count": 4,
+        "negative_evidence_count": 0,
+        "evidence": [
+          "RSI14 52.9 안정 구간",
+          "MACD histogram 양수",
+          "MACD > signal",
+          "ROC60 55.38% 양수"
+        ],
+        "risk_flags": [],
+        "limitations": []
+      },
+      "flow_view": {
+        "view": "NotAvailable",
+        "foreign_20d": null,
+        "institution_20d": null,
+        "total_flow_20d": null,
+        "evidence": [],
+        "risk_flags": [],
+        "limitations": [
+          "수급 데이터 없음"
+        ]
+      },
+      "relative_strength_view": {
+        "view": "NotAvailable",
+        "average_relative_strength_20d": null,
+        "evidence": [],
+        "risk_flags": [],
+        "limitations": [
+          "상대강도 benchmark 없음"
+        ]
+      },
+      "risk_view": {
+        "view": "Low",
+        "high_risk_count": 0,
+        "moderate_risk_count": 1,
+        "evidence": [
+          "52주 낙폭 -7.28% 제한적"
+        ],
+        "risk_flags": [
+          "20일 변동성 3.42% 중간"
+        ],
+        "limitations": []
+      },
+      "timing_readiness": {
+        "score": 90,
+        "zone": "Strong Entry Zone",
+        "supporting_signals": [
+          "이동평균 정배열",
+          "MACD > signal",
+          "MACD histogram 양수",
+          "RSI 안정 상승 구간",
+          "ROC60 양수"
+        ],
+        "caution_signals": [
+          "수급 데이터 부재",
+          "상대강도 benchmark 부재",
+          "변동성 중간"
+        ]
+      },
+      "evidence": [
+        "MA30>MA60>MA120 정배열",
+        "종가 MA60 대비 23.92% 상회",
+        "종가 MA120 대비 42.33% 상회",
+        "60일 수익률 55.38% 양수",
+        "120일 수익률 102.57% 양수",
+        "RSI14 52.9 안정 구간",
+        "MACD histogram 양수",
+        "MACD > signal"
+      ],
+      "limitations": [
+        "수급 데이터 없음",
+        "상대강도 benchmark 없음"
+      ],
+      "risk_flags": [
+        "20일 변동성 3.42% 중간"
+      ],
+      "rationale": "KOSPI: Neutral (신뢰도 High). 우호 블록=['trend', 'momentum'], 경계=[]. Timing 90점(Strong Entry Zone)."
+    },
+    {
+      "agent": "Market Agent",
+      "as_of_date": "2026-06-05",
+      "target": {
+        "asset_code": "SMH",
+        "asset_name": "VanEck Semiconductor ETF",
+        "market": "US_ETF"
+      },
+      "stance": "Neutral",
+      "confidence": "Low",
+      "decision_basis": {
+        "positive_blocks": [
+          "trend"
+        ],
+        "negative_blocks": [],
+        "mixed_blocks": [
+          "momentum",
+          "relative_strength"
+        ]
+      },
+      "technical_view": {
+        "view": "Bullish",
+        "bullish_evidence_count": 5,
+        "bearish_evidence_count": 0,
+        "evidence": [
+          "MA30>MA60>MA120 정배열",
+          "종가 MA60 대비 16.77% 상회",
+          "종가 MA120 대비 29.70% 상회",
+          "60일 수익률 42.06% 양수",
+          "120일 수익률 53.60% 양수"
+        ],
+        "limitations": []
+      },
+      "momentum_view": {
+        "view": "Mixed",
+        "positive_evidence_count": 2,
+        "negative_evidence_count": 2,
+        "evidence": [
+          "RSI14 53.5 안정 구간",
+          "MACD histogram 음수",
+          "MACD < signal",
+          "ROC60 42.06% 양수"
+        ],
+        "risk_flags": [],
+        "limitations": []
+      },
+      "flow_view": {
+        "view": "NotAvailable",
+        "foreign_20d": null,
+        "institution_20d": null,
+        "total_flow_20d": null,
+        "evidence": [],
+        "risk_flags": [],
+        "limitations": [
+          "수급 데이터 없음"
+        ]
+      },
+      "relative_strength_view": {
+        "view": "Neutral",
+        "average_relative_strength_20d": 0.017108862244170076,
+        "evidence": [
+          "NASDAQ 대비 20일 상대강도 2.66% 개선",
+          "S&P500 대비 20일 상대강도 0.76% 개선"
+        ],
+        "risk_flags": [],
+        "limitations": []
+      },
+      "risk_view": {
+        "view": "Low",
+        "high_risk_count": 0,
+        "moderate_risk_count": 1,
+        "evidence": [
+          "52주 낙폭 -10.69% 제한적"
+        ],
+        "risk_flags": [
+          "20일 변동성 3.25% 중간"
+        ],
+        "limitations": []
+      },
+      "timing_readiness": {
+        "score": 69,
+        "zone": "Entry Candidate",
+        "supporting_signals": [
+          "이동평균 정배열",
+          "RSI 안정 상승 구간",
+          "ROC60 양수",
+          "거래량 평균 이상"
+        ],
+        "caution_signals": [
+          "MACD < signal",
+          "MACD histogram 음수",
+          "수급 데이터 부재",
+          "변동성 중간"
+        ]
+      },
+      "evidence": [
+        "MA30>MA60>MA120 정배열",
+        "종가 MA60 대비 16.77% 상회",
+        "종가 MA120 대비 29.70% 상회",
+        "60일 수익률 42.06% 양수",
+        "120일 수익률 53.60% 양수",
+        "RSI14 53.5 안정 구간",
+        "MACD histogram 음수",
+        "MACD < signal"
+      ],
+      "limitations": [
+        "수급 데이터 없음"
+      ],
+      "risk_flags": [
+        "20일 변동성 3.25% 중간"
+      ],
+      "rationale": "VanEck Semiconductor ETF: Neutral (신뢰도 Low). 우호 블록=['trend'], 경계=[]. Timing 69점(Entry Candidate)."
+    },
+    {
+      "agent": "Market Agent",
+      "as_of_date": "2026-06-05",
+      "target": {
+        "asset_code": "SOXX",
+        "asset_name": "iShares Semiconductor ETF",
+        "market": "US_ETF"
+      },
+      "stance": "Neutral",
+      "confidence": "Medium",
+      "decision_basis": {
+        "positive_blocks": [
+          "trend",
+          "relative_strength"
+        ],
+        "negative_blocks": [],
+        "mixed_blocks": [
+          "momentum",
+          "risk"
+        ]
+      },
+      "technical_view": {
+        "view": "Bullish",
+        "bullish_evidence_count": 5,
+        "bearish_evidence_count": 0,
+        "evidence": [
+          "MA30>MA60>MA120 정배열",
+          "종가 MA60 대비 22.24% 상회",
+          "종가 MA120 대비 39.13% 상회",
+          "60일 수익률 57.79% 양수",
+          "120일 수익률 71.62% 양수"
+        ],
+        "limitations": []
+      },
+      "momentum_view": {
+        "view": "Mixed",
+        "positive_evidence_count": 2,
+        "negative_evidence_count": 2,
+        "evidence": [
+          "RSI14 57.1 안정 구간",
+          "MACD histogram 음수",
+          "MACD < signal",
+          "ROC60 57.79% 양수"
+        ],
+        "risk_flags": [],
+        "limitations": []
+      },
+      "flow_view": {
+        "view": "NotAvailable",
+        "foreign_20d": null,
+        "institution_20d": null,
+        "total_flow_20d": null,
+        "evidence": [],
+        "risk_flags": [],
+        "limitations": [
+          "수급 데이터 없음"
+        ]
+      },
+      "relative_strength_view": {
+        "view": "Outperforming",
+        "average_relative_strength_20d": 0.04933544973196258,
+        "evidence": [
+          "NASDAQ 대비 20일 상대강도 5.91% 개선",
+          "S&P500 대비 20일 상대강도 3.96% 개선"
+        ],
+        "risk_flags": [],
+        "limitations": []
+      },
+      "risk_view": {
+        "view": "Moderate",
+        "high_risk_count": 1,
+        "moderate_risk_count": 0,
+        "evidence": [
+          "52주 낙폭 -12.33% 제한적"
+        ],
+        "risk_flags": [
+          "20일 변동성 3.90% 높음"
+        ],
+        "limitations": []
+      },
+      "timing_readiness": {
+        "score": 68,
+        "zone": "Entry Candidate",
+        "supporting_signals": [
+          "이동평균 정배열",
+          "RSI 안정 상승 구간",
+          "ROC60 양수",
+          "상대강도 개선",
+          "거래량 평균 이상"
+        ],
+        "caution_signals": [
+          "MACD < signal",
+          "MACD histogram 음수",
+          "수급 데이터 부재",
+          "변동성 높음",
+          "risk Moderate"
+        ]
+      },
+      "evidence": [
+        "MA30>MA60>MA120 정배열",
+        "종가 MA60 대비 22.24% 상회",
+        "종가 MA120 대비 39.13% 상회",
+        "60일 수익률 57.79% 양수",
+        "120일 수익률 71.62% 양수",
+        "RSI14 57.1 안정 구간",
+        "MACD histogram 음수",
+        "MACD < signal"
+      ],
+      "limitations": [
+        "수급 데이터 없음"
+      ],
+      "risk_flags": [
+        "20일 변동성 3.90% 높음"
+      ],
+      "rationale": "iShares Semiconductor ETF: Neutral (신뢰도 Medium). 우호 블록=['trend', 'relative_strength'], 경계=[]. Timing 68점(Entry Candidate)."
+    },
+    {
+      "agent": "Market Agent",
+      "as_of_date": "2026-06-05",
+      "target": {
+        "asset_code": "^GSPC",
+        "asset_name": "S&P 500",
+        "market": "US_INDEX"
+      },
+      "stance": "Neutral",
+      "confidence": "Medium",
+      "decision_basis": {
+        "positive_blocks": [
+          "trend"
+        ],
+        "negative_blocks": [],
+        "mixed_blocks": [
+          "momentum"
+        ]
+      },
+      "technical_view": {
+        "view": "Bullish",
+        "bullish_evidence_count": 5,
+        "bearish_evidence_count": 0,
+        "evidence": [
+          "MA30>MA60>MA120 정배열",
+          "종가 MA60 대비 4.49% 상회",
+          "종가 MA120 대비 5.85% 상회",
+          "60일 수익률 8.97% 양수",
+          "120일 수익률 7.00% 양수"
+        ],
+        "limitations": []
+      },
+      "momentum_view": {
+        "view": "Mixed",
+        "positive_evidence_count": 2,
+        "negative_evidence_count": 2,
+        "evidence": [
+          "RSI14 47.9 안정 구간",
+          "MACD histogram 음수",
+          "MACD < signal",
+          "ROC60 8.97% 양수"
+        ],
+        "risk_flags": [],
+        "limitations": []
+      },
+      "flow_view": {
+        "view": "NotAvailable",
+        "foreign_20d": null,
+        "institution_20d": null,
+        "total_flow_20d": null,
+        "evidence": [],
+        "risk_flags": [],
+        "limitations": [
+          "수급 데이터 없음"
+        ]
+      },
+      "relative_strength_view": {
+        "view": "NotAvailable",
+        "average_relative_strength_20d": null,
+        "evidence": [],
+        "risk_flags": [],
+        "limitations": [
+          "상대강도 benchmark 없음"
+        ]
+      },
+      "risk_view": {
+        "view": "Low",
+        "high_risk_count": 0,
+        "moderate_risk_count": 0,
+        "evidence": [
+          "52주 낙폭 -2.97% 제한적",
+          "20일 변동성 0.84% 낮음"
+        ],
+        "risk_flags": [],
+        "limitations": []
+      },
+      "timing_readiness": {
+        "score": 72,
+        "zone": "Entry Candidate",
+        "supporting_signals": [
+          "이동평균 정배열",
+          "RSI 안정 상승 구간",
+          "ROC60 양수",
+          "변동성 낮음"
+        ],
+        "caution_signals": [
+          "MACD < signal",
+          "MACD histogram 음수",
+          "수급 데이터 부재",
+          "상대강도 benchmark 부재"
+        ]
+      },
+      "evidence": [
+        "MA30>MA60>MA120 정배열",
+        "종가 MA60 대비 4.49% 상회",
+        "종가 MA120 대비 5.85% 상회",
+        "60일 수익률 8.97% 양수",
+        "120일 수익률 7.00% 양수",
+        "RSI14 47.9 안정 구간",
+        "MACD histogram 음수",
+        "MACD < signal"
+      ],
+      "limitations": [
+        "수급 데이터 없음",
+        "상대강도 benchmark 없음"
+      ],
+      "risk_flags": [],
+      "rationale": "S&P 500: Neutral (신뢰도 Medium). 우호 블록=['trend'], 경계=[]. Timing 72점(Entry Candidate)."
+    },
+    {
+      "agent": "Market Agent",
+      "as_of_date": "2026-06-05",
+      "target": {
+        "asset_code": "^IXIC",
+        "asset_name": "NASDAQ Composite",
+        "market": "US_INDEX"
+      },
+      "stance": "Neutral",
+      "confidence": "Medium",
+      "decision_basis": {
+        "positive_blocks": [
+          "trend"
+        ],
+        "negative_blocks": [],
+        "mixed_blocks": [
+          "momentum"
+        ]
+      },
+      "technical_view": {
+        "view": "Bullish",
+        "bullish_evidence_count": 5,
+        "bearish_evidence_count": 0,
+        "evidence": [
+          "MA30>MA60>MA120 정배열",
+          "종가 MA60 대비 5.69% 상회",
+          "종가 MA120 대비 8.29% 상회",
+          "60일 수익률 13.18% 양수",
+          "120일 수익률 8.97% 양수"
+        ],
+        "limitations": []
+      },
+      "momentum_view": {
+        "view": "Mixed",
+        "positive_evidence_count": 1,
+        "negative_evidence_count": 2,
+        "evidence": [
+          "MACD histogram 음수",
+          "MACD < signal",
+          "ROC60 13.18% 양수"
+        ],
+        "risk_flags": [],
+        "limitations": []
+      },
+      "flow_view": {
+        "view": "NotAvailable",
+        "foreign_20d": null,
+        "institution_20d": null,
+        "total_flow_20d": null,
+        "evidence": [],
+        "risk_flags": [],
+        "limitations": [
+          "수급 데이터 없음"
+        ]
+      },
+      "relative_strength_view": {
+        "view": "NotAvailable",
+        "average_relative_strength_20d": null,
+        "evidence": [],
+        "risk_flags": [],
+        "limitations": [
+          "상대강도 benchmark 없음"
+        ]
+      },
+      "risk_view": {
+        "view": "Low",
+        "high_risk_count": 0,
+        "moderate_risk_count": 0,
+        "evidence": [
+          "52주 낙폭 -5.11% 제한적",
+          "20일 변동성 1.30% 낮음"
+        ],
+        "risk_flags": [],
+        "limitations": []
+      },
+      "timing_readiness": {
+        "score": 66,
+        "zone": "Entry Candidate",
+        "supporting_signals": [
+          "이동평균 정배열",
+          "ROC60 양수",
+          "거래량 평균 이상",
+          "변동성 낮음"
+        ],
+        "caution_signals": [
+          "MACD < signal",
+          "MACD histogram 음수",
+          "수급 데이터 부재",
+          "상대강도 benchmark 부재"
+        ]
+      },
+      "evidence": [
+        "MA30>MA60>MA120 정배열",
+        "종가 MA60 대비 5.69% 상회",
+        "종가 MA120 대비 8.29% 상회",
+        "60일 수익률 13.18% 양수",
+        "120일 수익률 8.97% 양수",
+        "MACD histogram 음수",
+        "MACD < signal",
+        "ROC60 13.18% 양수"
+      ],
+      "limitations": [
+        "수급 데이터 없음",
+        "상대강도 benchmark 없음"
+      ],
+      "risk_flags": [],
+      "rationale": "NASDAQ Composite: Neutral (신뢰도 Medium). 우호 블록=['trend'], 경계=[]. Timing 66점(Entry Candidate)."
+    }
+  ]
+}

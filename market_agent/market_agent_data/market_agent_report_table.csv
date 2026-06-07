@@ -1,0 +1,11 @@
+﻿Date,AssetCode,AssetName,Stance,Confidence,TimingScore,TimingZone,Trend,Momentum,Flow,Risk
+2026-06-05,000660,SK Hynix,Neutral,Low,56,Neutral,Bullish,Mixed,Distribution,Moderate
+2026-06-05,005930,Samsung Electronics,Positive,Medium,81,Strong Entry Zone,Bullish,Positive,Distribution,Moderate
+2026-06-05,042700,Hanmi Semiconductor,Cautious,High,0,Avoid,MildBearish,Negative,StrongDistribution,High
+2026-06-05,KQ11,KOSDAQ,Neutral,Medium,19,Avoid,MildBearish,Negative,NotAvailable,Moderate
+2026-06-06,KRW=X,USD/KRW,Neutral,Medium,84,Strong Entry Zone,Bullish,Positive,NotAvailable,Moderate
+2026-06-05,KS11,KOSPI,Neutral,High,90,Strong Entry Zone,Bullish,Positive,NotAvailable,Low
+2026-06-05,SMH,VanEck Semiconductor ETF,Neutral,Low,69,Entry Candidate,Bullish,Mixed,NotAvailable,Low
+2026-06-05,SOXX,iShares Semiconductor ETF,Neutral,Medium,68,Entry Candidate,Bullish,Mixed,NotAvailable,Moderate
+2026-06-05,^GSPC,S&P 500,Neutral,Medium,72,Entry Candidate,Bullish,Mixed,NotAvailable,Low
+2026-06-05,^IXIC,NASDAQ Composite,Neutral,Medium,66,Entry Candidate,Bullish,Mixed,NotAvailable,Low

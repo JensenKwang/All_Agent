@@ -466,7 +466,11 @@ class MarketFeatureBuilder:
         if price_df.empty:
             raise ValueError("price_df is empty")
 
+        # pandas 3.x: groupby().apply()가 그룹 키 컬럼을 제거하므로 보존 처리
+        asset_codes = price_df[["AssetCode"]].copy()
         price_feat = price_df.groupby("AssetCode", group_keys=False).apply(self.add_price_features).reset_index(drop=True)
+        if "AssetCode" not in price_feat.columns:
+            price_feat["AssetCode"] = asset_codes["AssetCode"].values
 
         if flow_df.empty:
             flow_feat = pd.DataFrame()
@@ -480,7 +484,10 @@ class MarketFeatureBuilder:
                 if c not in flow_wide.columns:
                     flow_wide[c] = 0.0
             flow_wide = flow_wide.sort_values(["AssetCode", "Date"]).reset_index(drop=True)
+            flow_asset_codes = flow_wide[["AssetCode"]].copy()
             flow_feat = flow_wide.groupby("AssetCode", group_keys=False).apply(self.add_flow_features).reset_index(drop=True)
+            if "AssetCode" not in flow_feat.columns:
+                flow_feat["AssetCode"] = flow_asset_codes["AssetCode"].values
 
         flow_cols = [
             "Date", "AssetCode", "Foreign", "Institution",
