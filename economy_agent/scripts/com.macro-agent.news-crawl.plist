@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.macro-agent.news-crawl</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/kim-woojae/macro-analysis-agent/.venv/bin/python3</string>
+        <string>/Users/kim-woojae/macro-analysis-agent/scripts/crawl_news.py</string>
+    </array>
+
+    <!-- 매일 오전 9시 실행 -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>9</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <!-- 로그 -->
+    <key>StandardOutPath</key>
+    <string>/Users/kim-woojae/macro-analysis-agent/logs/news_crawl.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/kim-woojae/macro-analysis-agent/logs/news_crawl_error.log</string>
+
+    <!-- .env 로드를 위한 작업 디렉토리 -->
+    <key>WorkingDirectory</key>
+    <string>/Users/kim-woojae/macro-analysis-agent</string>
+
+    <!-- 실패 시 재시도 방지 (무한 루프 차단) -->
+    <key>ThrottleInterval</key>
+    <integer>3600</integer>
+
+    <!-- 로그인 세션 없이도 실행 -->
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>

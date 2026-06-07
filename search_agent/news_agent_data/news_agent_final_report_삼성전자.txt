@@ -1,0 +1,29 @@
+======================================================================
+News Agent Analysis Report
+======================================================================
+생성 시각: 2026-06-03 03:50:28
+분석 키워드: 삼성전자
+
+[분석 요약]
+- Signal         : Positive
+- Confidence     : High
+- Score          : 0.842
+- News Reliability: HIGH
+- 분석 기사 수    : 전체 5건 중 5건 통과
+
+[핵심 근거]
+- [81.3점] 삼성전자, 앤트로픽 칩 수주 전망…파운드리 부활 시동 - 연합뉴스 — <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE9aMkNtUVQ0aGFXUUlNd1...
+- [81.3점] SK증권, 삼성전자 61만원·하이닉스 400만원으로 목표가↑ - 연합뉴스 — <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE13dWlQUlI3UUExNGphTT...
+- [74.3점] “27년 철옹성 흔들리나 했더니”…삼성전자, 사상 첫 시총 2000조 돌파 - 매일경제 — <a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTFA3d3J1dGhpT3AwQlFQSl...
+- [74.3점] 삼성전자 덕에…삼성생명, 한 달 만에 54% 폭등한 이유 - 한국경제 — <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9iLWxwOVVoaHl2QUtmQT...
+- [74.3점] 고맙다, 삼성전자 노동조합! [세상읽기] - 한겨레 — <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE1KOWt2czQwUUtxSXZJNE...
+
+[리스크]
+- “27년 철옹성 흔들리나 했더니”…삼성전자, 사상 첫 ... : 공식 연락처 미확인
+- 고맙다, 삼성전자 노동조합! [세상읽기] - 한겨레... : 공식 연락처 미확인
+
+[해석 제한]
+- 전체 30건 중 5건만 신뢰도 기준 통과
+
+[Integration Agent 전달 메시지]
+'삼성전자' 관련 뉴스 분석 완료. 평균 신뢰도 77.1점(HIGH). 종합 신호: Positive(High).

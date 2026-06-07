@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "macro-analysis-agent"
+version = "0.1.0"
+description = "반도체 도메인 거시경제·지정학 리스크 분석 멀티에이전트"
+requires-python = ">=3.11"
+dependencies = [
+    # LangChain / LangGraph
+    "langchain>=0.3",
+    "langchain-core>=0.3",
+    "langchain-openai>=0.3",
+    "langgraph>=0.2",
+    # HTTP 클라이언트
+    "requests>=2.32",
+    # 재시도 로직
+    "tenacity>=8.3",
+    # 금융 데이터
+    "yfinance>=0.2.40",
+    # RSS 파싱
+    "feedparser>=6.0",
+    # 환경변수
+    "python-dotenv>=1.0",
+    # 데이터 직렬화
+    "pydantic>=2.7",
+    # HTML 파싱 (은행 사이트 크롤링)
+    "beautifulsoup4>=4.12",
+    # PDF 텍스트 추출
+    "PyMuPDF>=1.24",
+    # ── DB 레이어 ──────────────────────────────────────────────────────
+    # TimescaleDB (PostgreSQL 드라이버)
+    "psycopg2-binary>=2.9",
+    # Vector DB
+    "chromadb>=0.5",
+    # 텍스트 청킹
+    "langchain-text-splitters>=0.3",
+    # ── 뉴스 수집 레이어 ─────────────────────────────────────────────
+    # 기사 본문 추출 (Firecrawl 폴백용)
+    "trafilatura>=2.0",
+    # Firecrawl 기사 본문 크롤링 (FIRECRAWL_API_KEY 설정 시 활성화)
+    "firecrawl-py>=1.5",
+    # RSS 파싱 (feedparser는 이미 포함)
+    # ── 분석 레이어 ──────────────────────────────────────────────────
+    # FinBERT 감성 분석 (CPU-only torch 권장)
+    "transformers>=4.40",
+    # NER 엔티티 추출
+    "spacy>=3.7",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "pytest-mock>=3.14",
+    "responses>=0.25",   # requests mock
+    "ruff>=0.4",
+    "mypy>=1.10",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+ignore_missing_imports = true

@@ -1,0 +1,19 @@
+{
+  "agent_name": "Market Agent",
+  "signal": "Neutral",
+  "confidence": "Medium",
+  "score": 0.35,
+  "timing_readiness_score": 75,
+  "timing_readiness_zone": "Entry Candidate",
+  "key_evidence": [
+    "삼성전자 가격은 MA30 > MA60 > MA120 정배열로 강한 상승 추세를 보임",
+    "MACD 및 RSI 지표가 긍정적 모멘텀 신호를 나타냄",
+    "상대강도 개선으로 시장 대비 우위 신호 존재"
+  ],
+  "key_risks": [
+    "외국인 20일 순매도 및 외국인+기관 합산 수급 음수로 수급 흐름 약화",
+    "20일 변동성 높음으로 단기 가격 변동 위험 존재"
+  ],
+  "limitations": [],
+  "handoff_message": "삼성전자는 기술적 지표와 상대강도 측면에서 강한 상승 신호를 보이나, 외국인 수급이 지속적으로 순매도 상태이고 변동성도 높아 단기 가격 방향성에 불확실성이 존재합니다. 수급과 가격 모멘텀 간 불일치가 관찰되어 추가 수급 확인과 리스크 관리가 필요합니다."
+}

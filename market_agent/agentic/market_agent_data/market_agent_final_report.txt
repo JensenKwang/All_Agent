@@ -1,0 +1,471 @@
+======================================================================
+Market Agent Analysis Report
+======================================================================
+생성 시각: 2026-06-07 15:31:29
+분석 자산 수: 10
+
+[시장 전체 요약]
+- Positive: 1
+- Neutral : 8
+- Cautious: 1
+- 평균 Timing Readiness: 60.5
+- 종합 판단: 시장 방향성이 뚜렷하지 않은 중립 구간입니다.
+
+======================================================================
+SK Hynix (000660) - KR_STOCK
+======================================================================
+종합 판단: Neutral
+신뢰도: Low
+Timing Readiness: 56 / Neutral
+
+[핵심 해석]
+SK Hynix에 대한 Market Agent의 판단은 Neutral이며, 신뢰도는 Low입니다. 우호 블록은 ['trend', 'relative_strength'], 경계 블록은 ['flow'], 혼재 블록은 ['momentum', 'risk']입니다. 보수적 Timing Readiness는 56점(Neutral)입니다. 추세는 우호적이지만 수급이 약해 상승 지속성에 대한 검증이 필요합니다.
+
+[세부 관점]
+- Trend: Bullish
+- Momentum: Mixed
+- Flow: Distribution
+- Relative Strength: Outperforming
+- Risk: Moderate
+
+[근거]
+- MA30 > MA60 > MA120 정배열이 형성되어 있습니다.
+- 현재 가격이 MA60 대비 50.47% 위에 있습니다.
+- 현재 가격이 MA120 대비 93.32% 위에 있습니다.
+- 최근 60거래일 수익률이 147.61%로 양수입니다.
+- 최근 120거래일 수익률이 281.92%로 양수입니다.
+- RSI14가 54.24로 안정적인 모멘텀 구간입니다.
+- MACD histogram이 음수로 단기 모멘텀이 약합니다.
+- MACD가 signal line 아래에 있습니다.
+
+[Timing Support]
+- 이동평균 정배열
+- RSI가 안정적 상승 구간
+- ROC60 양수
+- 기관 20일 순매수
+- benchmark 대비 상대강도 개선
+
+[Timing Caution]
+- MACD가 signal line 하회
+- MACD histogram 음수
+- 외국인+기관 20일 합산 수급 음수
+- 외국인 20일 순매도
+- 20일 변동성 높음
+- risk view Moderate
+
+[리스크]
+- 20일 변동성이 5.69%로 높습니다.
+
+======================================================================
+Samsung Electronics (005930) - KR_STOCK
+======================================================================
+종합 판단: Positive
+신뢰도: Medium
+Timing Readiness: 81 / Strong Entry Zone
+
+[핵심 해석]
+Samsung Electronics에 대한 Market Agent의 판단은 Positive이며, 신뢰도는 Medium입니다. 우호 블록은 ['trend', 'momentum', 'relative_strength'], 경계 블록은 ['flow'], 혼재 블록은 ['risk']입니다. 보수적 Timing Readiness는 81점(Strong Entry Zone)입니다. 추세는 우호적이지만 수급이 약해 상승 지속성에 대한 검증이 필요합니다.
+
+[세부 관점]
+- Trend: Bullish
+- Momentum: Positive
+- Flow: Distribution
+- Relative Strength: Outperforming
+- Risk: Moderate
+
+[근거]
+- MA30 > MA60 > MA120 정배열이 형성되어 있습니다.
+- 현재 가격이 MA60 대비 39.97% 위에 있습니다.
+- 현재 가격이 MA120 대비 71.31% 위에 있습니다.
+- 최근 60거래일 수익률이 89.63%로 양수입니다.
+- 최근 120거래일 수익률이 213.04%로 양수입니다.
+- RSI14가 58.82로 안정적인 모멘텀 구간입니다.
+- MACD histogram이 양수로 단기 모멘텀이 개선되어 있습니다.
+- MACD가 signal line 위에 있습니다.
+
+[Timing Support]
+- 이동평균 정배열
+- MACD가 signal line 상회
+- MACD histogram 양수
+- RSI가 안정적 상승 구간
+- ROC60 양수
+- 기관 20일 순매수
+- benchmark 대비 상대강도 개선
+
+[Timing Caution]
+- 외국인+기관 20일 합산 수급 음수
+- 외국인 20일 순매도
+- 20일 변동성 높음
+- risk view Moderate
+
+[리스크]
+- 20일 변동성이 4.74%로 높습니다.
+
+======================================================================
+Hanmi Semiconductor (042700) - KR_STOCK
+======================================================================
+종합 판단: Cautious
+신뢰도: High
+Timing Readiness: 0 / Avoid
+
+[핵심 해석]
+Hanmi Semiconductor에 대한 Market Agent의 판단은 Cautious이며, 신뢰도는 High입니다. 우호 블록은 [], 경계 블록은 ['trend', 'momentum', 'flow', 'relative_strength', 'risk'], 혼재 블록은 []입니다. 보수적 Timing Readiness는 0점(Avoid)입니다. 주요 판단 블록 간 큰 충돌은 관찰되지 않습니다.
+
+[세부 관점]
+- Trend: MildBearish
+- Momentum: Negative
+- Flow: StrongDistribution
+- Relative Strength: Underperforming
+- Risk: High
+
+[근거]
+- MA30 > MA60 > MA120 정배열이 형성되어 있습니다.
+- 현재 가격이 MA60 대비 -9.17% 아래에 있습니다.
+- 현재 가격이 MA120 대비 14.74% 위에 있습니다.
+- 최근 60거래일 수익률이 -7.21%로 음수입니다.
+- 최근 120거래일 수익률이 143.76%로 양수입니다.
+- 52주 고점 대비 낙폭이 -30.89%로 큽니다.
+- MACD histogram이 음수로 단기 모멘텀이 약합니다.
+- MACD가 signal line 아래에 있습니다.
+
+[Timing Support]
+- 이동평균 정배열
+
+[Timing Caution]
+- MACD가 signal line 하회
+- MACD histogram 음수
+- RSI 과매도
+- ROC60 음수
+- 외국인+기관 20일 합산 수급 음수
+- 외국인 20일 순매도
+- 기관 20일 순매도
+- benchmark 대비 상대강도 약화
+
+[리스크]
+- RSI14가 29.76로 과매도 구간입니다.
+- 52주 고점 대비 낙폭이 -30.89%로 큽니다.
+- 20일 변동성이 7.20%로 높습니다.
+- RSI14가 29.76로 과매도 상태입니다.
+
+======================================================================
+KOSDAQ (KQ11) - KR_INDEX
+======================================================================
+종합 판단: Neutral
+신뢰도: Medium
+Timing Readiness: 19 / Avoid
+
+[핵심 해석]
+KOSDAQ에 대한 Market Agent의 판단은 Neutral이며, 신뢰도는 Medium입니다. 우호 블록은 [], 경계 블록은 ['trend', 'momentum'], 혼재 블록은 ['risk']입니다. 보수적 Timing Readiness는 19점(Avoid)입니다. 해당 자산은 수급 데이터가 없어 flow 기반 확인은 제한됩니다. 상대강도 benchmark가 없어 시장 대비 우위 판단은 제한됩니다.
+
+[세부 관점]
+- Trend: MildBearish
+- Momentum: Negative
+- Flow: NotAvailable
+- Relative Strength: NotAvailable
+- Risk: Moderate
+
+[근거]
+- MA30 > MA60 > MA120 정배열이 형성되어 있습니다.
+- 현재 가격이 MA60 대비 -11.60% 아래에 있습니다.
+- 현재 가격이 MA120 대비 -7.10% 아래에 있습니다.
+- 최근 60거래일 수익률이 -9.06%로 음수입니다.
+- 최근 120거래일 수익률이 7.81%로 양수입니다.
+- MACD histogram이 음수로 단기 모멘텀이 약합니다.
+- MACD가 signal line 아래에 있습니다.
+- ROC60이 -9.06%로 중기 모멘텀이 약합니다.
+
+[Timing Support]
+- 이동평균 정배열
+
+[Timing Caution]
+- MACD가 signal line 하회
+- MACD histogram 음수
+- RSI 과매도
+- ROC60 음수
+- 수급 데이터 부재
+- 상대강도 benchmark 부재
+- 52주 고점 대비 조정 구간
+- 20일 변동성 중간 수준
+
+[리스크]
+- RSI14가 29.89로 과매도 구간입니다.
+- 52주 고점 대비 낙폭이 -18.25%로 조정 구간입니다.
+- 20일 변동성이 2.74%로 중간 수준입니다.
+- RSI14가 29.89로 과매도 상태입니다.
+
+[해석 제한]
+- 해당 자산에는 외국인/기관 수급 데이터가 없습니다.
+- 비교 가능한 상대강도 benchmark가 없습니다.
+
+======================================================================
+USD/KRW (KRW=X) - FX
+======================================================================
+종합 판단: Neutral
+신뢰도: Medium
+Timing Readiness: 84 / Strong Entry Zone
+
+[핵심 해석]
+USD/KRW에 대한 Market Agent의 판단은 Neutral이며, 신뢰도는 Medium입니다. 우호 블록은 ['trend', 'momentum'], 경계 블록은 [], 혼재 블록은 ['risk']입니다. 보수적 Timing Readiness는 84점(Strong Entry Zone)입니다. 해당 자산은 수급 데이터가 없어 flow 기반 확인은 제한됩니다. 상대강도 benchmark가 없어 시장 대비 우위 판단은 제한됩니다.
+
+[세부 관점]
+- Trend: Bullish
+- Momentum: Positive
+- Flow: NotAvailable
+- Relative Strength: NotAvailable
+- Risk: Moderate
+
+[근거]
+- MA30 > MA60 > MA120 정배열이 형성되어 있습니다.
+- 현재 가격이 MA60 대비 4.45% 위에 있습니다.
+- 현재 가격이 MA120 대비 5.78% 위에 있습니다.
+- 최근 60거래일 수익률이 3.80%로 양수입니다.
+- 최근 120거래일 수익률이 5.76%로 양수입니다.
+- MACD histogram이 양수로 단기 모멘텀이 개선되어 있습니다.
+- MACD가 signal line 위에 있습니다.
+- ROC60이 3.80%로 중기 모멘텀이 양호합니다.
+
+[Timing Support]
+- 이동평균 정배열
+- MACD가 signal line 상회
+- MACD histogram 양수
+- ROC60 양수
+- 20일 변동성 낮음
+
+[Timing Caution]
+- RSI 단기 과열 접근
+- 수급 데이터 부재
+- 상대강도 benchmark 부재
+- risk view Moderate
+
+[리스크]
+- RSI14가 77.33로 과열 구간입니다.
+- RSI14가 77.33로 과열 리스크가 있습니다.
+
+[해석 제한]
+- 해당 자산에는 외국인/기관 수급 데이터가 없습니다.
+- 비교 가능한 상대강도 benchmark가 없습니다.
+
+======================================================================
+KOSPI (KS11) - KR_INDEX
+======================================================================
+종합 판단: Neutral
+신뢰도: High
+Timing Readiness: 90 / Strong Entry Zone
+
+[핵심 해석]
+KOSPI에 대한 Market Agent의 판단은 Neutral이며, 신뢰도는 High입니다. 우호 블록은 ['trend', 'momentum'], 경계 블록은 [], 혼재 블록은 []입니다. 보수적 Timing Readiness는 90점(Strong Entry Zone)입니다. 해당 자산은 수급 데이터가 없어 flow 기반 확인은 제한됩니다. 상대강도 benchmark가 없어 시장 대비 우위 판단은 제한됩니다.
+
+[세부 관점]
+- Trend: Bullish
+- Momentum: Positive
+- Flow: NotAvailable
+- Relative Strength: NotAvailable
+- Risk: Low
+
+[근거]
+- MA30 > MA60 > MA120 정배열이 형성되어 있습니다.
+- 현재 가격이 MA60 대비 23.92% 위에 있습니다.
+- 현재 가격이 MA120 대비 42.33% 위에 있습니다.
+- 최근 60거래일 수익률이 55.38%로 양수입니다.
+- 최근 120거래일 수익률이 102.57%로 양수입니다.
+- RSI14가 52.85로 안정적인 모멘텀 구간입니다.
+- MACD histogram이 양수로 단기 모멘텀이 개선되어 있습니다.
+- MACD가 signal line 위에 있습니다.
+
+[Timing Support]
+- 이동평균 정배열
+- MACD가 signal line 상회
+- MACD histogram 양수
+- RSI가 안정적 상승 구간
+- ROC60 양수
+
+[Timing Caution]
+- 수급 데이터 부재
+- 상대강도 benchmark 부재
+- 20일 변동성 중간 수준
+
+[리스크]
+- 20일 변동성이 3.42%로 중간 수준입니다.
+
+[해석 제한]
+- 해당 자산에는 외국인/기관 수급 데이터가 없습니다.
+- 비교 가능한 상대강도 benchmark가 없습니다.
+
+======================================================================
+VanEck Semiconductor ETF (SMH) - US_ETF
+======================================================================
+종합 판단: Neutral
+신뢰도: Low
+Timing Readiness: 69 / Entry Candidate
+
+[핵심 해석]
+VanEck Semiconductor ETF에 대한 Market Agent의 판단은 Neutral이며, 신뢰도는 Low입니다. 우호 블록은 ['trend'], 경계 블록은 [], 혼재 블록은 ['momentum', 'relative_strength']입니다. 보수적 Timing Readiness는 69점(Entry Candidate)입니다. 해당 자산은 수급 데이터가 없어 flow 기반 확인은 제한됩니다.
+
+[세부 관점]
+- Trend: Bullish
+- Momentum: Mixed
+- Flow: NotAvailable
+- Relative Strength: Neutral
+- Risk: Low
+
+[근거]
+- MA30 > MA60 > MA120 정배열이 형성되어 있습니다.
+- 현재 가격이 MA60 대비 16.77% 위에 있습니다.
+- 현재 가격이 MA120 대비 29.70% 위에 있습니다.
+- 최근 60거래일 수익률이 42.06%로 양수입니다.
+- 최근 120거래일 수익률이 53.60%로 양수입니다.
+- RSI14가 53.52로 안정적인 모멘텀 구간입니다.
+- MACD histogram이 음수로 단기 모멘텀이 약합니다.
+- MACD가 signal line 아래에 있습니다.
+
+[Timing Support]
+- 이동평균 정배열
+- RSI가 안정적 상승 구간
+- ROC60 양수
+- 거래량이 평균 이상
+
+[Timing Caution]
+- MACD가 signal line 하회
+- MACD histogram 음수
+- 수급 데이터 부재
+- 20일 변동성 중간 수준
+
+[리스크]
+- 20일 변동성이 3.25%로 중간 수준입니다.
+
+[해석 제한]
+- 해당 자산에는 외국인/기관 수급 데이터가 없습니다.
+
+======================================================================
+iShares Semiconductor ETF (SOXX) - US_ETF
+======================================================================
+종합 판단: Neutral
+신뢰도: Medium
+Timing Readiness: 68 / Entry Candidate
+
+[핵심 해석]
+iShares Semiconductor ETF에 대한 Market Agent의 판단은 Neutral이며, 신뢰도는 Medium입니다. 우호 블록은 ['trend', 'relative_strength'], 경계 블록은 [], 혼재 블록은 ['momentum', 'risk']입니다. 보수적 Timing Readiness는 68점(Entry Candidate)입니다. 해당 자산은 수급 데이터가 없어 flow 기반 확인은 제한됩니다.
+
+[세부 관점]
+- Trend: Bullish
+- Momentum: Mixed
+- Flow: NotAvailable
+- Relative Strength: Outperforming
+- Risk: Moderate
+
+[근거]
+- MA30 > MA60 > MA120 정배열이 형성되어 있습니다.
+- 현재 가격이 MA60 대비 22.24% 위에 있습니다.
+- 현재 가격이 MA120 대비 39.13% 위에 있습니다.
+- 최근 60거래일 수익률이 57.79%로 양수입니다.
+- 최근 120거래일 수익률이 71.62%로 양수입니다.
+- RSI14가 57.06로 안정적인 모멘텀 구간입니다.
+- MACD histogram이 음수로 단기 모멘텀이 약합니다.
+- MACD가 signal line 아래에 있습니다.
+
+[Timing Support]
+- 이동평균 정배열
+- RSI가 안정적 상승 구간
+- ROC60 양수
+- benchmark 대비 상대강도 개선
+- 거래량이 평균 이상
+
+[Timing Caution]
+- MACD가 signal line 하회
+- MACD histogram 음수
+- 수급 데이터 부재
+- 20일 변동성 높음
+- risk view Moderate
+
+[리스크]
+- 20일 변동성이 3.90%로 높습니다.
+
+[해석 제한]
+- 해당 자산에는 외국인/기관 수급 데이터가 없습니다.
+
+======================================================================
+S&P 500 (^GSPC) - US_INDEX
+======================================================================
+종합 판단: Neutral
+신뢰도: Medium
+Timing Readiness: 72 / Entry Candidate
+
+[핵심 해석]
+S&P 500에 대한 Market Agent의 판단은 Neutral이며, 신뢰도는 Medium입니다. 우호 블록은 ['trend'], 경계 블록은 [], 혼재 블록은 ['momentum']입니다. 보수적 Timing Readiness는 72점(Entry Candidate)입니다. 해당 자산은 수급 데이터가 없어 flow 기반 확인은 제한됩니다. 상대강도 benchmark가 없어 시장 대비 우위 판단은 제한됩니다.
+
+[세부 관점]
+- Trend: Bullish
+- Momentum: Mixed
+- Flow: NotAvailable
+- Relative Strength: NotAvailable
+- Risk: Low
+
+[근거]
+- MA30 > MA60 > MA120 정배열이 형성되어 있습니다.
+- 현재 가격이 MA60 대비 4.49% 위에 있습니다.
+- 현재 가격이 MA120 대비 5.85% 위에 있습니다.
+- 최근 60거래일 수익률이 8.97%로 양수입니다.
+- 최근 120거래일 수익률이 7.00%로 양수입니다.
+- RSI14가 47.93로 안정적인 모멘텀 구간입니다.
+- MACD histogram이 음수로 단기 모멘텀이 약합니다.
+- MACD가 signal line 아래에 있습니다.
+
+[Timing Support]
+- 이동평균 정배열
+- RSI가 안정적 상승 구간
+- ROC60 양수
+- 20일 변동성 낮음
+
+[Timing Caution]
+- MACD가 signal line 하회
+- MACD histogram 음수
+- 수급 데이터 부재
+- 상대강도 benchmark 부재
+
+[해석 제한]
+- 해당 자산에는 외국인/기관 수급 데이터가 없습니다.
+- 비교 가능한 상대강도 benchmark가 없습니다.
+
+======================================================================
+NASDAQ Composite (^IXIC) - US_INDEX
+======================================================================
+종합 판단: Neutral
+신뢰도: Medium
+Timing Readiness: 66 / Entry Candidate
+
+[핵심 해석]
+NASDAQ Composite에 대한 Market Agent의 판단은 Neutral이며, 신뢰도는 Medium입니다. 우호 블록은 ['trend'], 경계 블록은 [], 혼재 블록은 ['momentum']입니다. 보수적 Timing Readiness는 66점(Entry Candidate)입니다. 해당 자산은 수급 데이터가 없어 flow 기반 확인은 제한됩니다. 상대강도 benchmark가 없어 시장 대비 우위 판단은 제한됩니다.
+
+[세부 관점]
+- Trend: Bullish
+- Momentum: Mixed
+- Flow: NotAvailable
+- Relative Strength: NotAvailable
+- Risk: Low
+
+[근거]
+- MA30 > MA60 > MA120 정배열이 형성되어 있습니다.
+- 현재 가격이 MA60 대비 5.69% 위에 있습니다.
+- 현재 가격이 MA120 대비 8.29% 위에 있습니다.
+- 최근 60거래일 수익률이 13.18%로 양수입니다.
+- 최근 120거래일 수익률이 8.97%로 양수입니다.
+- MACD histogram이 음수로 단기 모멘텀이 약합니다.
+- MACD가 signal line 아래에 있습니다.
+- ROC60이 13.18%로 중기 모멘텀이 양호합니다.
+
+[Timing Support]
+- 이동평균 정배열
+- ROC60 양수
+- 거래량이 평균 이상
+- 20일 변동성 낮음
+
+[Timing Caution]
+- MACD가 signal line 하회
+- MACD histogram 음수
+- 수급 데이터 부재
+- 상대강도 benchmark 부재
+
+[해석 제한]
+- RSI14가 41.29로 뚜렷한 방향성을 보이지 않습니다.
+- 해당 자산에는 외국인/기관 수급 데이터가 없습니다.
+- 비교 가능한 상대강도 benchmark가 없습니다.

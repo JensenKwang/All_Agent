@@ -1,0 +1,28 @@
+======================================================================
+News Agent Analysis Report
+======================================================================
+생성 시각: 2026-06-03 03:50:28
+분석 키워드: SK하이닉스
+
+[분석 요약]
+- Signal         : Positive
+- Confidence     : High
+- Score          : 0.833
+- News Reliability: HIGH
+- 분석 기사 수    : 전체 5건 중 5건 통과
+
+[핵심 근거]
+- [81.3점] [특징주] '대장주' 삼전이 10% 급등…SK하이닉스도 1%대 상승(종합2보) - 연합뉴스 — <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE50MVV2STBZREtRMDJMa2...
+- [75.5점] SKT, 엔비디아와 SK하이닉스 팹 디지털 트윈 시스템 구축 - 중앙일보 — <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFBycUdmd19iWjl0QnVrTj...
+- [75.5점] SK하이닉스 청주공장 화재… 가스 누출로 7명 병원 이송 - 조선일보 — <ol><li><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxNcDhPTVdUZl...
+- [75.5점] SK하이닉스 청주공장 화재 3600여명 한때 대피 — <img align="left" hspace="10" src="https://dimg.donga.com/wps/NEWS/IMAGE/2026/06...
+- [75.5점] 삼전-하닉-마이크론 3사 시총, 글로벌 석유 3사 뛰어넘었다 — <img align="left" hspace="10" src="https://dimg.donga.com/wps/NEWS/IMAGE/2026/06...
+
+[리스크]
+- SKT, 엔비디아와 SK하이닉스 팹 디지털 트윈 시스템... : 공식 연락처 미확인
+
+[해석 제한]
+- 전체 30건 중 5건만 신뢰도 기준 통과
+
+[Integration Agent 전달 메시지]
+'SK하이닉스' 관련 뉴스 분석 완료. 평균 신뢰도 76.63점(HIGH). 종합 신호: Positive(High).

@@ -1,0 +1,10 @@
+.env
+news_data.db
+__pycache__/
+myenv/
+.venv/
+.claude/
+agent_responses_*.json
+market_agent/
+*.md
+!README.md

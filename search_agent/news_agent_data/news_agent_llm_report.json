@@ -1,0 +1,29 @@
+{
+  "agent": "News Agent",
+  "model": "gpt-4.1-mini",
+  "generated_at": "2026-06-03 03:00:51",
+  "llm_judgment": {
+    "agent": "News Agent",
+    "decision_type": "llm_news_judgment",
+    "integration_payload": {
+      "agent_name": "News Agent",
+      "signal": "Positive",
+      "confidence": "Medium",
+      "score": 0.75,
+      "news_reliability": "HIGH",
+      "key_evidence": [
+        "삼성전자, 전작보다 20% 빠른 HBM4E 12단 샘플 세계 첫 출하 — 용량도 HBM4보다 30% 향상…글로벌 고객사 공급",
+        "삼성전자, 세계 첫 ‘7세대 HBM4E’ 샘플 공급… “AI칩 주도권 탈환” — 메모리-파운드리 협업으로 ‘초격차’",
+        "“AI는 비용 아닌 수익”… 젠슨 황, 에이전틱·피지컬 AI 시대 선언 — HBM4 메모리는 SK하이닉스, 삼성전자, 마이크론이 공급",
+        "삼전, 세계 최초 HBM4E 샘플 출하…차세대 AI 메모리 주도권",
+        "HBM4보다 속도·용량↑‥삼성전자 세계 첫 HBM4E 출하"
+      ],
+      "key_risks": [],
+      "limitations": [
+        "전체 30건 중 5건만 신뢰도 기준 통과"
+      ],
+      "handoff_message": "삼성전자의 7세대 HBM4E 고대역폭 메모리 샘플 출하 관련 다수의 고신뢰도 뉴스가 긍정적 내용을 담고 있음. 다만 전체 수집 기사 대비 신뢰도 기준 통과 기사가 적어 신뢰도는 Medium으로 평가함."
+    }
+  },
+  "raw_text": "{\n  \"agent\": \"News Agent\",\n  \"decision_type\": \"llm_news_judgment\",\n  \"integration_payload\": {\n    \"agent_name\": \"News Agent\",\n    \"signal\": \"Positive\",\n    \"confidence\": \"Medium\",\n    \"score\": 0.75,\n    \"news_reliability\": \"HIGH\",\n    \"key_evidence\": [\n      \"삼성전자, 전작보다 20% 빠른 HBM4E 12단 샘플 세계 첫 출하 — 용량도 HBM4보다 30% 향상…글로벌 고객사 공급\",\n      \"삼성전자, 세계 첫 ‘7세대 HBM4E’ 샘플 공급… “AI칩 주도권 탈환” — 메모리-파운드리 협업으로 ‘초격차’\",\n      \"“AI는 비용 아닌 수익”… 젠슨 황, 에이전틱·피지컬 AI 시대 선언 — HBM4 메모리는 SK하이닉스, 삼성전자, 마이크론이 공급\",\n      \"삼전, 세계 최초 HBM4E 샘플 출하…차세대 AI 메모리 주도권\",\n      \"HBM4보다 속도·용량↑‥삼성전자 세계 첫 HBM4E 출하\"\n    ],\n    \"key_risks\": [],\n    \"limitations\": [\n      \"전체 30건 중 5건만 신뢰도 기준 통과\"\n    ],\n    \"handoff_message\": \"삼성전자의 7세대 HBM4E 고대역폭 메모리 샘플 출하 관련 다수의 고신뢰도 뉴스가 긍정적 내용을 담고 있음. 다만 전체 수집 기사 대비 신뢰도 기준 통과 기사가 적어 신뢰도는 Medium으로 평가함.\"\n  }\n}"
+}

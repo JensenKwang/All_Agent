@@ -1,0 +1,64 @@
+{
+  "agent": "Market Agent",
+  "decision_type": "llm_market_judgment",
+  "overall_market_judgment": {
+    "stance": "Neutral",
+    "confidence": "Medium",
+    "market_agent_score": 0.3,
+    "summary": "삼성전자 주가는 현재 강한 추세와 모멘텀, 상대강도 우위 신호를 보이나, 외국인 수급이 20일 기준 순매도 상태이고 기관과 외국인 합산 수급도 음수이며 변동성도 높아 수급 흐름은 약한 편입니다. 따라서 시장 환경은 우호적이지만 수급 불확실성으로 인해 단기 가격 방향성에는 주의가 필요합니다."
+  },
+  "asset_judgments": [
+    {
+      "asset_code": "005930",
+      "asset_name": "Samsung Electronics",
+      "market": "KR_STOCK",
+      "llm_stance": "Neutral",
+      "llm_confidence": "Medium",
+      "market_signal_score": 0.35,
+      "timing_readiness": {
+        "score": 75,
+        "zone": "Entry Candidate",
+        "reason": "가격과 기술적 지표는 강한 상승 추세와 모멘텀을 나타내지만, 외국인 수급이 20일 순매도이며 외국인+기관 합산 수급도 음수이고 변동성도 높아 수급 흐름이 약한 점이 진입 타이밍에 대한 추가 확인 필요성을 제기합니다."
+      },
+      "reasoning": "이동평균선 정배열과 MACD, RSI 등 기술적 지표가 긍정적 신호를 주고 있으며 상대강도도 개선되어 추세와 모멘텀은 우호적입니다. 그러나 외국인 수급이 지속적으로 순매도 상태이고 기관과 외국인 합산 수급도 음수이며 변동성도 높아 단기 가격 흐름에 위험 요소가 존재합니다. 수급 신호와 가격 모멘텀 간 불일치가 관찰되어 신중한 관찰이 필요합니다.",
+      "supporting_signals": [
+        "이동평균 정배열 (MA30 > MA60 > MA120)",
+        "MACD가 signal line 상회 및 histogram 양수",
+        "RSI가 안정적 상승 구간 (58.82)",
+        "ROC60 양수",
+        "기관 20일 순매수",
+        "benchmark 대비 상대강도 개선",
+        "최근 60, 120거래일 수익률 양수"
+      ],
+      "conflicting_signals": [
+        "외국인 20일 순매도",
+        "외국인+기관 20일 합산 수급 음수",
+        "20일 변동성 높음 (4.74%)"
+      ],
+      "risk_flags": [
+        "20일 변동성 4.74%로 높음",
+        "risk view Moderate"
+      ],
+      "limitations": []
+    }
+  ],
+  "integration_payload": {
+    "agent_name": "Market Agent",
+    "signal": "Neutral",
+    "confidence": "Medium",
+    "score": 0.35,
+    "timing_readiness_score": 75,
+    "timing_readiness_zone": "Entry Candidate",
+    "key_evidence": [
+      "삼성전자 가격은 MA30 > MA60 > MA120 정배열로 강한 상승 추세를 보임",
+      "MACD 및 RSI 지표가 긍정적 모멘텀 신호를 나타냄",
+      "상대강도 개선으로 시장 대비 우위 신호 존재"
+    ],
+    "key_risks": [
+      "외국인 20일 순매도 및 외국인+기관 합산 수급 음수로 수급 흐름 약화",
+      "20일 변동성 높음으로 단기 가격 변동 위험 존재"
+    ],
+    "limitations": [],
+    "handoff_message": "삼성전자는 기술적 지표와 상대강도 측면에서 강한 상승 신호를 보이나, 외국인 수급이 지속적으로 순매도 상태이고 변동성도 높아 단기 가격 방향성에 불확실성이 존재합니다. 수급과 가격 모멘텀 간 불일치가 관찰되어 추가 수급 확인과 리스크 관리가 필요합니다."
+  }
+}

@@ -1,0 +1,10 @@
+requests
+python-dotenv
+SQLAlchemy
+beautifulsoup4
+langchain
+langchain-google-genai
+langchain-openai
+langgraph
+cryptography
+scrapfly-sdk
