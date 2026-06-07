@@ -1,0 +1,33 @@
+# AutoGen 멀티에이전트 통합 시스템 의존성
+
+# === AutoGen 프레임워크 ===
+pyautogen>=0.2.0
+
+# === LLM ===
+openai>=1.0
+
+# === Market Agent ===
+yfinance>=0.2.40
+finance-datareader>=0.9
+requests>=2.32
+beautifulsoup4>=4.12
+lxml
+html5lib
+numpy>=1.24
+pandas>=2.0
+
+# === Search Agent ===
+python-dotenv>=1.0
+SQLAlchemy>=2.0
+feedparser>=6.0
+
+# === Economy Agent ===
+langgraph>=0.2
+langchain-core>=0.3
+langchain-openai>=0.3
+chromadb>=0.5
+psycopg2-binary>=2.9
+tenacity>=8.3
+
+# === Semiconductor Agent ===
+# (shares openai, requests, pandas with above)
